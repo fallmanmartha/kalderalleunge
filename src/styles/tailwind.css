@@ -24,30 +24,60 @@
   /* Her tilføjes theme variable // tokens */
 
   /*Farver */
-  --color-primary-400: #00e4f5;
-  --color-primary-500: #006269;
-  --color-primary-600: #006d75;
-  --color-secondary-400: #f5e400;
-  --color-secondary-500: #f5a600;
-  --color-secondary-600: #f57a00;
+  /* Neutral */
+  --color-neutral-50: #ffffff;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #000000;
+
+  /* Pink */
+  --color-pink-50: #fff3fe;
+  --color-pink-100: #ffe7fe;
+  --color-pink-200: #ffcefe;
+  --color-pink-300: #ffa7f9;
+  --color-pink-400: #ff6ef4;
+  --color-pink-500: #f73ee8;
+  --color-pink-600: #db1ec9;
+  --color-pink-700: #b615a2;
+  --color-pink-800: #951384;
+  --color-pink-900: #791669;
+
+  /* Yellow */
+  --color-yellow-50: #feffe5;
+  --color-yellow-100: #f9ffc7;
+  --color-yellow-200: #f2ff95;
+  --color-yellow-300: #e6fe5e;
+  --color-yellow-400: #d4f526;
+  --color-yellow-500: #b5db07;
+  --color-yellow-600: #8db000;
+  --color-yellow-700: #698506;
+  --color-yellow-800: #54690b;
+  --color-yellow-900: #46580f;
 
   /*Typografi */
-  --font-heading: "Mulish", sans-serif;
-  --font-body: "Dm Sans", sans-serif;
+  --font-heading: "Inter", sans-serif;
+  --font-quoute: "ador-hairline", sans-serif;
+  --font-body: "Inter", sans-serif;
 
-  --text-mobile-h1: 40px;
-  --text-mobile-h2: 32px;
-  --text-mobile-h3: 28px;
-  --text-mobile-h4: 24px;
-  --text-mobile-h5: 20px;
+  --text-mobile-h1: 48px;
+  --text-mobile-h2: 38px;
+  --text-mobile-h3: 24px;
+  --text-mobile-h4: 20px;
   --text-mobile-p: 16px;
+  --text-mobile-quoute: 65px;
 
-  --text-desktop-h1: 64px;
-  --text-desktop-h2: 54px;
-  --text-desktop-h3: 40px;
-  --text-desktop-h4: 28px;
-  --text-desktop-h5: 22px;
+  --text-desktop-h1: 135px;
+  --text-desktop-h2: 80px;
+  --text-desktop-h3: 36px;
+  --text-desktop-h4: 24px;
   --text-desktop-p: 20px;
+  --text-desktop-quoute: 200px;
 
   /* CTA */
   --text-cta-large: 20px;
@@ -57,44 +87,43 @@
 
   /* Color Tokens */
   /* Cards */
-  --color-cards-primary: var(--color-violet-400);
-  --color-cards-secondary: var(--color-violet-200);
+  --color-cards-primary: var(--color-neutral-900);
+  --color-cards-secondary: var(--color-pink-400);
+  --color-cards-secondary: var(--color-yellow-300);
 
   /* Text */
-  --color-text-primary: ;
-  --color-text-secondary: ;
+  --color-text-primary: var(--color-neutral-900);
+  --color-text-secondary: var(--color-neutral-50);
+  --color-text-tertiary: var(--color-pink-400);
+  --color-text-quaternary: var(--color-yellow-300);
 
   /* Body */
-  --color-body-primary: ;
-  --color-body-secondary: ;
+  --color-body-primary: var(--color-neutral-50);
+  --color-body-secondary: var(--color-yellow-300);
+  --color-body-tertiary: var(--color-pink-400);
 
   /* Footer */
-  --color-footer-primary: ;
+  --color-footer-primary: var(--color-neutral-900);
 
   /* Hero */
-  --color-hero-primary: ;
-  --color-hero-secondary: ;
-
-  /* Borders */
-  --color-border-primary: ;
-  --color-border-secondary: ;
+  --color-hero-primary: var(--color-neutral-900);
 
   /* Buttons */
-  --color-button-primary-default: ;
-  --color-button-primary-active: ;
-  --color-button-primary-hover: ;
+  --color-button-primary-default: var(--color-yellow-300);
+  --color-button-primary-active: var(--color-yellow-200);
+  --color-button-primary-hover: var(--color-yellow-400);
 
-  --color-button-secondary-default: ;
-  --color-button-secondary-active: ;
-  --color-button-secondary-hover: ;
+  --color-button-secondary-default: var(--color-neutral-800);
+  --color-button-secondary-active: var(--color-neutral-500);
+  --color-button-secondary-hover: var(--color-neutral-50);
 
-  --color-button-tertiary-default: ;
-  --color-button-tertiary-active: ;
-  --color-button-tertiary-hover: ;
+  --color-button-tertiary-default: var(--color-pink-400);
+  --color-button-tertiary-active: var(--color-pink-300);
+  --color-button-tertiary-hover: var(--color-pink-500);
 
-  --color-button-quaternary-default: ;
-  --color-button-quaternary-active: ;
-  --color-button-quaternary-hover: ;
+  --color-button-quaternary-default: var(--color-neutral-50);
+  --color-button-quaternary-active: var(--color-pink-300);
+  --color-button-quaternary-hover: var(--color-neutral-100);
 }
 
 @layer base {
