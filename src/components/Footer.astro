@@ -1,7 +1,60 @@
 ---
+import Heading from "./Heading.astro";
+import Link from "./Link.astro";
+import Text from "./Text.astro";
 ---
-<footer class="bg-primary-500 text-white">
-    <div class="container mx-auto p-4">
-        <p>&copy; 2025</p>
+
+<footer class="bg-footer-primary text-text-secondary mt-20">
+  <div class="container mx-auto lg:px-0 px-10 py-20 flex flex-col gap-10 lg:flex-row lg:justify-between">
+    <!-- KONTAKT OS -->
+    <div class="max-w-md mt-10">
+      <div class="pb-5">
+        <Heading htmlheading="h3" size="small" color="secondary">KONTAKT OS</Heading>
+      </div>
+      <div>
+        <Text color="secondary">
+          Niels Hemmingsens Gade 10 <br />
+          1153 København<br />
+          CVR: 53361919
+        </Text>
+      </div>
+      <div class="py-5">
+        <Text color="secondary">sekretariat@danskkvindesamfund.dk</Text>
+      </div>
+      <div class="py-5">
+        <Text color="secondary">
+          +45 33157837 - Sekretariat <br />
+          +45 21807501 - Presse
+        </Text>
+      </div>
+      <div class="py-5">
+        <Text color="secondary"> Kan du se samarbejdsmuligheder, er det netop din by vi skal afholde events i, eller vil du høre mere når vi starter ambassadørnetværket op? </Text>
+      </div>
+      <div class="py-5">
+        <Text color="secondary"> Så kontakt Louise Kjølsen eller Julie Lykke Nielsen, der er projektledere på KALDER ALLE UNGE. </Text>
+      </div>
     </div>
+
+    <!-- STØTTE -->
+    <div class="max-w-md mt-10">
+      <Heading htmlheading="h3" size="small" color="secondary">STØTTE</Heading>
+      <div class="py-5">
+        <Text color="secondary"> Projektet “KALDER ALLE UNGE: Nye veje til demokratisk deltagelse i ligestilling” er muliggjort med støtte fra Tuborgfondet i 2024-2026. </Text>
+      </div>
+      <img src="/tuborgfonden.svg" alt="Tuborgfonden logo" class="lg:w-40 w-30 h-auto" />
+    </div>
+
+    <!-- SOME + LOGO -->
+    <div class="max-w-md lg:mt-10 mt-15">
+      <div class="flex lg:gap-10 gap-5 pb-10">
+        <img src="/instagram.svg" alt="Instagram" class="max-w-full h-auto" />
+        <img src="/facebook.svg" alt="Facebook" class="max-w-full h-auto" />
+        <img src="/linkedin.svg" alt="LinkedIn" class="max-w-full h-auto" />
+      </div>
+      <img src="/logo.svg" alt="logo" class="lg:w-40 w-30 h-auto lg:mt-35 mt-15" />
+      <div class="py-5">
+        <a href=" "><Heading htmlheading="h3" size="small" color="secondary">Dansk <br /> Kvindesamfund</Heading></a>
+      </div>
+    </div>
+  </div>
 </footer>
