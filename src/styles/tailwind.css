@@ -62,7 +62,7 @@
 
   /*Typografi */
   --font-heading: "Inter", sans-serif;
-  --font-quoute: "ador-hairline", sans-serif;
+  --font-quote: "ador-hairline", sans-serif;
   --font-body: "Inter", sans-serif;
 
   --text-mobile-h1: 48px;
@@ -70,14 +70,14 @@
   --text-mobile-h3: 24px;
   --text-mobile-h4: 20px;
   --text-mobile-p: 16px;
-  --text-mobile-quoute: 65px;
+  --text-mobile-quote: 65px;
 
   --text-desktop-h1: 135px;
   --text-desktop-h2: 80px;
   --text-desktop-h3: 36px;
   --text-desktop-h4: 24px;
   --text-desktop-p: 20px;
-  --text-desktop-quoute: 200px;
+  --text-desktop-quote: 200px;
 
   /* CTA */
   --text-cta-large: 20px;
