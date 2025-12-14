@@ -97,6 +97,10 @@
   --color-text-tertiary: var(--color-pink-400);
   --color-text-quaternary: var(--color-yellow-300);
 
+  /* Button text */
+  --color-text-button-primary: var(--color-neutral-900);
+  --color-text-button-secondary: var(--color-neutral-50);
+
   /* Body */
   --color-body-primary: var(--color-neutral-50);
   --color-body-secondary: var(--color-yellow-300);
