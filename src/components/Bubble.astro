@@ -1,0 +1,20 @@
+---
+const { variant = "left" } = Astro.props;
+
+const buttonStyling = "font-body text-left py-10 px-10 relative overflow-visible bg-cards-tertiary";
+
+const variantClasses = {
+  left: "",
+  right: "",
+};
+---
+
+<button class:list={[buttonStyling, variantClasses[variant]]}>
+  <slot />
+
+  <!-- TAIL LEFT -->
+  {variant === "left" && <img src="/tailleft.svg" alt="" class="absolute lg:-bottom-18 -bottom-10 left-0 lg:w-28 w-20 pointer-events-none select-none" />}
+
+  <!-- TAIL RIGHT -->
+  {variant === "right" && <img src="/tailright.svg" alt="" class="absolute lg:-bottom-18 -bottom-10 right-0 lg:w-28 w-20 pointer-events-none select-none " />}
+</button>

@@ -88,8 +88,8 @@
   /* Color Tokens */
   /* Cards */
   --color-cards-primary: var(--color-neutral-900);
-  --color-cards-secondary: var(--color-pink-400);
   --color-cards-secondary: var(--color-yellow-300);
+  --color-cards-tertiary: var(--color-pink-400);
 
   /* Text */
   --color-text-primary: var(--color-neutral-900);
