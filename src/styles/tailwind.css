@@ -63,6 +63,7 @@
   /*Typografi */
   --font-heading: "Inter", sans-serif;
   --font-quote: "ador-hairline", sans-serif;
+  --font-weight-quote: weight-900;
   --font-body: "Inter", sans-serif;
 
   --text-mobile-h1: 48px;

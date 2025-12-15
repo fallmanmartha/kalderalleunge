@@ -16,7 +16,7 @@ import Text from "./Text.astro";
     </button>
     <!-- LOGO -->
     <div id="logo" class="lg:w-35 lg:h-35 w-20 h-20">
-      <a href="#">
+      <a href="/">
         <img src="/logo.svg" alt="logo" />
       </a>
     </div>
@@ -29,17 +29,17 @@ import Text from "./Text.astro";
   <!-- Samma menu för ALLA skärmstorlekar -->
   <nav id="mobilmenu" class="bg-hero-primary flex flex-col content-left px-10 pb-25 font-quote lg:text-4xl text-3xl" x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
     <ul class="text-text-secondary">
-      <li class="py-3 hover:text-text-quaternary italic">
-        <a href="/ambassador/" class={currentPath === "" ? " font-bold" : ""}>BLIV AMBASSADØR</a>
+      <li class="py-3 hover:text-text-quaternary italic font-black">
+        <a href="/ambassador/" class={currentPath === "" ? " font-black" : ""}>BLIV AMBASSADØR</a>
       </li>
-      <li class="py-3 hover:text-text-quaternary italic">
-        <a href="/" class={currentPath === "" ? " font-bold" : ""}>EVENTS</a>
+      <li class="py-3 hover:text-text-quaternary italic font-black">
+        <a href="/" class={currentPath === "" ? " font-black" : ""}>EVENTS</a>
       </li>
-      <li class="py-3 hover:text-text-quaternary italic">
-        <a href="/" class={currentPath === "" ? " font-bold" : ""}>VÆRKTØJER</a>
+      <li class="py-3 hover:text-text-quaternary italic font-black">
+        <a href="/" class={currentPath === "" ? " font-black" : ""}>VÆRKTØJER</a>
       </li>
-      <li class="py-3 hover:text-text-quaternary italic">
-        <a href="/ligestilling/" class={currentPath === "" ? " font-bold" : ""}>VIDEN OM LIGESTILLING</a>
+      <li class="py-3 hover:text-text-quaternary italic font-black">
+        <a href="/ligestilling/" class={currentPath === "" ? " font-black" : ""}>VIDEN OM LIGESTILLING</a>
       </li>
       <li class="pt-12 hover:text-text-tertiary font-heading">
         <a href="/komponentbibliotek/" class={currentPath === "" ? " font-bold" : ""}>Dansk <br />Kvinnosamfund</a>

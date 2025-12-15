@@ -4,11 +4,19 @@ import Link from "../components/Link.astro";
 import Heading from "../components/Heading.astro";
 import Text from "../components/Text.astro";
 import Button from "../components/Button.astro";
+import Herosecondary from "../components/Herosecondary.astro";
 ---
 
 <MainLayout title="Kalder alle unge">
-  <main class="lg:mx-32 mx-12 mt-28">
-    <section class="mt-28">
+  <main class="">
+    <section>
+      <Herosecondary
+        herotitle="BLIV AMBASSADØR"
+        herotext_1="På denne side kan du få et overblik over, hvad det indebærer at være ambassadør for KALDER ALLE UNGE. Du kan læse om fællesskabet, de aktiviteter du kan blive en del af, og hvordan du selv kan bidrage til at skabe positive forandringer for unge."
+        herotext_2="Her finder du også information om, hvordan du tilmelder dig, og hvad du kan forvente som ambassadør."
+      />
+    </section>
+    <section class="lg:mx-32 mx-12 mt-28">
       <!-- Overskrift -->
       <div class="mb-12">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> HVAD VIL DET SIGE AT VÆRE AMBASSADØR? </Heading>

@@ -1,7 +1,7 @@
 ---
 const { variant = "left" } = Astro.props;
 
-const buttonStyling = "font-body text-left py-10 px-10 relative overflow-visible bg-cards-tertiary";
+const bubbleStyling = "font-body text-left py-10 px-10 relative overflow-visible bg-cards-tertiary";
 
 const variantClasses = {
   left: "",
@@ -9,7 +9,7 @@ const variantClasses = {
 };
 ---
 
-<button class:list={[buttonStyling, variantClasses[variant]]}>
+<div class:list={[bubbleStyling, variantClasses[variant]]}>
   <slot />
 
   <!-- TAIL LEFT -->
@@ -17,4 +17,4 @@ const variantClasses = {
 
   <!-- TAIL RIGHT -->
   {variant === "right" && <img src="/tailright.svg" alt="" class="absolute lg:-bottom-18 -bottom-10 right-0 lg:w-28 w-20 pointer-events-none select-none " />}
-</button>
+</div>
