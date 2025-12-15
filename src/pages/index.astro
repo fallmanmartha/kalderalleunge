@@ -4,14 +4,13 @@ import Link from "../components/Link.astro";
 import Heading from "../components/Heading.astro";
 import Text from "../components/Text.astro";
 import Button from "../components/Button.astro";
-import Quote from "../components/Quote.astro";
 import Infocard from "../components/Infocard.astro";
-import Ligestillningcard from "../components/Ligestillningcard.astro";
+import Quote from "../components/Quote.astro";
 ---
 
 <MainLayout title="Kalder alle unge">
-  <main class="lg:mx-32 mx-12 mt-10">
-    <section>
+  <main class="mt-10">
+    <section class="lg:mx-32 mx-12">
       <!-- Overskrift -->
       <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-12">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> VI KALDER ALLE UNGE! </Heading>
@@ -46,21 +45,27 @@ import Ligestillningcard from "../components/Ligestillningcard.astro";
       </div>
     </section>
 
-    <section class="mt-32">
-      <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold" class="mb-15"> UDFORSK OG ENGAGER DIG</Heading>
-      <div class="lg:grid lg:grid-cols-2 gap-35 mr-10">
+    <section class="lg:mx-32 mx-12">
+      <Quote>Unge viser vejen til ligestilling.</Quote>
+    </section>
+
+    <section class="mt-32 lg:mx-32 mx-12">
+      <div class="lg:mb-10 mb-5">
+        <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> UDFORSK OG ENGAGER DIG</Heading>
+      </div>
+      <div class="lg:grid lg:grid-cols-2 gap-10">
         <div>
           <Infocard
-            cardtitle="Overskrift"
+            cardtitle="Events"
             cardimage="/hands.png"
             cardimagealt="Hands on table"
             url="/ambassador"
-            cardtext="Her er en række samtaleværktøjer, du kan bruge til starte samtaler om ligestilling med venner og familie eller større grupper. Der er også individuelle refleksionsøvelser, og øvelser, hvor man i fællesskab kan skabe løsninger på konkrete ligestillingsproblemer."
+            cardtext="KALDER ALLE UNGE afholder events rundt om i landet, der giver unge ny viden og inspiration til at tage del i ligestillingsdebatten. "
           />
         </div>
         <div class="lg:mt-40 mt-15">
           <Infocard
-            cardtitle="Overskrift"
+            cardtitle="Værktøjer"
             cardimage="/hands.png"
             cardimagealt="Hands on table"
             url="/ambassador"
@@ -69,28 +74,26 @@ import Ligestillningcard from "../components/Ligestillningcard.astro";
         </div>
       </div>
 
-      <div class="lg:grid lg:grid-cols-2 gap-35 lg:-mt-15 mt-15 mr-10">
+      <div class="lg:grid lg:grid-cols-2 gap-10 lg:-mt-25 mt-15">
         <div>
           <Infocard
-            cardtitle="Overskrift"
+            cardtitle="Bliv ambassadør"
             cardimage="/hands.png"
             cardimagealt="Hands on table"
             url="/ambassador"
-            cardtext="Her er en række samtaleværktøjer, du kan bruge til starte samtaler om ligestilling med venner og familie eller større grupper. Der er også individuelle refleksionsøvelser, og øvelser, hvor man i fællesskab kan skabe løsninger på konkrete ligestillingsproblemer."
+            cardtext="KALDER ALLE UNGE etablerer et ambassadørnetværk, hvor unge kan udfolde deres aktivistiske evner og sætte deres præg på debatten."
           />
         </div>
         <div class="lg:mt-40 mt-15">
           <Infocard
-            cardtitle="Overskrift"
+            cardtitle="Viden om ligestilling"
             cardimage="/hands.png"
             cardimagealt="Hands on table"
             url="/ambassador"
-            cardtext="Her er en række samtaleværktøjer, du kan bruge til starte samtaler om ligestilling med venner og familie eller større grupper. Der er også individuelle refleksionsøvelser, og øvelser, hvor man i fællesskab kan skabe løsninger på konkrete ligestillingsproblemer."
+            cardtext="KALDER ALLE UNGE udvikler værktøjer og videnspakker, der åbner op for dialogen om ligestillingsemner og styrker unges engagement."
           />
         </div>
       </div>
     </section>
-
-    <Ligestillningcard cardtitle="KROPSIDEALER" cardimage="/feminisme.png" cardimagealt="Hands on table" url="/ambassador" cardtext="Mangfoldige kroppe" />
   </main>
 </MainLayout>
