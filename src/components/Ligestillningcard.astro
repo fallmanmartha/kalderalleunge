@@ -2,8 +2,8 @@
 const { url = "#", cardimage = "", cardimagealt = "", cardtitle = "", cardtext = "" } = Astro.props;
 ---
 
-<a href="/feminisme" class="block max-w-md m-20 group">
-  <div class="relative overflow-hidden border-40 border-cards-primary
+<a href="/feminisme" class="block max-w-md group">
+  <div class="relative overflow-hidden border-35 border-cards-primary
            group-hover:border-cards-secondary">
     <!-- BAKGRUNDSBILD -->
     <img src={cardimage} alt={cardimagealt} class="w-full h-full object-cover" />
@@ -16,9 +16,10 @@ const { url = "#", cardimage = "", cardimagealt = "", cardtitle = "", cardtext =
     </svg>
 
     <!-- CONTENT -->
-    <div class="absolute lg:bottom-10 bottom-5 left-0 w-full z-10">
+    <div class="absolute bottom-0 left-0 w-full z-10">
       <!-- OVERSKRIFT -->
-      <h3 class="uppercase font-heading font-bold text-text-secondary lg:text-desktop-h3 text-mobile-h3 mb-1
+      <h3 class="uppercase font-heading font-bold text-text-secondary text-2xl sm:text-3xl md:text-4xl lg:text-3xl
+ mb-1
                group-hover:text-text-button-primary">
         {cardtitle}
       </h3>
