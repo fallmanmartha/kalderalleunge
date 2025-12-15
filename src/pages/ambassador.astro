@@ -7,5 +7,48 @@ import Button from "../components/Button.astro";
 ---
 
 <MainLayout title="Kalder alle unge">
-  <main class=""></main>
+  <main class="lg:mx-32 mx-12 mt-28">
+    <section class="mt-28">
+      <!-- Overskrift -->
+      <div class="mb-12">
+        <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> HVAD VIL DET SIGE AT VÆRE AMBASSADØR? </Heading>
+      </div>
+
+      <!-- Indhold -->
+      <div class="flex flex-col gap-12 md:grid md:grid-cols-3 md:gap-16">
+        <!-- Kolonne 1 -->
+        <div>
+          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold"> Fællesskab </Heading>
+
+          <div class="mt-4 space-y-4">
+            <Text teksttype="brødttekst"> Stopper du op, når du støder på uretfærdighed? Er du én, der tør stå frem og sige din mening? </Text>
+
+            <Text teksttype="brødttekst"> Når du tilmelder dig som ambassadør bliver du en del af et netværk, hvor du i fællesskab med andre unge både kan tale om ligestillingsemner – men også handle. </Text>
+          </div>
+        </div>
+
+        <!-- Kolonne 2 -->
+        <div>
+          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold"> Viden & inspiration </Heading>
+
+          <div class="mt-4 space-y-4">
+            <Text teksttype="brødttekst"> I KALDER ALLE UNGEs netværk af ambassadører har du mulighed for at udvikle dine aktivistiske evner. </Text>
+
+            <Text teksttype="brødttekst"> Som ambassadør bliver du klædt på med viden, inspiration og konkrete redskaber til at tage del i samtaler og workshops. </Text>
+          </div>
+        </div>
+
+        <!-- Kolonne 3 -->
+        <div>
+          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold"> Netværksmøder </Heading>
+
+          <div class="mt-4 space-y-4">
+            <Text teksttype="brødttekst"> Vi afholder løbende netværksmøder i København og Aarhus, hvor du er inviteret. </Text>
+
+            <Text teksttype="brødttekst"> Når du tilmelder dig som ambassadør, vil du få tilsendt datoer for kommende netværksmøder. </Text>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </MainLayout>
