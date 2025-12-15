@@ -10,7 +10,37 @@ import Ligestillningcard from "../components/Ligestillningcard.astro";
 ---
 
 <MainLayout title="Kalder alle unge">
-  <main class="">
+  <main class="lg:mx-32 mx-12 mt-10">
+    <section>
+      <!-- Overskrift -->
+      <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-12">
+        <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> VI KALDER ALLE UNGE! </Heading>
+
+        <img src="/megafon.svg" alt="" class="w-40 md:w-50 shrink-0 self-end md:self-auto" />
+      </div>
+
+      <!-- Indhold -->
+      <div class="flex flex-col gap-12 md:grid md:grid-cols-2">
+        <!-- Venstre -->
+        <div>
+          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold">Giv unge en stærkere stemme </Heading>
+
+          <p class="mb-4">KALDER ALLE UNGE giver unge en større stemme i ligestillingsdebatten. Vi hjælper dem med at deltage i debatter, skrive indlæg, holde taler og håndtere samtaler om ligestilling i hverdagen.</p>
+
+          <p>Derudover udvikler vi samtaleværktøjer, videnspakker og et netværk af ligestillingsambassadører, der kan udfolde deres aktivisme på deres egen måde.</p>
+        </div>
+
+        <!-- Højre -->
+        <div>
+          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold">Et fællesskab for ligestilling</Heading>
+
+          <p class="mb-4">Hos KALDER ALLE UNGE arbejder vi for en bred forståelse af ligestilling, hvor alle har samme muligheder uanset køn, seksualitet, etnicitet, religion, alder eller handicap.</p>
+
+          <p>Her får unge støtte, netværk og inspiration til at kæmpe imod ulighed og skabe forandring i deres egen hverdag.</p>
+        </div>
+      </div>
+    </section>
+
     <Infocard
       cardtitle="Overskrift"
       cardimage="/hands.png"
