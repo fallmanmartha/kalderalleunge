@@ -1,0 +1,33 @@
+---
+const { url = "#", cardimage = "", cardimagealt = "", cardtitle = "", cardtext = "" } = Astro.props;
+---
+
+<a href="/feminisme" class="block max-w-md m-20 group">
+  <div class="relative overflow-hidden border-40 border-cards-primary
+           group-hover:border-cards-secondary">
+    <!-- BAKGRUNDSBILD -->
+    <img src={cardimage} alt={cardimagealt} class="w-full h-full object-cover" />
+
+    <!-- INLINE SVG-DIVIDER MED HOVER-FÄRG -->
+    <svg viewBox="0 0 381 149" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="absolute -bottom-1 left-0 w-full pointer-events-none select-none
+             text-cards-primary
+             group-hover:text-cards-secondary">
+      <path d="M0 149V0H271.135L381 99.5V149H0Z"></path>
+    </svg>
+
+    <!-- CONTENT -->
+    <div class="absolute lg:bottom-10 bottom-5 left-0 w-full z-10">
+      <!-- OVERSKRIFT -->
+      <h3 class="uppercase font-heading font-bold text-text-secondary lg:text-desktop-h3 text-mobile-h3 mb-1
+               group-hover:text-text-button-primary">
+        {cardtitle}
+      </h3>
+
+      <!-- TEXT -->
+      <p class="font-body text-text-secondary max-w-xs
+               group-hover:text-text-button-primary">
+        {cardtext}
+      </p>
+    </div>
+  </div>
+</a>
