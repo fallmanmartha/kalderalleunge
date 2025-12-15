@@ -1,0 +1,25 @@
+---
+import Heading from "./Heading.astro";
+import Text from "./Text.astro";
+
+const { herotitle = "", herotext_1 = "", herotext_2 = "" } = Astro.props;
+---
+
+<section class="bg-hero-primary lg:px-32 px-12 pb-20 pt-5">
+  <Heading htmlheading="h1" size="xlarge" font="quote" color="tertiary" weight="italic">
+    {herotitle}
+  </Heading>
+  <div class="lg:grid lg:grid-cols-2 gap-4 mt-5">
+    <div class="lg:mb-0 mb-5">
+      <Text font="body" color="secondary">
+        {herotext_1}
+      </Text>
+    </div>
+
+    <div>
+      <Text font="body" color="secondary">
+        {herotext_2}
+      </Text>
+    </div>
+  </div>
+</section>
