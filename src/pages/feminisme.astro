@@ -6,6 +6,7 @@ import Text from "../components/Text.astro";
 import Button from "../components/Button.astro";
 import Herosecondary from "../components/Herosecondary.astro";
 import Quote from "../components/Quote.astro";
+import Bubble from "../components/Bubble.astro";
 ---
 
 <MainLayout title="Kalder alle unge">
@@ -137,6 +138,17 @@ import Quote from "../components/Quote.astro";
       </div>
     </section>
     <section class="lg:mx-32 mx-12 mt-28">
+      <div><Quote>VIDSTE DU AT?</Quote></div>
+      <div class="mt-12">
+        <div class="md:w-1/2">
+          <Bubble variant="left"><Heading htmlheading="h3" size="medium">"Der er flere administrerende direktører i Danmark med navnet Lars eller Peter end der er kvindelige administrerende direktører.”</Heading></Bubble>
+        </div>
+        <div class="mt-28 md:w-1/2 ml-auto">
+          <Bubble variant="right"><Heading htmlheading="h3" size="medium">"Der er flere administrerende direktører i Danmark med navnet Lars eller Peter end der er kvindelige administrerende direktører.”</Heading></Bubble>
+        </div>
+      </div>
+    </section>
+    <section class="lg:mx-32 mx-12 mt-48">
       <!-- Overskrift -->
       <div class="mb-12">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> NORMKRITIK</Heading>
@@ -184,6 +196,17 @@ import Quote from "../components/Quote.astro";
               minoriteter, er oftest særligt udsatte for diskrimination eller vold. F.eks. kan homoseksuelle mænd opleve, at deres blotte eksistens bliver set som en trussel mod traditionel maskulinitet (KØN 2020).
             </Text>
           </div>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-start justify-center mt-28 gap-10">
+        <div class="flex justify-center md:justify-start w-full md:w-auto">
+          <img src="/!.svg" alt="Udråbstegn" class="w-16 md:w-24 flex-shrink-0" />
+        </div>
+        <div class="max-w-2xl text-left">
+          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold">
+            I 2023 samlede organisationen Lev og Lad Leve 1000 personlige vidnesbyrd om hadforbrydelser i bogen “Stop Hadet Nu”. Fortællingerne dokumenterer, hvordan personer, der bryder med kønsnormer, risikerer at blive råbt af, truet eller
+            overfaldet, når man som mand f.eks. har makeup på i det offentlige rum (Stop Hadet Nu 2023).
+          </Heading>
         </div>
       </div>
     </section>
