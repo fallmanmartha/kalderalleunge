@@ -12,6 +12,7 @@ import Infocard from "../components/Infocard.astro";
 
 <MainLayout title="Kalder alle unge">
   <main>
+    <!-- HERO SECTION -->
     <section>
       <Herosecondary
         herotitle="FEMINISME"
@@ -19,22 +20,27 @@ import Infocard from "../components/Infocard.astro";
         herotext_2="Du kan også læse lidt om den historiske udvikling, om ikke-vestlig feminisme, og om hvordan anti-feminisme truer tilkæmpede rettigheder for kvinder og minoriteter. "
       />
     </section>
-    <section class="mt-16 lg:mx-32 mx-12 lg:mt-28">
+    <!-- SLUT PÅ HERO SECTION -->
+
+    <!-- INDLEDENDE SEKTION -->
+    <section class="lg:mt-28 mt-16 lg:mx-margin-desktop mx-margin-mobile">
       <!-- Overskrift -->
-      <div class="mb-12">
+      <div class="lg:mb-h2-desktop mb-h2-mobile">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> HVAD ER FEMINISME?</Heading>
-        <div class="mt-4 lg:max-w-1/2">
+        <!-- indledende tekst -->
+        <div class="lg:mt-p-desktop mt-p-mobile lg:max-w-1/2">
           <Text> Feminisme handler om troen på, at alle mennesker skal have de samme muligheder — og om kampen for at fjerne de strukturer, der står i vejen. Det er både en historisk bevægelse og en nutidig kamp for reel ligestilling. </Text>
         </div>
       </div>
 
       <!-- Indhold -->
-      <div class="flex flex-col gap-12 md:grid md:grid-cols-3 md:gap-10">
+      <div class="flex flex-col gap-grid-gap-desktop md:grid md:grid-cols-3 md:gap-grid-gap-desktop">
         <!-- Kolonne 1 -->
         <div>
-          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> Feminisme historisk </Heading>
-
-          <div class="mt-4 space-y-4">
+          <div class="lg:mb-h3-desktop mb-h3-mobile">
+            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> Feminisme historisk </Heading>
+          </div>
+          <div class="space-y-p-desktop">
             <Text teksttype="brødttekst"> Feminisme begyndte som en kamp for rettigheder. I 1800-tallet og begyndelsen af 1900-tallet kæmpede feminister for kvinders adgang til uddannelse, arbejde og politisk deltagelse. </Text>
 
             <Text teksttype="brødttekst"> Modstanden byggede ofte på “biologiske” argumenter, som fx idéen om at uddannelse kunne skade kvinders kroppe. </Text>
@@ -45,9 +51,10 @@ import Infocard from "../components/Infocard.astro";
 
         <!-- Kolonne 2 -->
         <div>
-          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> Feminisme i dag </Heading>
-
-          <div class="mt-4 space-y-4">
+          <div class="lg:mb-h3-desktop mb-h3-mobile">
+            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> Feminisme i dag </Heading>
+          </div>
+          <div class="space-y-p-desktop">
             <Text teksttype="brødttekst"> Nutidens feminisme favner bredere. I dag handler feminisme om reel ligestilling på tværs af køn, identitet, etnicitet, seksualitet og social baggrund. </Text>
 
             <Text teksttype="brødttekst"> Feminister peger også på, hvordan mænd og drenge møder egne ligestillingsudfordringer, og hvordan normer påvirker alle. </Text>
@@ -58,9 +65,11 @@ import Infocard from "../components/Infocard.astro";
 
         <!-- Kolonne 3 -->
         <div>
-          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> Som bevægelse </Heading>
+          <div class="lg:mb-h3-desktop mb-h3-mobile">
+            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> Som bevægelse </Heading>
+          </div>
 
-          <div class="mt-4 space-y-4">
+          <div class="space-y-p-desktop">
             <Text teksttype="brødttekst"> Feminisme er ikke én samlet ideologi, men en bevægelse med mange retninger og perspektiver. </Text>
 
             <Text teksttype="brødttekst"> Fælles for dem er ønsket om reel ligestilling og en kritik af de strukturer, der giver magt og privilegier til nogle grupper frem for andre.</Text>
@@ -70,8 +79,10 @@ import Infocard from "../components/Infocard.astro";
         </div>
       </div>
     </section>
+    <!-- SLUT PÅ IN INDLEDENDE SEKTION -->
 
-    <section class="mt-28 lg:mt-56 lg:mx-32 mx-12 uppercase">
+    <!-- QUOTE SEKTION -->
+    <section class="mt-section-mobile lg:mt-section-desktop lg:mx-margin-desktop mx-margin-mobile uppercase">
       <div class="relative z-10">
         <Quote>Feminisme <br />er for<br />alle </Quote>
       </div>
@@ -79,28 +90,32 @@ import Infocard from "../components/Infocard.astro";
         <img src="heart.webp" alt="" class="w-180" />
       </div>
     </section>
+    <!-- SLUT PÅ QUOTE SEKTION -->
 
-    <section class="mt-28 lg:mx-32 mx-12 lg:mt-56">
+    <!-- HVORFOR HEDDER DET “FEMINISME”? SEKTION -->
+    <section class="mt-section-mobile lg:mx-margin-desktop mx-margin-mobile lg:mt-section-desktop">
       <!-- Overskrift -->
-      <div class="mb-12">
+      <div class="lg:mb-h2-desktop mb-h2-mobile">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> HVORFOR HEDDER DET “FEMINISME”?</Heading>
       </div>
 
       <!-- Indhold -->
-      <div class="flex flex-col gap-12 md:grid md:grid-cols-2">
+      <div class="flex flex-col lg:gap-grid-gap-desktop gap-grid-gap-mobile md:grid md:grid-cols-2">
         <!-- Venstre -->
         <div>
-          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Navnets historiske rødder </Heading>
-          <div class="mb-4 mt-4">
+          <div class="lg:mb-h3-desktop mb-h3-mobile">
+            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Navnets historiske rødder </Heading>
+          </div>
+          <div class="lg:mb-p-desktop mb-p-mobile">
             <Text teksttype="brødttekst"
               >Ordet feminisme stammer fra det latinske “femina” (kvinde) og udspringer historisk af kampen mod den ulighed, kvinder oplevede. I dag rummer feminisme også kampen for minoriteters rettigheder, men navnet giver stadig mening, fordi
               bevægelsen grundlæggende handler om at modarbejde undertrykkelsen af det feminine.</Text
             >
           </div>
-          <div class="mb-4">
+          <div class="lg:mb-p-desktop mb-p-mobile">
             <Text teksttype="brødttekst"> Alle mennesker har både maskuline og feminine træk, men samfundets forståelse af, hvilke egenskaber der anses som værdifulde, afhænger ofte af biologisk køn. </Text>
           </div>
-          <div class="mb-4">
+          <div class="lg:mb-p-desktop mb-p-mobile">
             <Text teksttype="brødttekst">
               Maskulinitet forbindes traditionelt med styrke, handlekraft og rationalitet, mens femininitet forbindes med omsorg, følelser og svaghed. Det ses fx i, hvordan omsorgsfag (sygepleje, pædagogik, SOSU) opfattes som “kvindelige”, og
               politibetjente eller elektrikere som “mandlige” (Bloksgaard 2010).
@@ -110,20 +125,22 @@ import Infocard from "../components/Infocard.astro";
 
         <!-- Højre -->
         <div>
-          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Kønsnormer og ulighed</Heading>
-          <div class="mb-4 mt-4">
+          <div class="lg:mb-h3-desktop mb-h3-mobile">
+            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Kønsnormer og ulighed</Heading>
+          </div>
+          <div class="lg:mb-p-desktop mb-p-mobile">
             <Text teksttype="brødttekst"
               >Kønsnormer er uskrevne regler for, hvordan mænd og kvinder “forventes” at være. De ændrer sig over tid – fx var pink engang en drengefarve (CNN 2018). Men fordi samfundet historisk er præget af patriarkalske magtstrukturer, værdsættes
               maskuline egenskaber ofte højere end feminine (Hofstede 1980).
             </Text>
           </div>
 
-          <div class="mb-4">
+          <div class="lg:mb-p-desktop mb-p-mobile">
             <Text teksttype="brødttekst"
-              >Det ses tydeligt i debatten om omsorgsarbejde. Arbejde, der forbindes med femininitet, er både lavere lønnet og mindre anerkendt – både i hjemmet og i job som sygepleje, pædagogik og SOSU (Holten 2024).
+              >Det ses tydeligt i debatten om omsorgsarbejde. Arbejde, der forbindes med femininitet, er både lavere lønnet og mindre anerkendt - både i hjemmet og i job som sygepleje, pædagogik og SOSU (Holten 2024).
             </Text>
           </div>
-          <div class="mb-4">
+          <div class="lg:mb-p-desktop mb-p-mobile">
             <Text teksttype="brødttekst"
               >Feminisme handler derfor også om at give feminine værdier som omsorg, følelser og sårbarhed højere status. Det betyder, at både mænd og kvinder skal kunne udtrykke disse egenskaber uden at blive set som svage eller mindre værd.
             </Text>
@@ -131,56 +148,73 @@ import Infocard from "../components/Infocard.astro";
         </div>
       </div>
     </section>
+    <!-- SLUT PÅ HVORFOR SEKTION -->
+
+    <!-- INFO BOX SEKTION -->
     <section class="bg-body-secondary">
-      <div class="mt-28 lg:mt-56 mx-12 pt-16 pb-16 lg:pt-28 lg:pb-28 lg:mx-32">
+      <div class="mt-section-mobile lg:mt-section-desktop py-section-mobile lg:mx-margin-desktop mx-margin-mobile">
+        <!-- INFO 1 -->
         <div class="mb-12 lg:mb-20">
           <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> FEMINISME = LIGESTILLING</Heading>
-          <div class="mt-4">
+          <div class="lg:mt-h3-desktop mt-h3-mobile">
             <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> En bevægelse for, at alle køn skal have de samme muligheder og rettigheder.</Heading>
           </div>
         </div>
+
+        <!-- INFO 2 -->
         <div>
           <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> FEMINISME ≠ KAMP MOD MÆND</Heading>
-          <div class="mt-4">
+          <div class="lg:mt-h3-desktop mt-h3-mobile">
             <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> Feminisme handler ikke om at tage noget fra mænd, men om at skabe retfærdighed og lige vilkår for alle.</Heading>
           </div>
         </div>
       </div>
     </section>
-    <section class="mt-28 lg:mx-32 mx-12 lg:mt-56">
-      <div><Quote>VIDSTE DU AT?</Quote></div>
-      <div class="mt-12">
+    <!-- SLUT INFO BOX SEKTION -->
+
+    <!-- VISSTE DU AT? SEKTION -->
+    <section class="mt-section-mobile lg:mx-margin-desktop mx-margin-mobile lg:mt-section-desktop">
+      <div class="lg:mb-h2-image-desktop mb-h2-image-mobile">
+        <Quote>VIDSTE DU AT?</Quote>
+      </div>
+      <div>
+        <!-- Bubble 1 -->
         <div class="md:w-1/2">
           <Bubble variant="left"><Heading htmlheading="h3" size="medium" weight="medium">"Der er flere administrerende direktører i Danmark med navnet Lars eller Peter end der er kvindelige administrerende direktører.”</Heading></Bubble>
         </div>
+
+        <!-- Bubble 2 -->
         <div class="mt-28 md:w-1/2 ml-auto">
           <Bubble variant="right"><Heading htmlheading="h3" size="medium" weight="medium">"Der er flere administrerende direktører i Danmark med navnet Lars eller Peter end der er kvindelige administrerende direktører.”</Heading></Bubble>
         </div>
       </div>
     </section>
-    <section class="mt-28 lg:mx-32 mx-12 lg:mt-56">
+    <!-- SLUT PÅ VISSTE DU AT? SEKTION -->
+
+    <!-- NORMKRITIK SEKTION -->
+    <section class="mt-section-mobile lg:mx-margin-desktop mx-margin-mobile lg:mt-section-desktop">
       <!-- Overskrift -->
-      <div class="mb-12">
+      <div class="lg:mb-h2-desktop mb-h2-mobile">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> NORMKRITIK</Heading>
       </div>
 
       <!-- Indhold -->
-      <div class="flex flex-col gap-12 md:grid md:grid-cols-2">
+      <div class="flex flex-col lg:gap-grid-gap-desktop md:grid md:grid-cols-2 gap-grid-gap-mobile">
         <!-- Venstre -->
         <div>
-          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Som del af feminismen</Heading>
-          <div class="mb-4 mt-4">
-            <Text teksttype="brødttekst"
-              >For mange feminister er kampen for ligestilling også en kamp mod kønsstereotype normer. Normkritik betyder at udfordre og stille spørgsmålstegn ved de normer, der definerer, hvad der anses som passende eller naturligt i et samfund.</Text
+          <div class="lg:mb-h3-desktop mb-h3-mobile">
+            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Som del af feminismen</Heading>
+          </div>
+          <div class="lg:mb-p-desktop mb-p-mobile">
+            <Text>
+              For mange feminister er kampen for ligestilling også en kamp mod kønsstereotype normer. Normkritik betyder at udfordre og stille spørgsmålstegn ved de normer, der definerer, hvad der anses som passende eller naturligt i et samfund.</Text
             >
           </div>
-          <div class="mb-4">
-            <Text teksttype="brødttekst">
-              Når feminister arbejder for at bryde kønsstereotyper, handler det om at udvide handlingsrummet for alle – ikke at afskaffe maskulinitet eller femininitet, men at gøre flere måder at være menneske på lige accepterede.
-            </Text>
+          <div class="lg:mb-p-desktop mb-p-mobile">
+            <Text> Når feminister arbejder for at bryde kønsstereotyper, handler det om at udvide handlingsrummet for alle – ikke at afskaffe maskulinitet eller femininitet, men at gøre flere måder at være menneske på lige accepterede. </Text>
           </div>
-          <div class="mb-4">
-            <Text teksttype="brødttekst">
+          <div class="lg:mb-p-desktop mb-p-mobile">
+            <Text>
               Normer kan ændres, og det bliver de heldigvis også, men det kan tage lang tid og kræve mange kampe (LGBT+ Danmark 2025). Da kvinder og mænd kæmpede for kvinders ret til uddannelse og adgang til arbejdsmarkedet, udfordrede de normen om,
               at kvinders rolle var i hjemmet. Da feminister kæmpede for en samtykkelov, var det en kamp for at ændre samfundets syn på voldtægt og retten til at bestemme over egen krop.
             </Text>
@@ -189,64 +223,82 @@ import Infocard from "../components/Infocard.astro";
 
         <!-- Højre -->
         <div>
-          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Når normer brydes </Heading>
-          <div class="mb-4 mt-4">
-            <Text teksttype="brødttekst"
+          <div class="lg:mb-h3-desktop mb-h3-mobile">
+            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Når normer brydes </Heading>
+          </div>
+          <div class="lg:mb-p-desktop mb-p-mobile">
+            <Text
               >Normkritik betyder, som ordet antyder, at man kritiserer normerne, som ofte er usynlige spilleregler i samfundet. Man kan synliggøre dem ved at stille spørgsmålstegn ved måden, tingene bliver gjort på. Eller man kan bryde normerne ved
               f.eks. at gøre noget, der ligger udenfor normerne – f.eks. at en mand tager makeup på, eller en kvinde ikke fjerner hår på kroppen.
             </Text>
           </div>
 
-          <div class="mb-4">
-            <Text teksttype="brødttekst">Der findes ingen lov, der forbyder disse handlinger, men normerne gør, at det ofte bliver bemærket, kommenteret eller udskældt. </Text>
+          <div class="lg:mb-p-desktop mb-p-mobile">
+            <Text>Der findes ingen lov, der forbyder disse handlinger, men normerne gør, at det ofte bliver bemærket, kommenteret eller udskældt. </Text>
           </div>
-          <div class="mb-4">
-            <Text teksttype="brødttekst"
+          <div class="lg:mb-p-desktop mb-p-mobile">
+            <Text
               >Det er lettere at følge normerne, da man typisk belønnes med anerkendelse og accept, mens normbrud kan føre til afvisning eller kritik (Lodahl 2018). Mennesker, der falder udenfor normen, f.eks. kønsminoriteter og seksuelle
               minoriteter, er oftest særligt udsatte for diskrimination eller vold. F.eks. kan homoseksuelle mænd opleve, at deres blotte eksistens bliver set som en trussel mod traditionel maskulinitet (KØN 2020).
             </Text>
           </div>
         </div>
       </div>
-      <div class="flex flex-col md:flex-row items-start justify-center mt-28 gap-10">
+
+      <!-- info box -->
+      <div class="flex flex-col md:flex-row items-start justify-center mt-section-mobile gap-grid-gap-mobile lg:gap-grid-gap-desktop">
         <div class="flex justify-center md:justify-start w-full md:w-auto">
           <img src="/!.svg" alt="Udråbstegn" class="w-16 md:w-12 flex-shrink-0" />
         </div>
         <div class="max-w-xl text-left">
-          <Text teksttype="brødtekst" weight="semibold">
+          <Text weight="semibold">
             I 2023 samlede organisationen Lev og Lad Leve 1000 personlige vidnesbyrd om hadforbrydelser i bogen “Stop Hadet Nu”. Fortællingerne dokumenterer, hvordan personer, der bryder med kønsnormer, risikerer at blive råbt af, truet eller
             overfaldet, når man som mand f.eks. har makeup på i det offentlige rum (Stop Hadet Nu 2023).
           </Text>
         </div>
       </div>
     </section>
+    <!-- SLUT PÅ NORMKRITIK SEKTION -->
+
+    <!-- DERFOR BETYDER NORMER NOGET SEKTION -->
     <section class="bg-body-secondary">
-      <div class="lg:mx-32 mx-12 mt-28 pt-16 pb-16 lg:pt-28 lg:pb-28 lg:mt-56">
-        <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">DERFOR BETYDER NORMER NOGET </Heading>
-        <div class="mt-12 grid grid-cols-1 gap-10 text-center lg:grid-cols-3 lg:gap-20">
+      <div class="lg:mx-margin-desktop mx-margin-mobile py-section-mobile lg:mt-section-desktop mt-section-mobile">
+        <!-- overskrift -->
+        <div class="lg:mb-h2-desktop mb-h2-mobile">
+          <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">DERFOR BETYDER NORMER NOGET </Heading>
+        </div>
+
+        <!-- Statistik -->
+        <div class="grid grid-cols-1 gap-grid-gap-mobile text-center lg:grid-cols-3 lg:gap-grid-gap-desktop">
           <div>
             <div><Quote>17%</Quote></div>
-            <div class="mt-4 pr-10 pl-10 lg:pr-0 lg:pl-0"><Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">kvinder 15–25 år har oplevet chikane på arbejde (2 % mænd).</Heading></div>
+            <div class="lg:mt-p-desktop mt-p-mobile pr-10 pl-10 lg:pr-0 lg:pl-0"><Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">kvinder 15–25 år har oplevet chikane på arbejde (2 % mænd).</Heading></div>
           </div>
           <div>
             <div><Quote>73%</Quote></div>
-            <div class="mt-4 pr-10 pl-10 lg:pr-0 lg:pl-0"><Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">af alle selvmord i Danmark begås af mænd  (Sundhedsstyrelsen 2024).</Heading></div>
+            <div class="lg:mt-p-desktop mt-p-mobile pr-10 pl-10 lg:pr-0 lg:pl-0"><Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">af alle selvmord i Danmark begås af mænd  (Sundhedsstyrelsen 2024).</Heading></div>
           </div>
           <div>
             <div><Quote>84%</Quote></div>
-            <div class="mt-4 pr-10 pl-10 lg:pr-0 lg:pl-0"><Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">af minoritetsetniske danskere har oplevet diskrimination det seneste år.</Heading></div>
+            <div class="lg:mt-p-desktop mt-p-mobile px-10 lg:px-0">
+              <Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">af minoritetsetniske danskere har oplevet diskrimination det seneste år.</Heading>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
+    <!-- SLUT PÅ DERFOR BETYDER NORMER NOGET SEKTION -->
+
+    <!-- HVORFOR ER DET RELEVANT SEKTION -->
+    <section class="mt-section-mobile mx-margin-mobile lg:mx-margin-desktop lg:mt-section-desktop">
       <div class="lg:grid grid-cols-3">
+        <!-- grafik -->
         <div class="lg:col-span-2">
           <img src="hvorfor.svg" />
         </div>
 
         <!-- TEKST -->
-        <div class="space-y-4 mt-8 lg:mt-0 lg:col-start-3">
+        <div class="space-y-p-mobile mt-8 lg:mt-0 lg:col-start-3">
           <Text>
             De fleste danskere går ind for ligestilling, men der er en tydelig forskel mellem kønnene. Over 70% af danske kvinder mener, at ligestillingen halter, mens næsten 20% af unge mænd mener, at den er gået for langt (Andersen 2022).
           </Text>
@@ -255,22 +307,25 @@ import Infocard from "../components/Infocard.astro";
             forestillingen om Danmark som et foregangsland og viser behovet for fortsat fokus på reel ligestilling.</Text
           >
 
-          <Text> Det er værd at bemærke, at rapporten kan kritiseres for vestlig bias og for primært at måle formel – og ikke altid reel – ligestilling. </Text>
+          <Text> Det er værd at bemærke, at rapporten kan kritiseres for vestlig bias og for primært at måle formel – og ikke altid reel - ligestilling. </Text>
         </div>
       </div>
       <div></div>
     </section>
-    <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
-      <div class="mb-12">
+    <!-- SLUT PÅ HVORFOR ER DET RELEVANT SEKTION -->
+
+    <!-- FEMINISMENS HISTORIE SEKTION -->
+    <section class="mt-section-mobile mx-margin-mobile lg:mx-margin-desktop lg:mt-section-desktop">
+      <div class="lg:mb-h2-desktop mb-h2-mobile">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">FEMINISMENS HISTORIE</Heading>
       </div>
 
-      <!-- Indhold -->
-      <div class="flex flex-col gap-12 md:grid md:grid-cols-2">
+      <!-- Indhold tekst -->
+      <div class="flex flex-col lg:gap-grid-gap-desktop gap-grid-gap-mobile md:grid md:grid-cols-2">
         <!-- Venstre -->
         <div>
-          <div class="">
-            <Text teksttype="brødttekst"
+          <div>
+            <Text
               >Flere forskere peger på, at patriarkalske magtsystemer begyndte at dominere for ca. 8.000-10.000 år siden, da vi gik fra mere ligestillede jæger/samlersamfund til et hierarkisk landbrugssamfund. Her havde mænd ofte kontrol over
               ressourcer, beslutninger og over kvinder og børn (Reed 1975).
             </Text>
@@ -279,16 +334,18 @@ import Infocard from "../components/Infocard.astro";
 
         <!-- Højre -->
         <div>
-          <div class="">
-            <Text teksttype="brødttekst"
+          <div>
+            <Text
               >Der har formodentligt været en form for feminisme lige så længe, som der har være undertrykkelse. Begrebet feminisme, som vi kender det i den vestlige verden, opstod dog i 1880'ernes Frankrig og har udviklet sig gennem fire
               hovedbølger, hvor hver bølge har fokuseret på forskellige aspekter af ligestilling (Danmarks Nationalleksikon 2024).
             </Text>
           </div>
         </div>
       </div>
-      <div class="lg:grid lg:grid-cols-2 gap-10 mt-10 lg:mt-20">
-        <div class="">
+
+      <!-- info cards -->
+      <div class="lg:grid lg:grid-cols-2 gap-grid-gap-desktop mt-10 lg:mt-20">
+        <div>
           <Infocard
             cardtitle="Første bølge"
             cardsubtitle="1800 – Tidlig 1900-tallet"
