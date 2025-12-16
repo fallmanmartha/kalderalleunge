@@ -7,6 +7,7 @@ import Button from "../components/Button.astro";
 import Herosecondary from "../components/Herosecondary.astro";
 import Quote from "../components/Quote.astro";
 import Bubble from "../components/Bubble.astro";
+import Infocard from "../components/Infocard.astro";
 ---
 
 <MainLayout title="Kalder alle unge">
@@ -18,11 +19,11 @@ import Bubble from "../components/Bubble.astro";
         herotext_2="Du kan også læse lidt om den historiske udvikling, om ikke-vestlig feminisme, og om hvordan anti-feminisme truer tilkæmpede rettigheder for kvinder og minoriteter. "
       />
     </section>
-    <section class="lg:mx-32 mx-12 mt-28">
+    <section class="mt-16 lg:mx-32 mx-12 lg:mt-28">
       <!-- Overskrift -->
       <div class="mb-12">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> HVAD ER FEMINISME?</Heading>
-        <div class="mt-4 max-w-1/2">
+        <div class="mt-4 lg:max-w-1/2">
           <Text> Feminisme handler om troen på, at alle mennesker skal have de samme muligheder — og om kampen for at fjerne de strukturer, der står i vejen. Det er både en historisk bevægelse og en nutidig kamp for reel ligestilling. </Text>
         </div>
       </div>
@@ -69,8 +70,11 @@ import Bubble from "../components/Bubble.astro";
         </div>
       </div>
     </section>
+    <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
+      <img src="/fem3.png" alt="Feminisme illustration" class="w-full mt-28 lg:mt-56" />
+    </section>
 
-    <section class="lg:mx-32 mx-12 mt-28">
+    <section class="mt-28 lg:mx-32 mx-12 lg:mt-56">
       <!-- Overskrift -->
       <div class="mb-12">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> HVORFOR HEDDER DET “FEMINISME”?</Heading>
@@ -121,9 +125,9 @@ import Bubble from "../components/Bubble.astro";
         </div>
       </div>
     </section>
-    <section class="bg-yellow-300">
-      <div class="lg:mx-32 mx-12 pt-28 pb-28 mt-28">
-        <div class="mb-20">
+    <section class="bg-body-secondary">
+      <div class="mt-28 mx-12 pt-16 pb-16 lg:pt-28 lg:pb-28 lg:mx-32">
+        <div class="mb-12 lg:mb-20">
           <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> FEMINISME = LIGESTILLING</Heading>
           <div class="mt-4">
             <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> En bevægelse for, at alle køn skal have de samme muligheder og rettigheder.</Heading>
@@ -137,7 +141,7 @@ import Bubble from "../components/Bubble.astro";
         </div>
       </div>
     </section>
-    <section class="lg:mx-32 mx-12 mt-28">
+    <section class="mt-28 lg:mx-32 mx-12 lg:mt-56">
       <div><Quote>VIDSTE DU AT?</Quote></div>
       <div class="mt-12">
         <div class="md:w-1/2">
@@ -148,7 +152,7 @@ import Bubble from "../components/Bubble.astro";
         </div>
       </div>
     </section>
-    <section class="lg:mx-32 mx-12 mt-48">
+    <section class="mt-28 lg:mx-32 mx-12 lg:mt-56">
       <!-- Overskrift -->
       <div class="mb-12">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> NORMKRITIK</Heading>
@@ -210,8 +214,8 @@ import Bubble from "../components/Bubble.astro";
         </div>
       </div>
     </section>
-    <section class="bg-yellow-300">
-      <div class="lg:mx-32 mx-12 mt-28 pt-28 pb-28">
+    <section class="bg-body-secondary">
+      <div class="lg:mx-32 mx-12 mt-28 pt-16 pb-16 lg:pt-28 lg:pb-28 lg:mt-56">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">DERFOR BETYDER NORMER NOGET </Heading>
         <div class="mt-12 grid grid-cols-1 gap-10 text-center lg:grid-cols-3 lg:gap-20">
           <div>
@@ -229,26 +233,14 @@ import Bubble from "../components/Bubble.astro";
         </div>
       </div>
     </section>
-    <section class="mx-12 lg:mx-32 mt-28">
+    <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
       <div class="lg:grid grid-cols-3">
-        <div class="grid grid-cols-2 mb-8 lg:col-span-2">
-          <div class="">
-            <Heading htmlheading="h2" size="large" font="quote" weight="italic">
-              HVORFOR <br />
-              ER <br />
-              FEMINISME <br />
-              STADIG <br />
-              RELEVANT
-            </Heading>
-          </div>
-
-          <!-- SPØRGSMÅLSTEGN -->
-          <div class="flex items-center justify-center">
-            <img src="question.svg" alt="" class="w-26 lg:w-60 object-contain" />
-          </div>
+        <div class="lg:col-span-2">
+          <img src="hvorfor.svg" />
         </div>
+
         <!-- TEKST -->
-        <div class="space-y-4 lg:col-start-3">
+        <div class="space-y-4 mt-8 lg:mt-0 lg:col-start-3">
           <Text>
             De fleste danskere går ind for ligestilling, men der er en tydelig forskel mellem kønnene. Over 70% af danske kvinder mener, at ligestillingen halter, mens næsten 20% af unge mænd mener, at den er gået for langt (Andersen 2022).
           </Text>
@@ -260,9 +252,151 @@ import Bubble from "../components/Bubble.astro";
           <Text> Det er værd at bemærke, at rapporten kan kritiseres for vestlig bias og for primært at måle formel – og ikke altid reel – ligestilling. </Text>
         </div>
       </div>
+      <div></div>
+    </section>
+    <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
+      <div class="mb-12">
+        <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">FEMINISMENS HISTORIE</Heading>
+      </div>
+
+      <!-- Indhold -->
+      <div class="flex flex-col gap-12 md:grid md:grid-cols-2">
+        <!-- Venstre -->
+        <div>
+          <div class="">
+            <Text teksttype="brødttekst"
+              >Flere forskere peger på, at patriarkalske magtsystemer begyndte at dominere for ca. 8.000-10.000 år siden, da vi gik fra mere ligestillede jæger/samlersamfund til et hierarkisk landbrugssamfund. Her havde mænd ofte kontrol over
+              ressourcer, beslutninger og over kvinder og børn (Reed 1975).
+            </Text>
+          </div>
+        </div>
+
+        <!-- Højre -->
+        <div>
+          <div class="">
+            <Text teksttype="brødttekst"
+              >Der har formodentligt været en form for feminisme lige så længe, som der har være undertrykkelse. Begrebet feminisme, som vi kender det i den vestlige verden, opstod dog i 1880'ernes Frankrig og har udviklet sig gennem fire
+              hovedbølger, hvor hver bølge har fokuseret på forskellige aspekter af ligestilling (Danmarks Nationalleksikon 2024).
+            </Text>
+          </div>
+        </div>
+      </div>
+      <div class="lg:grid lg:grid-cols-2 gap-10">
+        <div class="">
+          <Infocard
+            cardtitle="Første bølge"
+            cardsubtitle="1800 – TIDLIG 1900-TALLET"
+            cardimage="/b1.png"
+            cardimagealt="Hands on table"
+            variant=""
+            cardtext="I denne periode havde den feministiske kamp fokus på grundlæggende, juridiske rettigheder for kvinder, eksempelvis stemmeret, ejendomsret og adgang til uddannelse. Stemmeretten blev opnået i 1915 i Danmark efter mange års kamp fra kvindeorganisationer, heriblandt Dansk Kvindesamfund (Folketinget 2024).Denne kamp var ret fredelig i modsætning til andre steder. I Storbritannien kæmpede suffragetterne for kvinderettigheder. De brugte ofte militante taktikker såsom bombning af offentlige bygninger, sabotage af telefonledninger og afbrænding af politikernes hjem og ofrede livet for deres sag (Militant Suffragettes 2024)."
+          />
+        </div>
+        <div class="lg:mt-40 mt-15">
+          <Infocard
+            cardtitle="Anden bølge "
+            cardsubtitle="1960-1980"
+            cardimage="/b2.png"
+            cardimagealt="Hands on table"
+            variant=""
+            cardtext="Anden bølge kendes som “Rødstrømpebevægelsen”, inspireret af den amerikanske socialistiske kvindebevægelse “the Redstockings“. Rødstrømperne fokuserede på sociale og kulturelle uligheder og kæmpede for ligeløn, reproduktive rettigheder som fri adgang til prævention og abort, samt bekæmpelse af sexisme og chikane i arbejdslivet og kønsbaseret vold. Bevægelsen satte også spørgsmålstegn ved traditionelle kønsroller og arbejdede for at ændre samfundets opfattelse af kvinders plads både i hjemmet og på arbejdsmarkedet (Danmarks Statistik 2012)."
+          />
+        </div>
+      </div>
+
+      <div class="lg:grid lg:grid-cols-2 gap-10 lg:-mt-20 mt-15">
+        <div>
+          <Infocard
+            cardtitle="Tredje bølge "
+            cardsubtitle="1990-2000"
+            cardimage="/b3.png"
+            cardimagealt="Hands on table"
+            variant=""
+            cardtext="Denne bølge opstod som en reaktion på de mangler, den nye generation af feminister syntes, den anden bølge havde. I Vesten havde feminismen taget udgangspunkt i hvide, heteroseksuelle, middel- og overklasse kvinder, og feminister fra den tredje bølge havde en bredere forståelse af feminisme, der inkluderede flere identitetsmarkører end køn, f.eks. etnicitet, seksuel orientering, klasse, kønsidentitet mm. Denne forståelse af feminisme kaldes intersektionel feminisme. Tredje bølge havde også en poststrukturalistisk fortolkning af køn og seksualitet, hvor de forstod køn og seksualitet som sociale konstruktioner, der blev skabt og formet af sprog og kultur frem for faste, biologisk bestemte kategorier (Butler 1990). "
+          />
+        </div>
+        <div class="lg:mt-40 mt-15">
+          <Infocard
+            cardtitle="Fjerde bølge "
+            cardsubtitle="2010-NU"
+            cardimage="/b4.png"
+            cardimagealt="Hands on table"
+            variant=""
+            cardtext="Den fjerde og nyeste, feministiske bølge er kendetegnet ved brugen af sociale medier til at fremme feminisme og adressere problemer som seksuel chikane, kropspositivitet og intersektionalitet. Bevægelser som #MeToo har spillet en central rolle i at sætte fokus på seksuel chikane og overgreb, og fjerde bølge-feminister arbejder for at skabe opmærksomhed omkring, hvordan forskellige former for diskrimination overlapper og påvirker hinanden. I denne bølge er der også et fokus på at reclaime det feminine (Kjølsen, Klæstrup & Andersen 2017)."
+          />
+        </div>
+      </div>
+    </section>
+    <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
+      <img src="/stadigfem.svg" alt="Feminisme illustration" class="w-full mt-28 lg:mt-56" />
+    </section>
+    <section class="mt-28 lg:mx-32 mx-12 lg:mt-56">
+      <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">OFTE HØRTE PÅSTANDE</Heading>
+      <div class="mt-12 lg:mt-28">
+        <div class="md:w-1/2">
+          <Bubble variant="left"
+            ><Heading htmlheading="h3" size="medium" weight="medium">"Ligestilling er gået for langt."</Heading>
+            <div class="mt-4">
+              <Text teksttype="brødtekst"
+                >Ligestilling handler om at skabe lige muligheder for alle, ikke om at "give mere" til én gruppe. F.eks. når mænd får mere barsel, og kvinder får adgang til lederstillinger, vinder hele samfundet – både økonomisk og socialt.
+                Undersøgelser viser, at lande med høj ligestilling oplever øget livskvalitet og økonomisk vækst (World Economic Forum 2024). Filosofisk set kan ligestilling heller ikke "gå for langt," fordi det ultimative mål er at fjerne
+                uretfærdigheder og sikre fuld lighed for alle. Modstanden mod ligestilling handler derfor ofte om frygten for forandring eller for at miste (ufortjente) fordele, ikke om lighedens rent faktiske konsekvenser (Crenshaw 1989).
+              </Text>
+            </div></Bubble
+          >
+        </div>
+        <div class="mt-28 md:w-1/2 ml-auto">
+          <Bubble variant="right"
+            ><Heading htmlheading="h3" size="medium" weight="medium">"“Feminister hader mænd og vil bare bestemme over dem.” "</Heading>
+            <div class="mt-4">
+              <Text teksttype="brødtekst"
+                >Et stort studie fra 2024 har bevist, at feminister ikke hader mænd og ikke ønsker mere magt end dem. Studiet dokumenterer, at feminister har samme overordnede positive holdning som ikke-feminister ift. mænd, og at feminister ønsker
+                ligestilling og hverken mandehad eller overlegenhed. Den eneste forskel de fandt var, at feminister ikke var lige så godtroende overfor mænd (Ging 2024).
+              </Text>
+            </div></Bubble
+          >
+        </div>
+        <div class="mt-28 md:w-1/2">
+          <Bubble variant="left"
+            ><Heading htmlheading="h3" size="medium" weight="medium">"…Men hvad med børneægteskaber i Indien?”</Heading>
+            <div class="mt-4">
+              <Text teksttype="brødtekst"
+                >Når man taler om et ligestillingsproblem, bringes nogle gange andre og helt urelaterede problemer op. Denne argumentationstaktik hedder “whataboutism”, og er en måde at afspore en debat ved at skabe en falsk sammenligning, som
+                antyder at man ikke kan løse flere problemer på en gang (Sørensen 2019). Den bedste strategi er at anerkende det andet problem, men holde fokus: "Ja, børneægteskaber i Indien er et alvorligt problem, men det ændrer ikke på, at vi også
+                har udfordringer med ligestilling i Danmark, som vi kan og bør adressere". Man har jo heller aldrig droppet at lave en finanslov, fordi der er lande, som tjener færre penge end Danmark.
+              </Text>
+            </div></Bubble
+          >
+        </div>
+      </div>
+    </section>
+    <section class="bg-body-secondary">
+      <div class="lg:mx-32 mx-12 mt-28 pt-16 pb-16 lg:pt-28 lg:pb-28 lg:mt-56">
+        <Quote>ANTI-<br />FEMINISME</Quote>
+        <div class="lg:grid grid-cols-2 lg:gap-12">
+          <div class="mt-4">
+            <Text teksttype="brødtekst"
+              >Anti-feminisme udspringer af en reaktion mod feministiske bevægelser, og søger mod ultra traditionelle kønsroller med udgangspunkt i ekstreme højrefløjsværdier. De afviser ideen om strukturelle uligheder mellem kønnene og glamouriserer
+              et traditionelt syn på køn og kønshierarki. Internetfænomener som "trad wives" promoverer en romantiseret idé om kvinders primære rolle som underdanige hustruer og mødre, hvilket oftest betyder, at de bliver økonomisk afhængige af deres
+              mænd. Nogle trad wife-fora taler også om, at kvinder bør acceptere utroskab og endda fysisk afstraffelse som ”spanking” fra deres mænd (The Guardian 2023). <br />
+              <br />Vi ser også anti-feministiske figurer som Andrew Tate, der fremmer en maskulinitetskultur, som nedvurderer kvinder og opildner unge mænd til at modarbejde ligestilling (Ging 2019). Andrew Tate er pt. tiltalt for menneskehandel,
+              voldtægt og organiseret kriminalitet i Rumænien, men ikke dømt (DR 2023).
+            </Text>
+          </div>
+          <div class="mt-8 lg:mt-0">
+            <Heading htmlheading="h1" size="xlarge" font="quote" weight="italic">POST- <br />FEMINISME</Heading>
+            <div class="mt-4">
+              <Text teksttype="brødtekst"
+                >Postfeminisme, på den anden side, antyder, at feminisme er overflødig, fordi man mener, at ligestilling allerede er opnået. Her ignorerer man problemer som lønforskelle, kønsbaseret vold og diskrimination. Det kan betyde, at man
+                fastholder uligheder og forhindrer kvinder og minoritetsgrupper i at opnå fuld deltagelse i samfundet (Banet-Weiser 2018).
+              </Text>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="lg:mx-32 mx-12 mt-28">
+    <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
       <!-- Overskrift -->
       <div class="mb-12">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">IKKE-VESTLIG FEMINISME</Heading>
@@ -306,7 +440,10 @@ import Bubble from "../components/Bubble.astro";
         </div>
       </div>
     </section>
-    <section class="lg:mx-32 mx-12 mt-28">
+    <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
+      <img src="/fem2.png" alt="Feminisme illustration" class="w-full mt-28 lg:mt-56" />
+    </section>
+    <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
       <!-- Overskrift -->
       <div class="mb-12">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">HVORDAN KAN DU GØRE EN FORSKEL?</Heading>
@@ -342,6 +479,21 @@ import Bubble from "../components/Bubble.astro";
             <Text teksttype="brødttekst">
               Man kan handle feministisk både alene og i fællesskab. Der kan være stor styrke i at finde ligesindede, der ønsker at engagere sig i feminismen – for eksempel gennem fællesskaber som KALDER ALLE UNGEs ambassadørnetværk.
             </Text>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-body-tertiary -mb-20">
+      <div class="mt-28 mx-12 pt-16 pb-16 lg:pt-28 lg:pb-28 lg:mx-32 lg:mt-56">
+        <div class="lg:grid grid-cols-2">
+          <div class="flex justify-center lg:justify-end lg:pr-10"><img src="/handsheart.svg" alt="Ikon med hjerte og hænder" /></div>
+          <div class="mt-8">
+            <div class="flex justify-center lg:justify-start">
+              <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">VÆR EN DEL AF FREMTIDEN, <br />BLIV AMBASSADØR</Heading>
+            </div>
+            <div class="flex justify-center lg:justify-start mt-8">
+              <Button>Læs mere</Button>
+            </div>
           </div>
         </div>
       </div>
