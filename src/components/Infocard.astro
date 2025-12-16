@@ -3,7 +3,7 @@ import Heading from "./Heading.astro";
 import Text from "./Text.astro";
 import Button from "./Button.astro";
 
-const { url = "#", cardimage = "", cardimagealt = "", cardtitle = "", cardtext = "", variant = "button" } = Astro.props;
+const { url = "#", cardimage = "", cardimagealt = "", cardtitle = "", cardsubtitle = "", cardtext = "", variant = "button" } = Astro.props;
 ---
 
 <a href={url} class="">
@@ -18,6 +18,10 @@ const { url = "#", cardimage = "", cardimagealt = "", cardtitle = "", cardtext =
                 flex flex-col">
       <Heading htmlheading="h3" size="small" font="heading" color="secondary" weight="bold">
         {cardtitle}
+      </Heading>
+
+      <Heading htmlheading="h4" size="xsmall" font="heading" color="secondary" weight="bold">
+        {cardsubtitle}
       </Heading>
 
       <div class="mt-6 max-w-xl">
