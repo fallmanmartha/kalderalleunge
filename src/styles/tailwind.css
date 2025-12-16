@@ -85,8 +85,8 @@
   --text-cta-small: 16px;
 
   /* Ligestillning card */
-  --text-card-desktop: 2vw;
-  --text-card-mobile: 4vw;
+  --text-card-heading: 10cqw;
+  --text-card-p: 6cqw;
 
   /* Tokens */
 
@@ -137,6 +137,33 @@
   --color-button-quaternary-default: var(--color-neutral-50);
   --color-button-quaternary-active: var(--color-pink-300);
   --color-button-quaternary-hover: var(--color-neutral-100);
+
+  /* Spacing tokens */
+  --spacing-section-mobile: 112px;
+  --spacing-section-desktop: 224px;
+
+  --spacing-margin-desktop: 130px;
+  --spacing-margin-mobile: 50px;
+
+  --spacing-h2-mobile: 40px;
+  --spacing-h2-desktop: 48px;
+
+  --spacing-h2-image-mobile: 64px;
+  --spacing-h2-image-desktop: 80px;
+
+  --spacing-h3-mobile: 14px;
+  --spacing-h3-desktop: 20px;
+
+  --spacing-p-mobile: 14px;
+  --spacing-p-desktop: 20px;
+
+  --spacing-button-large: 16px 28px;
+  --spacing-button-small: 12px 20px;
+
+  --spacing-grid-gap-mobile: 48px;
+  --spacing-grid-gap-desktop: 54px;
+
+  --spacing-card: 40px 40px;
 }
 
 @layer base {

@@ -2,8 +2,8 @@
 const { url = "#", cardimage = "", cardimagealt = "", cardtitle = "", cardtext = "" } = Astro.props;
 ---
 
-<a href="/feminisme" class="block max-w-md group">
-  <div class="relative overflow-hidden border-35 border-cards-primary
+<a href={url} class="block max-w-md group">
+  <div style="container-type: inline-size;" class="relative overflow-hidden border-35 border-cards-primary
            bg-cards-primary
            group-hover:bg-cards-secondary
            group-hover:border-cards-secondary">
@@ -14,18 +14,21 @@ const { url = "#", cardimage = "", cardimagealt = "", cardtitle = "", cardtext =
     <svg viewBox="0 0 381 149" fill="currentColor" class="absolute -bottom-2 left-0 w-full
              text-cards-primary
              group-hover:text-cards-secondary
-             pointer-events-none">
+             pointer-events-none select-none">
       <path d="M0 149V0H271.135L381 99.5V149H0Z"></path>
     </svg>
 
     <!-- CONTENT -->
-    <div class="absolute bottom-0 left-0 w-full z-10">
-      <h3 class="uppercase font-heading font-semibold text-text-secondary text-2xl max-w-3xs
+    <div class="absolute -bottom-0 left-0 w-full z-10">
+      <h3 class="uppercase font-heading leading-none font-semibold text-text-secondary
+               text-card-heading
+               max-w-100
                group-hover:text-text-button-primary">
         {cardtitle}
       </h3>
 
-      <p class="font-body text-text-secondary max-w-xs
+      <p class="font-body text-text-secondary max-w-xs mt-2
+               text-card-p
                group-hover:text-text-button-primary">
         {cardtext}
       </p>

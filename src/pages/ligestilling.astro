@@ -5,7 +5,6 @@ import Ligestillningcard from "../components/Ligestillningcard.astro";
 import Herosecondary from "../components/Herosecondary.astro";
 import Instagram from "../components/Instagram.astro";
 import Form from "../components/Form.astro";
-import Infocard from "../components/Infocard.astro";
 ---
 
 <MainLayout title="Kalder alle unge">
@@ -17,11 +16,11 @@ import Infocard from "../components/Infocard.astro";
         herotext_2="KALDER ALLE UNGEs videnspakker er baseret på viden frem for holdninger, og giver dig pålidelig og faktabaseret indsigt. Emnerne er udvalgt på baggrund af over 800 unges interesser indenfor ligestilling."
       />
     </section>
-    <section class="lg:mx-32 mx-12 mt-28">
-      <div class="mb-15">
+    <section class="lg:mx-margin-desktop mx-margin-mobile lg:mt-section-desktop mt-section-mobile">
+      <div class="lg:mb-h2-image-desktop mb-h2-image-mobile">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> BLIV KLOGERE PÅ... </Heading>
       </div>
-      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-grid-gap-desktop gap-grid-gap-mobile">
         <div>
           <Ligestillningcard cardtitle="KROPSIDEALER" cardimage="/card1.webp" cardimagealt="Hands on table" url="/ambassador" cardtext="Lighed mellem kønnene" />
         </div>
