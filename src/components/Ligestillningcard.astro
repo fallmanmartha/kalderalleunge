@@ -4,27 +4,27 @@ const { url = "#", cardimage = "", cardimagealt = "", cardtitle = "", cardtext =
 
 <a href="/feminisme" class="block max-w-md group">
   <div class="relative overflow-hidden border-35 border-cards-primary
+           bg-cards-primary
+           group-hover:bg-cards-secondary
            group-hover:border-cards-secondary">
     <!-- BAKGRUNDSBILD -->
     <img src={cardimage} alt={cardimagealt} class="w-full h-full object-cover" />
 
-    <!-- INLINE SVG-DIVIDER MED HOVER-FÄRG -->
-    <svg viewBox="0 0 381 149" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="absolute -bottom-1 left-0 w-full pointer-events-none select-none
+    <!-- SVG DIVIDER -->
+    <svg viewBox="0 0 381 149" fill="currentColor" class="absolute -bottom-2 left-0 w-full
              text-cards-primary
-             group-hover:text-cards-secondary">
+             group-hover:text-cards-secondary
+             pointer-events-none">
       <path d="M0 149V0H271.135L381 99.5V149H0Z"></path>
     </svg>
 
     <!-- CONTENT -->
     <div class="absolute bottom-0 left-0 w-full z-10">
-      <!-- OVERSKRIFT -->
-      <h3 class="uppercase font-heading font-bold text-text-secondary text-2xl sm:text-3xl md:text-4xl lg:text-3xl
- mb-1
+      <h3 class="uppercase font-heading font-semibold text-text-secondary text-2xl max-w-3xs
                group-hover:text-text-button-primary">
         {cardtitle}
       </h3>
 
-      <!-- TEXT -->
       <p class="font-body text-text-secondary max-w-xs
                group-hover:text-text-button-primary">
         {cardtext}
