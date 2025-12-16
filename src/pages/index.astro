@@ -11,71 +11,70 @@ import Bubble from "../components/Bubble.astro";
 
 <MainLayout title="Kalder alle unge">
   <main class="mt-10">
-    <section class="lg:mx-32 mx-12">
+    <!-- INTRO SEKTION -->
+    <section class="lg:mx-margin-desktop mx-margin-mobile">
       <!-- Overskrift -->
-      <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-12">
+      <div class="flex flex-col md:flex-row md:justify-between md:items-end lg:mb-h2-desktop mb-h2-mobile">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> VI KALDER ALLE UNGE! </Heading>
 
         <img src="/megafon.svg" alt="" class="w-40 md:w-50 shrink-0 self-end md:self-auto" />
       </div>
 
-      <!-- Indhold -->
-      <div class="flex flex-col gap-12 md:grid md:grid-cols-2">
-        <!-- Venstre -->
+      <!-- Text -->
+      <div class="flex flex-col lg:gap-grid-gap-desktop gap-grid-gap-mobile md:grid md:grid-cols-2">
+        <!-- Venstre kolonne -->
         <div>
-          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold">Giv unge en stærkere stemme </Heading>
-          <div class="mb-4">
+          <div class="lg:mb-h3-desktop mb-h3-mobile">
+            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold">Giv unge en stærkere stemme </Heading>
+          </div>
+          <div class="lg:mb-p-desktop mb-p-mobile">
             <Text teksttype="brødttekst">KALDER ALLE UNGE giver unge en større stemme i ligestillingsdebatten. Vi hjælper dem med at deltage i debatter, skrive indlæg, holde taler og håndtere samtaler om ligestilling i hverdagen.</Text>
           </div>
-          <div class="mb-4">
+          <div class="lg:mb-p-desktop mb-p-mobile">
             <Text teksttype="brødttekst">Derudover udvikler vi samtaleværktøjer, videnspakker og et netværk af ligestillingsambassadører, der kan udfolde deres aktivisme på deres egen måde.</Text>
           </div>
         </div>
 
-        <!-- Højre -->
+        <!-- Højre kolonne -->
         <div>
-          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold">Et fællesskab for ligestilling</Heading>
-          <div class="mb-4">
+          <div class="lg:mb-h3-desktop mb-h3-mobile">
+            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold">Et fællesskab for ligestilling</Heading>
+          </div>
+          <div class="lg:mb-p-desktop mb-p-mobile">
             <Text teksttype="brødttekst">Hos KALDER ALLE UNGE arbejder vi for en bred forståelse af ligestilling, hvor alle har samme muligheder uanset køn, seksualitet, etnicitet, religion, alder eller handicap.</Text>
           </div>
 
-          <div class="mb-4">
+          <div class="lg:mb-p-desktop mb-p-mobile">
             <Text teksttype="brødttekst">Her får unge støtte, netværk og inspiration til at kæmpe imod ulighed og skabe forandring i deres egen hverdag.</Text>
           </div>
         </div>
       </div>
     </section>
+    <!--SLUT PÅ INTRO SEKTION -->
 
-    <section class="flex lg:flex-row flex-col max-w-3xl gap-10 items-center mt-32 mx-auto px-12">
-      <img src="handshake.svg" alt="handshake illustration" class="w-70 h-auto" />
-
-      <div>
-        <div class="mb-10">
-          <Heading htmlheading="h4" size="small" font="heading" color="primary" weight="bold"> Synes du, det ovenstående lyder spændende og interessant? </Heading>
-        </div>
-
-        <div class="mb-10">
-          <Heading htmlheading="h4" size="small" font="heading" color="primary" weight="bold"> Så er KALDER ALLE UNGEs ambassadørnetværk noget for dig! </Heading>
-        </div>
-
-        <Button variant="primary" class="mt-10" href="/ambassador"> Bliv ambassadør </Button>
-      </div>
-    </section>
-
-    <section class="mt-32 lg:mx-32 mx-12 uppercase">
+    <!--QUOTE SEKTION -->
+    <!-- overskrift  -->
+    <section class="lg:mt-section-desktop mt-section-mobile lg:mx-margin-desktop mx-margin-mobile uppercase">
       <div class="relative z-10">
         <Quote>Unge viser vejen til ligestilling.</Quote>
       </div>
+      <!-- billede  -->
       <div class="flex justify-end lg:-mt-20 -mt-7 relative z-0">
         <img src="signs.webp" alt="" class="w-150" />
       </div>
     </section>
+    <!--SLUT PÅ QUOTE SEKTION -->
 
-    <section class="mt-32 lg:mx-32 mx-12">
-      <div class="lg:mb-10 mb-5">
+    <!--INFO CARDS SEKTION -->
+    <section class="lg:mt-section-desktop mt-section-mobile lg:mx-margin-desktop mx-margin-mobile">
+      <!-- overskrift  -->
+      <div class="lg:mb-h2-desktop mb-h2-mobile">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> UDFORSK OG ENGAGER DIG</Heading>
       </div>
-      <div class="lg:grid lg:grid-cols-2 gap-10">
+
+      <!-- info cards -->
+      <div class="grid lg:grid-cols-2 lg:gap-grid-gap-desktop gap-grid-gap-mobile">
+        <!-- events card -->
         <div>
           <Infocard
             cardtitle="Events"
@@ -85,7 +84,9 @@ import Bubble from "../components/Bubble.astro";
             cardtext="KALDER ALLE UNGE afholder events rundt om i landet, der giver unge ny viden og inspiration til at tage del i ligestillingsdebatten. "
           />
         </div>
-        <div class="lg:mt-40 mt-15">
+
+        <!-- værktøjer card -->
+        <div class="lg:mt-40">
           <Infocard
             cardtitle="Værktøjer"
             cardimage="/hands.png"
@@ -96,17 +97,20 @@ import Bubble from "../components/Bubble.astro";
         </div>
       </div>
 
-      <div class="lg:grid lg:grid-cols-2 gap-10 lg:-mt-25 mt-15">
+      <div class="grid lg:grid-cols-2 lg:gap-grid-gap-desktop gap-grid-gap-mobile lg:-mt-25 mt-15">
+        <!-- ambassadør card -->
         <div>
           <Infocard
             cardtitle="Bliv ambassadør"
             cardimage="/hug.webp"
             cardimagealt="Hands on table"
             url="/ambassador"
-            cardtext="KALDER ALLE UNGE etablerer et ambassadørnetværk, hvor unge kan udfolde deres aktivistiske evner og sætte deres præg på debatten."
+            cardtext="KALDER ALLE UNGE etablerer et ambassadørnetværk, hvor unge kan udfolde deres aktivistiske evner og sætte deres præg på debatten."
           />
         </div>
-        <div class="lg:mt-40 mt-15">
+
+        <!-- viden om ligestilling card -->
+        <div class="lg:mt-40">
           <Infocard
             cardtitle="Viden om ligestilling"
             cardimage="/signs.webp"
@@ -117,27 +121,32 @@ import Bubble from "../components/Bubble.astro";
         </div>
       </div>
     </section>
+    <!-- SLUT PÅ INFO CARDS SEKTION -->
 
-    <section class="bg-body-secondary mt-32 lg:pt-20 pt-15 lg:pb-40 pb-20 lg:px-32 px-12">
-      <div class="bg-body-secondary py-5">
+    <!-- INFOGRAFIK SEKTION -->
+    <section class="bg-body-secondary lg:mt-section-desktop mt-section-mobile lg:p-margin-desktop p-margin-mobile">
+      <!-- Infografik overskrifter-->
+      <div class="bg-body-secondary pb-h2-mobile">
         <div class="uppercase">
           <Heading htmlheading="span" size="large" font="heading" color="primary" weight="bold">
             <span class="font-quote font-black italic">1</span> ud af <span class="font-quote font-black italic">4</span> unge i Europa mener ligestilling er en vigtig værdi
           </Heading>
         </div>
       </div>
-
-      <div class="lg:mb-30 mb-15">
+      <div class="lg:mb-30">
         <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold">Er du med til at løfte antallet?</Heading>
       </div>
-      <div class="lg:grid lg:grid-cols-12 gap-10 mx-auto">
+
+      <!-- Infografik illustration-->
+      <div class="lg:grid lg:grid-cols-12 gap-grid-gap-desktop mx-auto">
         <img src="infografik.svg" alt="" class="col-span-9" />
         <img src="signgrafik.svg" alt="" class="col-span-3 lg:block hidden" />
       </div>
     </section>
+    <!-- SLUT PÅ INFOGRAFIK SEKTION -->
 
-    <!-- BILD + BUBBLE SEKTION -->
-    <section class="">
+    <!-- BILLEDE + BUBBLE SEKTION -->
+    <section>
       <div class="relative w-full">
         <!-- bakgrundsbild -->
         <img src="/hug.webp" alt="people hugging" class="lg:w-full lg:h-auto object-cover h-130" />
@@ -148,31 +157,43 @@ import Bubble from "../components/Bubble.astro";
         </div>
       </div>
 
+      <!-- nedre billede  -->
       <div class="ml-auto w-fit -mt-50 relative z-30 lg:px-32 px-12">
         <img src="/sittinggroup.webp" alt="group sitting on sofa" />
       </div>
     </section>
+    <!--SLUT PÅ BILLEDE + BUBBLE SEKTION -->
 
-    <section class="my-32 lg:mx-32 mx-12">
-      <div class="uppercase mb-10">
+    <!-- GØR EN FORSKEL SEKTION -->
+    <section class="my-section-desktop lg:mx-margin-desktop mx-margin-mobile">
+      <!-- quote -->
+      <div class="uppercase mb-h2-desktop">
         <Quote>Gør en forskel</Quote>
       </div>
-      <div class="flex lg:flex-row flex-col max-w-4xl ml-auto gap-10">
+      <div class="flex lg:flex-row flex-col ml-auto gap-grid-gap-desktop max-w-4xl">
+        <!-- & ikon -->
         <img src="and.svg" alt="&" class="w-80" />
         <div>
-          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold"> Bliv ambassadør</Heading>
-          <div class="my-5">
+          <!-- overskrift -->
+          <div class="mb-h3-desktop">
+            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold"> Bliv ambassadør</Heading>
+          </div>
+
+          <!-- tekst -->
+          <div class="lg:mb-p-desktop mb-p-desktop">
             <Text
               >Som ambassadør bliver du en del af et engageret fællesskab af unge, der arbejder for ligestilling, trygge fællesskaber og stærke ungestemmer. Du får mulighed for at udvikle dine kompetencer og inspirere andre til at tage del i
               fællesskabet.
             </Text>
           </div>
-          <div class="mb-10">
+          <div class="lg:mb-p-desktop mb-p-mobile">
             <Text>Som ambassadør står du ikke alene - du bliver en del af et netværk, der støtter hinanden og arbejder sammen om at skabe plads til flere.</Text>
           </div>
+          <!-- knap -->
           <Button href="/ambassador">Læs mere</Button>
         </div>
       </div>
     </section>
+    <!--SLUT PÅ GØR EN FORSKEL SEKTION -->
   </main>
 </MainLayout>
