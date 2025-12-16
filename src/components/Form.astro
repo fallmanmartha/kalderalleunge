@@ -1,0 +1,31 @@
+---
+import Heading from "../components/Heading.astro";
+import Text from "../components/Text.astro";
+import Quote from "./Quote.astro";
+---
+
+<section class="bg-cards-primary">
+  <div class="mb-15">
+    <Heading htmlheading="h2" size="large" font="quote" color="secondary" weight="italic">TILMELD DIG HER</Heading>
+  </div>
+
+  <div class="grid grid-cols-12">
+    <div class="col-span-5">
+      <div class="mb-5">
+        <Text color="secondary">Ambassadørnetværketer for alle unge i aldersgruppe 16-30 år, der interesserer sig for ligestilling.</Text>
+      </div>
+      <div class="mb-10">
+        <Text color="secondary">Har du spørgsmål inden du tilmelder dig? Så skriv blot til projektleder Louise Kjølsen her.</Text>
+      </div>
+
+      <div class="flex">
+        <Text color="secondary">Når du tilmelder dig som ambassadør får du info om næste ledige datoer for ambassadørworkshop. Du kan godt starte i netværket og senere deltage i en ambassadørworkshop.</Text>
+        <div class="-mt-20"><Quote color="tertiary">!</Quote></div>
+      </div>
+    </div>
+
+    <div class="col-span-7">
+      <Heading htmlheading="h3" size="medium" font="heading" color="secondary" weight="bold">De praktiske informationer</Heading>
+    </div>
+  </div>
+</section>
