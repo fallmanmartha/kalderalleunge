@@ -348,7 +348,7 @@ import Infocard from "../components/Infocard.astro";
         <div>
           <Infocard
             cardtitle="Første bølge"
-            cardsubtitle="1800 – Tidlig 1900-tallet"
+            cardsubtitle="1800 - Tidlig 1900-tallet"
             cardimage="/b1.webp"
             cardimagealt="Hands on table"
             variant=""
@@ -367,7 +367,7 @@ import Infocard from "../components/Infocard.astro";
         </div>
       </div>
 
-      <div class="lg:grid lg:grid-cols-2 gap-10 lg:-mt-10 mt-15">
+      <div class="lg:grid lg:grid-cols-2 gap-grid-gap-desktop lg:-mt-10 mt-15">
         <div>
           <Infocard
             cardtitle="Tredje bølge "
@@ -390,17 +390,25 @@ import Infocard from "../components/Infocard.astro";
         </div>
       </div>
     </section>
-    <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
+    <!-- SLUT PÅ FEMINISMENS HISTORIE SEKTION -->
+
+    <!--  QUOTE  SEKTION -->
+    <section class="mt-section-mobile mx-margin-mobile lg:mx-margin-desktop lg:mt-section-desktop">
       <img src="/stadigfem.svg" alt="Feminisme illustration" class="w-full mt-28 lg:mt-56" />
     </section>
-    <section class="mt-28 lg:mx-32 mx-12 lg:mt-56">
-      <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">OFTE HØRTE PÅSTANDE</Heading>
-      <div class="mt-12 lg:mt-28">
+    <!-- SLUT PÅ QUOTE SEKTION -->
+
+    <!-- OFTE HØRTE PÅSTANDE SEKTION -->
+    <section class="mt-section-mobile mx-margin-mobile lg:mx-margin-desktop lg:mt-section-desktop">
+      <div class="lg:mb-h2-image-desktop mb-h2-image-mobile">
+        <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">OFTE HØRTE PÅSTANDE</Heading>
+      </div>
+      <div>
         <div class="md:w-1/2">
           <Bubble variant="left"
             ><Heading htmlheading="h3" size="medium" weight="medium">"Ligestilling er gået for langt."</Heading>
-            <div class="mt-4">
-              <Text teksttype="brødtekst"
+            <div class="lg:mt-p-desktop mt-p-mobile">
+              <Text
                 >Ligestilling handler om at skabe lige muligheder for alle, ikke om at "give mere" til én gruppe. F.eks. når mænd får mere barsel, og kvinder får adgang til lederstillinger, vinder hele samfundet – både økonomisk og socialt.
                 Undersøgelser viser, at lande med høj ligestilling oplever øget livskvalitet og økonomisk vækst (World Economic Forum 2024). Filosofisk set kan ligestilling heller ikke "gå for langt," fordi det ultimative mål er at fjerne
                 uretfærdigheder og sikre fuld lighed for alle. Modstanden mod ligestilling handler derfor ofte om frygten for forandring eller for at miste (ufortjente) fordele, ikke om lighedens rent faktiske konsekvenser (Crenshaw 1989).
@@ -411,8 +419,8 @@ import Infocard from "../components/Infocard.astro";
         <div class="mt-28 md:w-1/2 ml-auto">
           <Bubble variant="right"
             ><Heading htmlheading="h3" size="medium" weight="medium">"“Feminister hader mænd og vil bare bestemme over dem.” "</Heading>
-            <div class="mt-4">
-              <Text teksttype="brødtekst"
+            <div class="lg:mt-p-desktop mt-p-mobile">
+              <Text
                 >Et stort studie fra 2024 har bevist, at feminister ikke hader mænd og ikke ønsker mere magt end dem. Studiet dokumenterer, at feminister har samme overordnede positive holdning som ikke-feminister ift. mænd, og at feminister ønsker
                 ligestilling og hverken mandehad eller overlegenhed. Den eneste forskel de fandt var, at feminister ikke var lige så godtroende overfor mænd (Ging 2024).
               </Text>
@@ -422,8 +430,8 @@ import Infocard from "../components/Infocard.astro";
         <div class="mt-28 md:w-1/2">
           <Bubble variant="left"
             ><Heading htmlheading="h3" size="medium" weight="medium">"…Men hvad med børneægteskaber i Indien?”</Heading>
-            <div class="mt-4">
-              <Text teksttype="brødtekst"
+            <div class="lg:mt-p-desktop mt-p-mobile">
+              <Text
                 >Når man taler om et ligestillingsproblem, bringes nogle gange andre og helt urelaterede problemer op. Denne argumentationstaktik hedder “whataboutism”, og er en måde at afspore en debat ved at skabe en falsk sammenligning, som
                 antyder at man ikke kan løse flere problemer på en gang (Sørensen 2019). Den bedste strategi er at anerkende det andet problem, men holde fokus: "Ja, børneægteskaber i Indien er et alvorligt problem, men det ændrer ikke på, at vi også
                 har udfordringer med ligestilling i Danmark, som vi kan og bør adressere". Man har jo heller aldrig droppet at lave en finanslov, fordi der er lande, som tjener færre penge end Danmark.
@@ -433,12 +441,15 @@ import Infocard from "../components/Infocard.astro";
         </div>
       </div>
     </section>
+    <!-- SLUT PÅ OFTE HØRTE PÅSTANDE SEKTION -->
+
+    <!-- ANTI-FEMINISME  SEKTION-->
     <section class="bg-body-secondary">
-      <div class="lg:mx-32 mx-12 mt-28 pt-16 pb-16 lg:pt-28 lg:pb-28 lg:mt-56">
+      <div class="lg:mx-margin-desktop mx-margin-mobile mt-section-mobile py-section-mobile lg:mt-section-desktop">
         <Quote>ANTI-<br />FEMINISME</Quote>
-        <div class="lg:grid grid-cols-2 lg:gap-12">
-          <div class="mt-4">
-            <Text teksttype="brødtekst"
+        <div class="lg:grid grid-cols-2 lg:gap-grid-gap-desktop">
+          <div class="lg:mt-p-desktop mt-p-mobile">
+            <Text
               >Anti-feminisme udspringer af en reaktion mod feministiske bevægelser, og søger mod ultra traditionelle kønsroller med udgangspunkt i ekstreme højrefløjsværdier. De afviser ideen om strukturelle uligheder mellem kønnene og glamouriserer
               et traditionelt syn på køn og kønshierarki. Internetfænomener som "trad wives" promoverer en romantiseret idé om kvinders primære rolle som underdanige hustruer og mødre, hvilket oftest betyder, at de bliver økonomisk afhængige af deres
               mænd. Nogle trad wife-fora taler også om, at kvinder bør acceptere utroskab og endda fysisk afstraffelse som ”spanking” fra deres mænd (The Guardian 2023). <br />
@@ -448,8 +459,8 @@ import Infocard from "../components/Infocard.astro";
           </div>
           <div class="mt-8 lg:mt-0">
             <Heading htmlheading="h1" size="xlarge" font="quote" weight="italic">POST- <br />FEMINISME</Heading>
-            <div class="mt-4">
-              <Text teksttype="brødtekst"
+            <div class="lg:mt-p-desktop mt-p-mobile">
+              <Text
                 >Postfeminisme, på den anden side, antyder, at feminisme er overflødig, fordi man mener, at ligestilling allerede er opnået. Her ignorerer man problemer som lønforskelle, kønsbaseret vold og diskrimination. Det kan betyde, at man
                 fastholder uligheder og forhindrer kvinder og minoritetsgrupper i at opnå fuld deltagelse i samfundet (Banet-Weiser 2018).
               </Text>
@@ -458,27 +469,30 @@ import Infocard from "../components/Infocard.astro";
         </div>
       </div>
     </section>
+    <!-- SLUT PÅ ANTI-FEMINISME SEKTION -->
 
-    <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
+    <!-- IKKE-VESTLIG FEMINISME SEKTION -->
+    <section class="mt-section-mobile mx-margin-mobile lg:mx-margin-desktop lg:mt-section-desktop">
       <!-- Overskrift -->
-      <div class="mb-12">
+      <div class="lg:mb-h2-desktop mb-h2-mobile">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">IKKE-VESTLIG FEMINISME</Heading>
       </div>
 
       <!-- Indhold -->
-      <div class="flex flex-col gap-12 md:grid md:grid-cols-2">
+      <div class="flex flex-col lg:gap-grid-gap-desktop gap-grid-gap-mobile md:grid md:grid-cols-2">
         <!-- Venstre -->
         <div>
-          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Kritik og perspektiver</Heading>
-
-          <div class="mb-4 mt-4">
+          <div class="lg:mb-h3-desktop mb-h3-mobile">
+            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Kritik og perspektiver</Heading>
+          </div>
+          <div class="lg:mb-p-desktop mb-p-mobile">
             <Text teksttype="brødttekst">
               Feminisme bliver ofte fremstillet ud fra et vestligt perspektiv såsom de fire ovenstående bølger, men i ikke-vestlige lande har bevægelsen sine egne dynamikker og unikke historiske udviklinger, der går længere tilbage end den vestlige
               feminisme. Ikke-vestlig feminisme tager udgangspunkt i feministiske værdier ud fra specifikke kulturer og udfordringer snarere end at kopiere vestlige modeller. Nogle kritiserer vestlig feminisme for at have et ”white-savior-komplex”
               for sin manglende forståelse for kulturel og historisk kontekst samt egen bias (Abu-Lughod 2013).
             </Text>
           </div>
-          <div class="mb-4">
+          <div class="lg:mb-p-desktop mb-p-mobile">
             <Text teksttype="brødttekst">
               Vi ser f.eks. den feministiske 4B-bevægelse i Sydkorea, som står for "bihon" (nej til ægteskab), "bichulsan" (nej til at få børn), "biyeonae" (nej til at date mænd) og "bisekseu" (nej til sex med mænd). Det er en opfordring til kvinder
               om at afvise traditionelle kønsroller og forventninger til kvinder i samfundet. Bevægelsen ser ægteskab som en institution, der primært gavner mænd, mens kvinder ender med at bære byrden af både lønarbejde og huslige opgaver. Bevægelsen
@@ -489,8 +503,10 @@ import Infocard from "../components/Infocard.astro";
 
         <!-- Højre -->
         <div>
-          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Kvinders kamp i Iran</Heading>
-          <div class="mb-4 mt-4">
+          <div class="lg:mb-h3-desktop mb-h3-mobile">
+            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Kvinders kamp i Iran</Heading>
+          </div>
+          <div class="lg:mb-p-desktop mb-p-mobile">
             <Text teksttype="brødttekst"
               >Et andet eksempel er Kvinde Liv Frihed-bevægelsen i Iran, som startede efter 22-årige Jina Mahsa Amini døde i det iranske moralpolitis varetægt den 16. september 2022. Bevægelsen kæmper for kvinders rettigheder og basale
               frihedsrettigheder i Iran. Demonstranter har trodset præstestyret med livet som indsats, mens regimet har svaret med vold, undertrykkelse og henrettelser. Trods regimets forsøg på at kvæle bevægelsen, fortsætter kampen for kvinders
@@ -503,7 +519,10 @@ import Infocard from "../components/Infocard.astro";
         </div>
       </div>
     </section>
-    <section class="mt-28 lg:mt-56 lg:mx-32 mx-12 uppercase">
+    <!-- SLUT PÅ IKKE-VESTLIG FEMINISME SEKTION-->
+
+    <!-- QUOTE SEKTION -->
+    <section class="mt-section-mobile lg:mt-section-desktop lg:mx-margin-desktop mx-margin-mobile uppercase">
       <div class="relative z-10">
         <Quote>Feminisme er kærlighed i handling.</Quote>
       </div>
@@ -511,23 +530,26 @@ import Infocard from "../components/Infocard.astro";
         <img src="shirt.webp" alt="" class="w-180" />
       </div>
     </section>
+    <!-- SLUT PÅ QUOTE SEKTION -->
 
-    <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
+    <!-- HVORDAN KAN DU GØRE EN FORSKEL SEKTION -->
+    <section class="mt-section-mobile mx-margin-mobile lg:mx-margin-desktop lg:mt-section-desktop">
       <!-- Overskrift -->
-      <div class="mb-12">
+      <div class="lg:mb-h2-desktop mb-h2-mobile">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">HVORDAN KAN DU GØRE EN FORSKEL?</Heading>
       </div>
 
       <!-- Indhold -->
-      <div class="flex flex-col gap-12 md:grid md:grid-cols-2">
+      <div class="flex flex-col lg:gap-grid-gap-desktop gap-grid-gap-mobile md:grid md:grid-cols-2">
         <!-- Venstre -->
         <div>
-          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Former for feministisk aktivisme</Heading>
-
-          <div class="mb-4 mt-4">
+          <div class="lg:mb-h3-desktop mb-h3-mobile">
+            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Former for feministisk aktivisme</Heading>
+          </div>
+          <div class="lg:mb-p-desktop mb-p-mobile">
             <Text teksttype="brødttekst"> Feminisme kommer i mange former og kan både udleves gennem klassisk aktivisme – som at skrive debatindlæg, arrangere demonstrationer eller samle underskrifter – og i hverdagsnære handlinger. </Text>
           </div>
-          <div class="mb-4">
+          <div class="lg:mb-p-desktop mb-p-mobile">
             <Text teksttype="brødttekst">
               Det kan være at italesætte sexisme eller racisme, rette brugen af forkerte pronominer, anbefale en feministisk bog eller dele sine egne erfaringer for at bryde tabuer. For nogle er det at leve autentisk i sig selv en feministisk kamp,
               særligt hvis ens kønsudtryk eller identitet udfordrer samfundets normer. Feministisk aktivisme kan også tage form gennem kunst, medier eller litteratur.
@@ -537,14 +559,16 @@ import Infocard from "../components/Infocard.astro";
 
         <!-- Højre -->
         <div>
-          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Engagement & fællesskaber</Heading>
-          <div class="mb-4 mt-4">
+          <div class="lg:mb-3-desktop mb-h3-mobile">
+            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Engagement & fællesskaber</Heading>
+          </div>
+          <div class="lg:mb-p-desktop mb-p-mobile">
             <Text teksttype="brødttekst"
               >Den mest tilgængelige måde at engagere sig på er at starte i sin egen hverdag – ved at tilegne sig viden om ulighed og turde tage samtalen med dem omkring sig. Aktivisme kan være stor eller lille, og enhver indsats tæller. Det handler
               også om at tage ansvar for at skabe inkluderende rum og respektere dem, der kæmper deres egne feministiske kampe på deres egne præmisser.
             </Text>
           </div>
-          <div class="mb-4">
+          <div class="lg:mb-p-desktop mb-p-mobile">
             <Text teksttype="brødttekst">
               Man kan handle feministisk både alene og i fællesskab. Der kan være stor styrke i at finde ligesindede, der ønsker at engagere sig i feminismen – for eksempel gennem fællesskaber som KALDER ALLE UNGEs ambassadørnetværk.
             </Text>
@@ -552,20 +576,26 @@ import Infocard from "../components/Infocard.astro";
         </div>
       </div>
     </section>
+    <!-- SLUT PÅ HVORDAN KAN DU GØRE EN FORSKEL SEKTION -->
+
+    <!-- VÆR EN DEL SEKTION -->
     <section class="bg-body-tertiary -mb-20">
-      <div class="mt-28 mx-12 pt-16 pb-16 lg:pt-28 lg:pb-28 lg:mx-32 lg:mt-56">
+      <div class="mt-section-mobile mx-margin-mobile py-section-mobile lg:mx-margin-desktop lg:mt-section-desktop">
         <div class="lg:grid grid-cols-2">
           <div class="flex justify-center lg:justify-end lg:pr-10"><img src="/handsheart.svg" alt="Ikon med hjerte og hænder" /></div>
           <div class="mt-8">
             <div class="flex justify-start">
-              <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Vær en del af fremtiden, <br />bliv ambasaddør</Heading>
+              <div class="lg:mb-h3-desktop mb-h3-mobile">
+                <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Vær en del af fremtiden, <br />bliv ambasaddør</Heading>
+              </div>
             </div>
-            <div class="flex justify-start mt-8">
+            <div class="flex justify-start">
               <Button>Læs mere</Button>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- SLUT PÅ VÆR EN DEL SEKTION -->
   </main>
 </MainLayout>
