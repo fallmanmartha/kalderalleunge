@@ -6,10 +6,12 @@ const { herotitle = "", herotext_1 = "", herotext_2 = "" } = Astro.props;
 ---
 
 <section class="bg-hero-primary lg:px-32 px-12 pb-20 pt-5">
-  <Heading htmlheading="h1" size="xlarge" font="quote" color="tertiary" weight="italic">
-    {herotitle}
-  </Heading>
-  <div class="lg:grid lg:grid-cols-2 gap-7 mt-7">
+  <div class="intersect:animate-flip-down animate-once">
+    <Heading htmlheading="h1" size="xlarge" font="quote" color="tertiary" weight="italic">
+      {herotitle}
+    </Heading>
+  </div>
+  <div class="lg:grid lg:grid-cols-2 gap-7 mt-7 intersect:animate-fade-up animate-once">
     <div class="lg:mb-0 mb-5">
       <Text font="body" color="secondary">
         {herotext_1}

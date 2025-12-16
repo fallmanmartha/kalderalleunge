@@ -22,14 +22,14 @@ import Infocard from "../components/Infocard.astro";
     <section class="mt-16 lg:mx-32 mx-12 lg:mt-28">
       <!-- Overskrift -->
       <div class="mb-12">
-        <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> HVAD ER FEMINISME?</Heading>
-        <div class="mt-4 lg:max-w-1/2">
+        <div class="intersect:animate-flip-down animate-once"><Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> HVAD ER FEMINISME?</Heading></div>
+        <div class="mt-4 lg:max-w-1/2 intersect:animate-fade-up animate-once">
           <Text> Feminisme handler om troen på, at alle mennesker skal have de samme muligheder — og om kampen for at fjerne de strukturer, der står i vejen. Det er både en historisk bevægelse og en nutidig kamp for reel ligestilling. </Text>
         </div>
       </div>
 
       <!-- Indhold -->
-      <div class="flex flex-col gap-12 md:grid md:grid-cols-3 md:gap-10">
+      <div class="flex flex-col gap-12 md:grid md:grid-cols-3 md:gap-10 intersect:animate-fade-up animate-once">
         <!-- Kolonne 1 -->
         <div>
           <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> Feminisme historisk </Heading>
@@ -72,22 +72,22 @@ import Infocard from "../components/Infocard.astro";
     </section>
 
     <section class="mt-28 lg:mt-56 lg:mx-32 mx-12 uppercase">
-      <div class="relative z-10">
-        <Quote>Feminisme <br />er for<br />alle </Quote>
+      <div class="relative z-10 intersect:animate-fade-right intersect:duration-[8000ms]">
+        <Quote>Feminisme <br />er for<br />alle. </Quote>
       </div>
-      <div class="flex justify-end lg:-mt-90 -mt-7 relative z-0">
+      <div class="flex justify-end lg:-mt-90 -mt-7 relative z-0 intersect:animate-fade-left intersect:duration-[8000ms]">
         <img src="heart.webp" alt="" class="w-180" />
       </div>
     </section>
 
     <section class="mt-28 lg:mx-32 mx-12 lg:mt-56">
       <!-- Overskrift -->
-      <div class="mb-12">
+      <div class="mb-12 intersect:animate-flip-down animate-once">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> HVORFOR HEDDER DET “FEMINISME”?</Heading>
       </div>
 
       <!-- Indhold -->
-      <div class="flex flex-col gap-12 md:grid md:grid-cols-2">
+      <div class="flex flex-col gap-12 md:grid md:grid-cols-2 intersect:animate-fade-up animate-once">
         <!-- Venstre -->
         <div>
           <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Navnets historiske rødder </Heading>
@@ -134,38 +134,42 @@ import Infocard from "../components/Infocard.astro";
     <section class="bg-body-secondary">
       <div class="mt-28 lg:mt-56 mx-12 pt-16 pb-16 lg:pt-28 lg:pb-28 lg:mx-32">
         <div class="mb-12 lg:mb-20">
-          <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> FEMINISME = LIGESTILLING</Heading>
-          <div class="mt-4">
+          <div class="intersect:animate-flip-down animate-once"><Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> FEMINISME = LIGESTILLING</Heading></div>
+          <div class="mt-4 intersect:animate-fade-up animate-once">
             <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> En bevægelse for, at alle køn skal have de samme muligheder og rettigheder.</Heading>
           </div>
         </div>
-        <div>
-          <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> FEMINISME ≠ KAMP MOD MÆND</Heading>
-          <div class="mt-4">
+        <div class="">
+          <div class="intersect:animate-flip-down animate-once">
+            <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> FEMINISME ≠ KAMP MOD MÆND</Heading>
+          </div>
+          <div class="mt-4 intersect:animate-fade-up animate-once">
             <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> Feminisme handler ikke om at tage noget fra mænd, men om at skabe retfærdighed og lige vilkår for alle.</Heading>
           </div>
         </div>
       </div>
     </section>
     <section class="mt-28 lg:mx-32 mx-12 lg:mt-56">
-      <div><Quote>VIDSTE DU AT?</Quote></div>
+      <div class="intersect:animate-fade-right intersect:duration-[8000ms]"><Quote>VIDSTE DU AT?</Quote></div>
       <div class="mt-12">
-        <div class="md:w-1/2">
+        <div class="md:w-1/2 intersect:animate-shake">
           <Bubble variant="left"><Heading htmlheading="h3" size="medium" weight="medium">"Der er flere administrerende direktører i Danmark med navnet Lars eller Peter end der er kvindelige administrerende direktører.”</Heading></Bubble>
         </div>
-        <div class="mt-28 md:w-1/2 ml-auto">
-          <Bubble variant="right"><Heading htmlheading="h3" size="medium" weight="medium">"Der er flere administrerende direktører i Danmark med navnet Lars eller Peter end der er kvindelige administrerende direktører.”</Heading></Bubble>
+        <div class="mt-28 md:w-1/2 ml-auto intersect:animate-shake animate-once">
+          <Bubble variant="right"
+            ><Heading htmlheading="h3" size="medium" weight="medium">I 1893 hævdede en dansk gynækolog, at kvinder kunne blive sterile af at studere, fordi blodet ville “løbe væk fra underlivet og op til hjernen”. </Heading></Bubble
+          >
         </div>
       </div>
     </section>
     <section class="mt-28 lg:mx-32 mx-12 lg:mt-56">
       <!-- Overskrift -->
-      <div class="mb-12">
+      <div class="mb-12 intersect:animate-flip-down animate-once">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> NORMKRITIK</Heading>
       </div>
 
       <!-- Indhold -->
-      <div class="flex flex-col gap-12 md:grid md:grid-cols-2">
+      <div class="flex flex-col gap-12 md:grid md:grid-cols-2 intersect:animate-fade-up animate-once">
         <!-- Venstre -->
         <div>
           <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Som del af feminismen</Heading>
@@ -208,8 +212,8 @@ import Infocard from "../components/Infocard.astro";
           </div>
         </div>
       </div>
-      <div class="flex flex-col md:flex-row items-start justify-center mt-28 gap-10">
-        <div class="flex justify-center md:justify-start w-full md:w-auto">
+      <div class="flex flex-col md:flex-row items-start justify-center mt-28 gap-10 intersect:animate-jump animate-once">
+        <div class="flex justify-center md:justify-start w-full md:w-auto animate-wiggle animate-infinite">
           <img src="/!.svg" alt="Udråbstegn" class="w-16 md:w-12 flex-shrink-0" />
         </div>
         <div class="max-w-xl text-left">
@@ -222,31 +226,39 @@ import Infocard from "../components/Infocard.astro";
     </section>
     <section class="bg-body-secondary">
       <div class="lg:mx-32 mx-12 mt-28 pt-16 pb-16 lg:pt-28 lg:pb-28 lg:mt-56">
-        <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">DERFOR BETYDER NORMER NOGET </Heading>
+        <div class="intersect:animate-flip-down animate-once">
+          <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">DERFOR BETYDER NORMER NOGET </Heading>
+        </div>
         <div class="mt-12 grid grid-cols-1 gap-10 text-center lg:grid-cols-3 lg:gap-20">
           <div>
-            <div><Quote>17%</Quote></div>
-            <div class="mt-4 pr-10 pl-10 lg:pr-0 lg:pl-0"><Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">kvinder 15–25 år har oplevet chikane på arbejde (2 % mænd).</Heading></div>
+            <div class="intersect:animate-jump animate-once"><Quote>17%</Quote></div>
+            <div class="mt-4 pr-10 pl-10 lg:pr-0 lg:pl-0 intersect:animate-fade-up animate-once">
+              <Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">kvinder 15–25 år har oplevet chikane på arbejde (2 % mænd).</Heading>
+            </div>
           </div>
           <div>
-            <div><Quote>73%</Quote></div>
-            <div class="mt-4 pr-10 pl-10 lg:pr-0 lg:pl-0"><Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">af alle selvmord i Danmark begås af mænd  (Sundhedsstyrelsen 2024).</Heading></div>
+            <div class="intersect:animate-jump animate-once"><Quote>73%</Quote></div>
+            <div class="mt-4 pr-10 pl-10 lg:pr-0 lg:pl-0 intersect:animate-fade-up animate-once">
+              <Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">af alle selvmord i Danmark begås af mænd  (Sundhedsstyrelsen 2024).</Heading>
+            </div>
           </div>
           <div>
-            <div><Quote>84%</Quote></div>
-            <div class="mt-4 pr-10 pl-10 lg:pr-0 lg:pl-0"><Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">af minoritetsetniske danskere har oplevet diskrimination det seneste år.</Heading></div>
+            <div class="intersect:animate-jump animate-once"><Quote>84%</Quote></div>
+            <div class="mt-4 pr-10 pl-10 lg:pr-0 lg:pl-0 intersect:animate-fade-up animate-once">
+              <Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">af minoritetsetniske danskere har oplevet diskrimination det seneste år.</Heading>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
       <div class="lg:grid grid-cols-3">
-        <div class="lg:col-span-2">
+        <div class="lg:col-span-2 intersect:animate-fade-right intersect:duration-[8000ms]">
           <img src="hvorfor.svg" />
         </div>
 
         <!-- TEKST -->
-        <div class="space-y-4 mt-8 lg:mt-0 lg:col-start-3">
+        <div class="space-y-4 mt-8 lg:mt-0 lg:col-start-3 intersect:animate-fade-left intersect:duration-[8000ms]">
           <Text>
             De fleste danskere går ind for ligestilling, men der er en tydelig forskel mellem kønnene. Over 70% af danske kvinder mener, at ligestillingen halter, mens næsten 20% af unge mænd mener, at den er gået for langt (Andersen 2022).
           </Text>
@@ -261,12 +273,12 @@ import Infocard from "../components/Infocard.astro";
       <div></div>
     </section>
     <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
-      <div class="mb-12">
+      <div class="mb-12 intersect:animate-flip-down animate-once">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">FEMINISMENS HISTORIE</Heading>
       </div>
 
       <!-- Indhold -->
-      <div class="flex flex-col gap-12 md:grid md:grid-cols-2">
+      <div class="flex flex-col gap-12 md:grid md:grid-cols-2 intersect:animate-fade-up animate-once">
         <!-- Venstre -->
         <div>
           <div class="">
@@ -288,7 +300,7 @@ import Infocard from "../components/Infocard.astro";
         </div>
       </div>
       <div class="lg:grid lg:grid-cols-2 gap-10 mt-10 lg:mt-20">
-        <div class="">
+        <div class="intersect:animate-fade-right intersect:duration-[8000ms]">
           <Infocard
             cardtitle="Første bølge"
             cardsubtitle="1800 – Tidlig 1900-tallet"
@@ -298,7 +310,7 @@ import Infocard from "../components/Infocard.astro";
             cardtext="I denne periode havde den feministiske kamp fokus på grundlæggende, juridiske rettigheder for kvinder, eksempelvis stemmeret, ejendomsret og adgang til uddannelse. Stemmeretten blev opnået i 1915 i Danmark efter mange års kamp fra kvindeorganisationer, heriblandt Dansk Kvindesamfund (Folketinget 2024).Denne kamp var ret fredelig i modsætning til andre steder. I Storbritannien kæmpede suffragetterne for kvinderettigheder. De brugte ofte militante taktikker såsom bombning af offentlige bygninger, sabotage af telefonledninger og afbrænding af politikernes hjem og ofrede livet for deres sag (Militant Suffragettes 2024)."
           />
         </div>
-        <div class="lg:mt-40 mt-15">
+        <div class="lg:mt-40 mt-15 intersect:animate-fade-left intersect:duration-[8000ms]">
           <Infocard
             cardtitle="Anden bølge "
             cardsubtitle="1960-1980"
@@ -311,7 +323,7 @@ import Infocard from "../components/Infocard.astro";
       </div>
 
       <div class="lg:grid lg:grid-cols-2 gap-10 lg:-mt-10 mt-15">
-        <div>
+        <div class="intersect:animate-fade-right intersect:duration-[8000ms]">
           <Infocard
             cardtitle="Tredje bølge "
             cardsubtitle="1990-2000"
@@ -321,7 +333,7 @@ import Infocard from "../components/Infocard.astro";
             cardtext="Denne bølge opstod som en reaktion på de mangler, den nye generation af feminister syntes, den anden bølge havde. I Vesten havde feminismen taget udgangspunkt i hvide, heteroseksuelle, middel- og overklasse kvinder, og feminister fra den tredje bølge havde en bredere forståelse af feminisme, der inkluderede flere identitetsmarkører end køn, f.eks. etnicitet, seksuel orientering, klasse, kønsidentitet mm. Denne forståelse af feminisme kaldes intersektionel feminisme. Tredje bølge havde også en poststrukturalistisk fortolkning af køn og seksualitet, hvor de forstod køn og seksualitet som sociale konstruktioner, der blev skabt og formet af sprog og kultur frem for faste, biologisk bestemte kategorier (Butler 1990). "
           />
         </div>
-        <div class="lg:mt-40 mt-15">
+        <div class="lg:mt-40 mt-15 intersect:animate-fade-left intersect:duration-[8000ms]">
           <Infocard
             cardtitle="Fjerde bølge "
             cardsubtitle="2010-Nu"
@@ -333,13 +345,14 @@ import Infocard from "../components/Infocard.astro";
         </div>
       </div>
     </section>
+
     <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
-      <img src="/stadigfem.svg" alt="Feminisme illustration" class="w-full mt-28 lg:mt-56" />
+      <div class="intersect:animate-fade-right intersect:duration-[8000ms]"><Quote>KAMPEN ER FÆLLES.</Quote></div>
     </section>
     <section class="mt-28 lg:mx-32 mx-12 lg:mt-56">
-      <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">OFTE HØRTE PÅSTANDE</Heading>
+      <div class="intersect:animate-flip-down animate-once"><Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">OFTE HØRTE PÅSTANDE</Heading></div>
       <div class="mt-12 lg:mt-28">
-        <div class="md:w-1/2">
+        <div class="md:w-1/2 intersect:animate-shake animate-once">
           <Bubble variant="left"
             ><Heading htmlheading="h3" size="medium" weight="medium">"Ligestilling er gået for langt."</Heading>
             <div class="mt-4">
@@ -351,7 +364,7 @@ import Infocard from "../components/Infocard.astro";
             </div></Bubble
           >
         </div>
-        <div class="mt-28 md:w-1/2 ml-auto">
+        <div class="mt-28 md:w-1/2 ml-auto intersect:animate-shake animate-once">
           <Bubble variant="right"
             ><Heading htmlheading="h3" size="medium" weight="medium">"“Feminister hader mænd og vil bare bestemme over dem.” "</Heading>
             <div class="mt-4">
@@ -362,7 +375,7 @@ import Infocard from "../components/Infocard.astro";
             </div></Bubble
           >
         </div>
-        <div class="mt-28 md:w-1/2">
+        <div class="mt-28 md:w-1/2 intersect:animate-shake animate-once">
           <Bubble variant="left"
             ><Heading htmlheading="h3" size="medium" weight="medium">"…Men hvad med børneægteskaber i Indien?”</Heading>
             <div class="mt-4">
@@ -378,8 +391,8 @@ import Infocard from "../components/Infocard.astro";
     </section>
     <section class="bg-body-secondary">
       <div class="lg:mx-32 mx-12 mt-28 pt-16 pb-16 lg:pt-28 lg:pb-28 lg:mt-56">
-        <Quote>ANTI-<br />FEMINISME</Quote>
-        <div class="lg:grid grid-cols-2 lg:gap-12">
+        <div class="intersect:animate-flip-down animate-once"><Quote>ANTI-<br />FEMINISME</Quote></div>
+        <div class="lg:grid grid-cols-2 lg:gap-12 intersect:animate-fade-up animate-once">
           <div class="mt-4">
             <Text teksttype="brødtekst"
               >Anti-feminisme udspringer af en reaktion mod feministiske bevægelser, og søger mod ultra traditionelle kønsroller med udgangspunkt i ekstreme højrefløjsværdier. De afviser ideen om strukturelle uligheder mellem kønnene og glamouriserer
@@ -390,10 +403,10 @@ import Infocard from "../components/Infocard.astro";
             </Text>
           </div>
           <div class="mt-8 lg:mt-0">
-            <Heading htmlheading="h1" size="xlarge" font="quote" weight="italic">POST- <br />FEMINISME</Heading>
+            <div class="intersect:animate-flip-down animate-once"><Heading htmlheading="h1" size="xlarge" font="quote" weight="italic">POST- <br />FEMINISME</Heading></div>
             <div class="mt-4">
               <Text teksttype="brødtekst"
-                >Postfeminisme, på den anden side, antyder, at feminisme er overflødig, fordi man mener, at ligestilling allerede er opnået. Her ignorerer man problemer som lønforskelle, kønsbaseret vold og diskrimination. Det kan betyde, at man
+                >Post-feminisme, på den anden side, antyder, at feminisme er overflødig, fordi man mener, at ligestilling allerede er opnået. Her ignorerer man problemer som lønforskelle, kønsbaseret vold og diskrimination. Det kan betyde, at man
                 fastholder uligheder og forhindrer kvinder og minoritetsgrupper i at opnå fuld deltagelse i samfundet (Banet-Weiser 2018).
               </Text>
             </div>
@@ -404,12 +417,12 @@ import Infocard from "../components/Infocard.astro";
 
     <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
       <!-- Overskrift -->
-      <div class="mb-12">
+      <div class="mb-12 intersect:animate-flip-down animate-once">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">IKKE-VESTLIG FEMINISME</Heading>
       </div>
 
       <!-- Indhold -->
-      <div class="flex flex-col gap-12 md:grid md:grid-cols-2">
+      <div class="flex flex-col gap-12 md:grid md:grid-cols-2 intersect:animate-fade-up animate-once">
         <!-- Venstre -->
         <div>
           <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Kritik og perspektiver</Heading>
@@ -440,29 +453,29 @@ import Infocard from "../components/Infocard.astro";
               rettigheder og friheder i Iran (Amnesty 2025).
             </Text>
           </div>
-          <div>
+          <div class="hover:animate-jump animate-once">
             <img src="/arm.svg" alt="" class="w-40 mt-8 md:w-50 shrink-0 self-end md:self-auto" />
           </div>
         </div>
       </div>
     </section>
     <section class="mt-28 lg:mt-56 lg:mx-32 mx-12 uppercase">
-      <div class="relative z-10">
+      <div class="relative z-10 intersect:animate-fade-right intersect:duration-[8000ms]">
         <Quote>Feminisme er kærlighed i handling.</Quote>
       </div>
-      <div class="flex justify-end lg:-mt-20 -mt-7 relative z-0">
+      <div class="flex justify-end lg:-mt-20 -mt-7 relative z-0 intersect:animate-fade-left intersect:duration-[8000ms]">
         <img src="shirt.webp" alt="" class="w-180" />
       </div>
     </section>
 
     <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
       <!-- Overskrift -->
-      <div class="mb-12">
+      <div class="mb-12 intersect:animate-flip-down animate-once">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">HVORDAN KAN DU GØRE EN FORSKEL?</Heading>
       </div>
 
       <!-- Indhold -->
-      <div class="flex flex-col gap-12 md:grid md:grid-cols-2">
+      <div class="flex flex-col gap-12 md:grid md:grid-cols-2 intersect:animate-fade-up animate-once">
         <!-- Venstre -->
         <div>
           <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Former for feministisk aktivisme</Heading>
@@ -498,13 +511,13 @@ import Infocard from "../components/Infocard.astro";
     <section class="bg-body-tertiary -mb-20">
       <div class="mt-28 mx-12 pt-16 pb-16 lg:pt-28 lg:pb-28 lg:mx-32 lg:mt-56">
         <div class="lg:grid grid-cols-2">
-          <div class="flex justify-center lg:justify-end lg:pr-10"><img src="/handsheart.svg" alt="Ikon med hjerte og hænder" /></div>
-          <div class="mt-8">
+          <div class="flex justify-center lg:justify-end lg:pr-10 animate-wiggle animate-infinite"><img src="/handsheart.svg" alt="Ikon med hjerte og hænder" /></div>
+          <div class="mt-8 intersect:animate-fade-left animate-once">
             <div class="flex justify-start">
               <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Vær en del af fremtiden, <br />bliv ambasaddør</Heading>
             </div>
             <div class="flex justify-start mt-8">
-              <Button>Læs mere</Button>
+              <a href="/ambassador"><Button>Læs mere</Button></a>
             </div>
           </div>
         </div>
