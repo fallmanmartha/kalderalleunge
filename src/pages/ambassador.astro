@@ -5,10 +5,14 @@ import Heading from "../components/Heading.astro";
 import Text from "../components/Text.astro";
 import Button from "../components/Button.astro";
 import Herosecondary from "../components/Herosecondary.astro";
+import Quote from "../components/Quote.astro";
+import Infocard from "../components/Infocard.astro";
+import Bubble from "../components/Bubble.astro";
 ---
 
 <MainLayout title="Kalder alle unge">
   <main class="">
+    <!-- hero -->
     <section>
       <Herosecondary
         herotitle="BLIV AMBASSADØR"
@@ -16,45 +20,215 @@ import Herosecondary from "../components/Herosecondary.astro";
         herotext_2="Her finder du også information om, hvordan du tilmelder dig, og hvad du kan forvente som ambassadør."
       />
     </section>
+    <!-- hvad vil det si at være ambassadør -->
     <section class="lg:mx-32 mx-12 mt-28">
-      <!-- Overskrift -->
       <div class="mb-12">
-        <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> HVAD VIL DET SIGE AT VÆRE AMBASSADØR? </Heading>
+        <Heading
+          htmlheading="h2"
+          size="large"
+          font="heading"
+          color="primary"
+          weight="bold"
+        >
+          HVAD VIL DET SIGE AT VÆRE AMBASSADØR?
+        </Heading>
       </div>
 
-      <!-- Indhold -->
       <div class="flex flex-col gap-12 md:grid md:grid-cols-3 md:gap-10">
-        <!-- Kolonne 1 -->
         <div>
-          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold"> Fællesskab </Heading>
+          <Heading
+            htmlheading="h3"
+            size="medium"
+            font="heading"
+            color="primary"
+            weight="medium"
+          >
+            Fællesskab
+          </Heading>
 
           <div class="mt-4 space-y-4">
-            <Text teksttype="brødttekst"> Stopper du op, når du støder på uretfærdighed? Er du én, der tør stå frem og sige din mening? </Text>
+            <Text teksttype="brødttekst">
+              Stopper du op, når du støder på uretfærdighed? Er du én, der tør
+              stå frem og sige din mening?
+            </Text>
 
-            <Text teksttype="brødttekst"> Når du tilmelder dig som ambassadør bliver du en del af et netværk, hvor du i fællesskab med andre unge både kan tale om ligestillingsemner – men også handle. </Text>
+            <Text teksttype="brødttekst">
+              Når du tilmelder dig som ambassadør bliver du en del af et
+              netværk, hvor du i fællesskab med andre unge både kan tale om
+              ligestillingsemner – men også handle.
+            </Text>
           </div>
         </div>
 
-        <!-- Kolonne 2 -->
         <div>
-          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold"> Viden & inspiration </Heading>
+          <Heading
+            htmlheading="h3"
+            size="medium"
+            font="heading"
+            color="primary"
+            weight="medium"
+          >
+            Viden & inspiration
+          </Heading>
 
           <div class="mt-4 space-y-4">
-            <Text teksttype="brødttekst"> I KALDER ALLE UNGEs netværk af ambassadører har du mulighed for at udvikle dine aktivistiske evner. </Text>
+            <Text teksttype="brødttekst">
+              I KALDER ALLE UNGEs netværk af ambassadører har du mulighed for at
+              udvikle dine aktivistiske evner.
+            </Text>
 
-            <Text teksttype="brødttekst"> Som ambassadør bliver du klædt på med viden, inspiration og konkrete redskaber til at tage del i samtaler og workshops. </Text>
+            <Text teksttype="brødttekst">
+              Som ambassadør bliver du klædt på med viden, inspiration og
+              konkrete redskaber til at tage del i samtaler og workshops.
+            </Text>
           </div>
         </div>
 
-        <!-- Kolonne 3 -->
         <div>
-          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold"> Netværksmøder </Heading>
+          <Heading
+            htmlheading="h3"
+            size="medium"
+            font="heading"
+            color="primary"
+            weight="medium"
+          >
+            Netværksmøder
+          </Heading>
 
           <div class="mt-4 space-y-4">
-            <Text teksttype="brødttekst"> Vi afholder løbende netværksmøder i København og Aarhus, hvor du er inviteret. </Text>
+            <Text teksttype="brødttekst">
+              Vi afholder løbende netværksmøder i København og Aarhus, hvor du
+              er inviteret.
+            </Text>
 
-            <Text teksttype="brødttekst"> Når du tilmelder dig som ambassadør, vil du få tilsendt datoer for kommende netværksmøder. </Text>
+            <Text teksttype="brødttekst">
+              Når du tilmelder dig som ambassadør, vil du få tilsendt datoer for
+              kommende netværksmøder.
+            </Text>
           </div>
+        </div>
+      </div>
+    </section>
+    <!-- tilmeld deg -->
+    <section
+      class="flex lg:flex-row flex-col max-w-5xl gap-10 items-center mt-32 mx-auto px-12"
+    >
+      <img
+        src="/handshake.svg"
+        alt="handshake illustration"
+        class="w-70 h-auto"
+      />
+
+      <div>
+        <div class="mb-10">
+          <Heading
+            htmlheading="h3"
+            size="medium"
+            font="heading"
+            color="primary"
+            weight="medium"
+          >
+            Synes du, det ovenstående lyder spændende og interessant?
+          </Heading>
+        </div>
+
+        <div class="mb-10">
+          <Heading
+            htmlheading="h3"
+            size="medium"
+            font="heading"
+            color="primary"
+            weight="medium"
+          >
+            Så er KALDER ALLE UNGEs ambassadørnetværk noget for dig!
+          </Heading>
+        </div>
+
+        <Button variant="primary" class="mt-10" href="/ambassador">
+          Bliv ambassadør
+        </Button>
+      </div>
+    </section>
+
+    <!-- vil du gøre en forskel -->
+    <section class="mt-28 lg:mx-32 mx-12 lg:mt-56 uppercase">
+      <div class="relative z-10">
+        <Quote>Vil du gøre <br /> en forskel?</Quote>
+      </div>
+      <div class="flex justify-end lg:-mt-12 -mt-7 relative z-0">
+        <img src="/ambassadør.webp" alt="" class="w-240" />
+      </div>
+      <div class="md:w-1/2 relative z-10 lg:-mt-80 -mt-7">
+        <Bubble variant="left">
+          <div class="mt-4">
+            <Heading htmlheading="h3" size="medium" weight="medium"
+              >“For mig handler Kalder Alle Unge om at give plads til dem, der
+              ikke altid føler, at de passer ind. Når vi lytter til hinanden,
+              skaber vi et samfund, hvor alle unge kan stå stærkt, uanset hvem
+              de er.”</Heading
+            >
+            <div class="mt-4">
+              <Heading htmlheading="h3" size="medium" weight="medium"
+                >— Ambassadør for Kalder Alle Unge</Heading
+              >
+            </div>
+          </div></Bubble
+        >
+      </div>
+    </section>
+    <!-- ambassadørworkshops -->
+    <section class="mt-28 lg:mx-32 mx-12 lg:mt-56">
+      <div class="mb-12">
+        <Heading
+          htmlheading="h2"
+          size="large"
+          font="heading"
+          color="primary"
+          weight="bold"
+        >
+          AMBASSADØRWORKSHOPS
+        </Heading>
+      </div>
+      <div class="flex flex-col gap-12 md:grid md:grid-cols-2">
+        <div>
+          <div class="">
+            <Text teksttype="brødttekst"
+              >Som ambassadør deltager du i en gratis to-dages workshop weekend,
+              hvor vi dykker ned i emner som ligestilling og feminisme,
+              hverdagsaktivisme og selvomsorg.
+            </Text>
+          </div>
+        </div>
+        <div>
+          <div class="">
+            <Text teksttype="brødttekst"
+              >Du får samtaleskills der styrker din stemme, alt sammen i et
+              trygt og inkluderende rum! Du behøver ikke at vide noget om
+              ligestilling eller aktivisme for at være med, alle er velkommen :)
+            </Text>
+          </div>
+        </div>
+      </div>
+      <div class="lg:grid lg:grid-cols-2 gap-10 mt-12 lg:mt-20">
+        <div class="">
+          <Infocard
+            cardtitle="Dag 1"
+            cardsubtitle=""
+            cardimage="/hands.png"
+            cardimagealt="Hands on table"
+            variant=""
+            cardtext="Dag 1 starter med velkomst og introduktion til både projektet og hinanden. Vi laver små øvelser, sætter rammerne for et safer space og får en introduktion til ligestilling og feminisme. Efter frokost arbejder vi med styrke din stemme, når Ibrahim fra Mellemfolkeligt Samvirke byder på et oplæg om debat og dialog. Bagefter skal vi lave forumteater, hvor du får mulighed for at afprøve dine nye værktøjet til at navigere i realistiske hverdagsscenarier. Dagen byder også på en inspirationstalk med ambassadører fra KALDER ALLE UNGE, der vil fortælle mere om netværket, og hvilke aktiviteter, der er igangsat. Vi slutter af med en fælles tjek-ud!"
+          />
+        </div>
+        <div class="lg:mt-40 mt-15">
+          <Infocard
+            cardtitle="Anden bølge "
+            cardsubtitle="1960-1980"
+            cardimage="/table.webp"
+            cardimagealt="Hands on table"
+            variant=""
+            cardtext="Dag 2 begynder med tjek-ind. I dag er fokus på aktivisme og selvomsorg. Først vil Cybernauterne klæde dig på til at navigere i digital aktivisme og selvforsvar. Her vil du få strategier til, hvordan du kan indgå i debatter online, og hvordan du kan beskytte dig selv imod digital chikane. Efter frokost laver vi i grupper dilemmaøvelser,  så du kan styrket dine kompetencer til at bruge din stemme i hverdagens dilemmaer. Til sidst vil klimaaktivist, Selma de Montgomery, holde oplæg om selvomsorg og bæredygtig aktivisme. Vi slutter dagen af med fælles refleksion og tjek-ud."
+          />
         </div>
       </div>
     </section>
