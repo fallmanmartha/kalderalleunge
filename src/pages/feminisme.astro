@@ -70,8 +70,14 @@ import Infocard from "../components/Infocard.astro";
         </div>
       </div>
     </section>
-    <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
-      <img src="/fem3.png" alt="Feminisme illustration" class="w-full mt-28 lg:mt-56" />
+
+    <section class="mt-28 lg:mt-56 lg:mx-32 mx-12 uppercase">
+      <div class="relative z-10">
+        <Quote>Feminisme <br />er for<br />alle </Quote>
+      </div>
+      <div class="flex justify-end lg:-mt-90 -mt-7 relative z-0">
+        <img src="heart.webp" alt="" class="w-180" />
+      </div>
     </section>
 
     <section class="mt-28 lg:mx-32 mx-12 lg:mt-56">
@@ -126,7 +132,7 @@ import Infocard from "../components/Infocard.astro";
       </div>
     </section>
     <section class="bg-body-secondary">
-      <div class="mt-28 mx-12 pt-16 pb-16 lg:pt-28 lg:pb-28 lg:mx-32">
+      <div class="mt-28 lg:mt-56 mx-12 pt-16 pb-16 lg:pt-28 lg:pb-28 lg:mx-32">
         <div class="mb-12 lg:mb-20">
           <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> FEMINISME = LIGESTILLING</Heading>
           <div class="mt-4">
@@ -220,15 +226,15 @@ import Infocard from "../components/Infocard.astro";
         <div class="mt-12 grid grid-cols-1 gap-10 text-center lg:grid-cols-3 lg:gap-20">
           <div>
             <div><Quote>17%</Quote></div>
-            <div class="mt-4 pr-10 pl-10 lg:pr-0 lg:pl-0"><Text teksttype="brødtekst" weight="semibold">kvinder 15–25 år har oplevet chikane på arbejde (2 % mænd).</Text></div>
+            <div class="mt-4 pr-10 pl-10 lg:pr-0 lg:pl-0"><Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">kvinder 15–25 år har oplevet chikane på arbejde (2 % mænd).</Heading></div>
           </div>
           <div>
             <div><Quote>73%</Quote></div>
-            <div class="mt-4 pr-10 pl-10 lg:pr-0 lg:pl-0"><Text teksttype="brødtekst" weight="semibold">af alle selvmord i Danmark begås af mænd  (Sundhedsstyrelsen 2024).</Text></div>
+            <div class="mt-4 pr-10 pl-10 lg:pr-0 lg:pl-0"><Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">af alle selvmord i Danmark begås af mænd  (Sundhedsstyrelsen 2024).</Heading></div>
           </div>
           <div>
             <div><Quote>84%</Quote></div>
-            <div class="mt-4 pr-10 pl-10 lg:pr-0 lg:pl-0"><Text teksttype="brødtekst" weight="semibold">af minoritetsetniske danskere har oplevet diskrimination det seneste år.</Text></div>
+            <div class="mt-4 pr-10 pl-10 lg:pr-0 lg:pl-0"><Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">af minoritetsetniske danskere har oplevet diskrimination det seneste år.</Heading></div>
           </div>
         </div>
       </div>
@@ -281,12 +287,12 @@ import Infocard from "../components/Infocard.astro";
           </div>
         </div>
       </div>
-      <div class="lg:grid lg:grid-cols-2 gap-10">
+      <div class="lg:grid lg:grid-cols-2 gap-10 mt-10 lg:mt-20">
         <div class="">
           <Infocard
             cardtitle="Første bølge"
-            cardsubtitle="1800 – TIDLIG 1900-TALLET"
-            cardimage="/b1.png"
+            cardsubtitle="1800 – Tidlig 1900-tallet"
+            cardimage="/b1.webp"
             cardimagealt="Hands on table"
             variant=""
             cardtext="I denne periode havde den feministiske kamp fokus på grundlæggende, juridiske rettigheder for kvinder, eksempelvis stemmeret, ejendomsret og adgang til uddannelse. Stemmeretten blev opnået i 1915 i Danmark efter mange års kamp fra kvindeorganisationer, heriblandt Dansk Kvindesamfund (Folketinget 2024).Denne kamp var ret fredelig i modsætning til andre steder. I Storbritannien kæmpede suffragetterne for kvinderettigheder. De brugte ofte militante taktikker såsom bombning af offentlige bygninger, sabotage af telefonledninger og afbrænding af politikernes hjem og ofrede livet for deres sag (Militant Suffragettes 2024)."
@@ -296,7 +302,7 @@ import Infocard from "../components/Infocard.astro";
           <Infocard
             cardtitle="Anden bølge "
             cardsubtitle="1960-1980"
-            cardimage="/b2.png"
+            cardimage="/b2.webp"
             cardimagealt="Hands on table"
             variant=""
             cardtext="Anden bølge kendes som “Rødstrømpebevægelsen”, inspireret af den amerikanske socialistiske kvindebevægelse “the Redstockings“. Rødstrømperne fokuserede på sociale og kulturelle uligheder og kæmpede for ligeløn, reproduktive rettigheder som fri adgang til prævention og abort, samt bekæmpelse af sexisme og chikane i arbejdslivet og kønsbaseret vold. Bevægelsen satte også spørgsmålstegn ved traditionelle kønsroller og arbejdede for at ændre samfundets opfattelse af kvinders plads både i hjemmet og på arbejdsmarkedet (Danmarks Statistik 2012)."
@@ -304,12 +310,12 @@ import Infocard from "../components/Infocard.astro";
         </div>
       </div>
 
-      <div class="lg:grid lg:grid-cols-2 gap-10 lg:-mt-20 mt-15">
+      <div class="lg:grid lg:grid-cols-2 gap-10 lg:-mt-10 mt-15">
         <div>
           <Infocard
             cardtitle="Tredje bølge "
             cardsubtitle="1990-2000"
-            cardimage="/b3.png"
+            cardimage="/b3.webp"
             cardimagealt="Hands on table"
             variant=""
             cardtext="Denne bølge opstod som en reaktion på de mangler, den nye generation af feminister syntes, den anden bølge havde. I Vesten havde feminismen taget udgangspunkt i hvide, heteroseksuelle, middel- og overklasse kvinder, og feminister fra den tredje bølge havde en bredere forståelse af feminisme, der inkluderede flere identitetsmarkører end køn, f.eks. etnicitet, seksuel orientering, klasse, kønsidentitet mm. Denne forståelse af feminisme kaldes intersektionel feminisme. Tredje bølge havde også en poststrukturalistisk fortolkning af køn og seksualitet, hvor de forstod køn og seksualitet som sociale konstruktioner, der blev skabt og formet af sprog og kultur frem for faste, biologisk bestemte kategorier (Butler 1990). "
@@ -318,8 +324,8 @@ import Infocard from "../components/Infocard.astro";
         <div class="lg:mt-40 mt-15">
           <Infocard
             cardtitle="Fjerde bølge "
-            cardsubtitle="2010-NU"
-            cardimage="/b4.png"
+            cardsubtitle="2010-Nu"
+            cardimage="/b4.webp"
             cardimagealt="Hands on table"
             variant=""
             cardtext="Den fjerde og nyeste, feministiske bølge er kendetegnet ved brugen af sociale medier til at fremme feminisme og adressere problemer som seksuel chikane, kropspositivitet og intersektionalitet. Bevægelser som #MeToo har spillet en central rolle i at sætte fokus på seksuel chikane og overgreb, og fjerde bølge-feminister arbejder for at skabe opmærksomhed omkring, hvordan forskellige former for diskrimination overlapper og påvirker hinanden. I denne bølge er der også et fokus på at reclaime det feminine (Kjølsen, Klæstrup & Andersen 2017)."
@@ -440,8 +446,13 @@ import Infocard from "../components/Infocard.astro";
         </div>
       </div>
     </section>
-    <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
-      <img src="/fem2.png" alt="Feminisme illustration" class="w-full mt-28 lg:mt-56" />
+    <section class="mt-28 lg:mt-56 lg:mx-32 mx-12 uppercase">
+      <div class="relative z-10">
+        <Quote>Feminisme er kærlighed i handling.</Quote>
+      </div>
+      <div class="flex justify-end lg:-mt-20 -mt-7 relative z-0">
+        <img src="shirt.webp" alt="" class="w-180" />
+      </div>
     </section>
 
     <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
@@ -490,7 +501,7 @@ import Infocard from "../components/Infocard.astro";
           <div class="flex justify-center lg:justify-end lg:pr-10"><img src="/handsheart.svg" alt="Ikon med hjerte og hænder" /></div>
           <div class="mt-8">
             <div class="flex justify-start">
-              <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">VÆR EN DEL AF FREMTIDEN, <br />BLIV AMBASSADØR</Heading>
+              <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Vær en del af fremtiden, <br />bliv ambasaddør</Heading>
             </div>
             <div class="flex justify-start mt-8">
               <Button>Læs mere</Button>

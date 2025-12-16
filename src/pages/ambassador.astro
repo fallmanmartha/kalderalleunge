@@ -5,10 +5,15 @@ import Heading from "../components/Heading.astro";
 import Text from "../components/Text.astro";
 import Button from "../components/Button.astro";
 import Herosecondary from "../components/Herosecondary.astro";
+import Quote from "../components/Quote.astro";
+import Infocard from "../components/Infocard.astro";
+import Bubble from "../components/Bubble.astro";
+import Form from "../components/Form.astro";
 ---
 
 <MainLayout title="Kalder alle unge">
   <main class="">
+    <!-- hero -->
     <section>
       <Herosecondary
         herotitle="BLIV AMBASSADØR"
@@ -16,17 +21,15 @@ import Herosecondary from "../components/Herosecondary.astro";
         herotext_2="Her finder du også information om, hvordan du tilmelder dig, og hvad du kan forvente som ambassadør."
       />
     </section>
+    <!-- hvad vil det si at være ambassadør -->
     <section class="lg:mx-32 mx-12 mt-28">
-      <!-- Overskrift -->
       <div class="mb-12">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> HVAD VIL DET SIGE AT VÆRE AMBASSADØR? </Heading>
       </div>
 
-      <!-- Indhold -->
       <div class="flex flex-col gap-12 md:grid md:grid-cols-3 md:gap-10">
-        <!-- Kolonne 1 -->
         <div>
-          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold"> Fællesskab </Heading>
+          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> Fællesskab </Heading>
 
           <div class="mt-4 space-y-4">
             <Text teksttype="brødttekst"> Stopper du op, når du støder på uretfærdighed? Er du én, der tør stå frem og sige din mening? </Text>
@@ -35,9 +38,8 @@ import Herosecondary from "../components/Herosecondary.astro";
           </div>
         </div>
 
-        <!-- Kolonne 2 -->
         <div>
-          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold"> Viden & inspiration </Heading>
+          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> Viden & inspiration </Heading>
 
           <div class="mt-4 space-y-4">
             <Text teksttype="brødttekst"> I KALDER ALLE UNGEs netværk af ambassadører har du mulighed for at udvikle dine aktivistiske evner. </Text>
@@ -46,9 +48,8 @@ import Herosecondary from "../components/Herosecondary.astro";
           </div>
         </div>
 
-        <!-- Kolonne 3 -->
         <div>
-          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold"> Netværksmøder </Heading>
+          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> Netværksmøder </Heading>
 
           <div class="mt-4 space-y-4">
             <Text teksttype="brødttekst"> Vi afholder løbende netværksmøder i København og Aarhus, hvor du er inviteret. </Text>
@@ -57,6 +58,131 @@ import Herosecondary from "../components/Herosecondary.astro";
           </div>
         </div>
       </div>
+    </section>
+    <!-- tilmeld deg -->
+    <section class="flex lg:flex-row flex-col max-w-5xl gap-10 items-center mt-28 lg:mt-56 mx-auto px-12">
+      <img src="/handshake.svg" alt="handshake illustration" class="w-45 h-auto lg:w-70" />
+
+      <div>
+        <div class="mb-10">
+          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> Synes du, det ovenstående lyder spændende og interessant? </Heading>
+        </div>
+
+        <div class="mb-10">
+          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> Så er KALDER ALLE UNGEs ambassadørnetværk noget for dig! </Heading>
+        </div>
+
+        <Button variant="primary" class="mt-10" href="/ambassador"> Bliv ambassadør </Button>
+      </div>
+    </section>
+
+    <!-- vil du gøre en forskel -->
+    <section class="mt-28 lg:mx-32 mx-12 lg:mt-56">
+      <div class="relative z-10">
+        <Quote>VIL DU GØRE <br /> EN FORSKEL?</Quote>
+      </div>
+      <div class="flex justify-end lg:-mt-12 -mt-7 relative z-0">
+        <img src="/ambassadør.webp" alt="" class="w-240" />
+      </div>
+      <div class="md:w-1/2 relative z-10 lg:-mt-80 mt-4">
+        <Bubble variant="left">
+          <div class="mt-4">
+            <Heading htmlheading="h3" size="medium" weight="medium"
+              >“For mig handler Kalder Alle Unge om at give plads til dem, der ikke altid føler, at de passer ind. Når vi lytter til hinanden, skaber vi et samfund, hvor alle unge kan stå stærkt, uanset hvem de er.”</Heading
+            >
+            <div class="mt-4">
+              <Heading htmlheading="h3" size="medium" weight="regular">— Ambassadør for Kalder Alle Unge</Heading>
+            </div>
+          </div></Bubble
+        >
+      </div>
+    </section>
+    <!-- ambassadørworkshops -->
+    <section class="mt-28 lg:mx-32 mx-12 lg:mt-56">
+      <div class="mb-12">
+        <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">AMBASSADØR<br />WORKSHOPS</Heading>
+      </div>
+      <div class="flex flex-col gap-12 md:grid md:grid-cols-2">
+        <div>
+          <div class="">
+            <Text teksttype="brødttekst">Som ambassadør deltager du i en gratis to-dages workshop weekend, hvor vi dykker ned i emner som ligestilling og feminisme, hverdagsaktivisme og selvomsorg. </Text>
+          </div>
+        </div>
+        <div>
+          <div class="">
+            <Text teksttype="brødttekst">Du får samtaleskills der styrker din stemme, alt sammen i et trygt og inkluderende rum! Du behøver ikke at vide noget om ligestilling eller aktivisme for at være med, alle er velkommen :) </Text>
+          </div>
+        </div>
+      </div>
+      <div class="lg:grid lg:grid-cols-2 gap-10 mt-12 lg:mt-20">
+        <div class="">
+          <Infocard
+            cardtitle="Dag 1"
+            cardimage="/hands.png"
+            cardimagealt="Hands on table"
+            variant=""
+            cardtext="Dag 1 starter med velkomst og introduktion til både projektet og hinanden. Vi laver små øvelser, sætter rammerne for et safer space og får en introduktion til ligestilling og feminisme. Efter frokost arbejder vi med styrke din stemme, når Ibrahim fra Mellemfolkeligt Samvirke byder på et oplæg om debat og dialog. Bagefter skal vi lave forumteater, hvor du får mulighed for at afprøve dine nye værktøjet til at navigere i realistiske hverdagsscenarier. Dagen byder også på en inspirationstalk med ambassadører fra KALDER ALLE UNGE, der vil fortælle mere om netværket, og hvilke aktiviteter, der er igangsat. Vi slutter af med en fælles tjek-ud!"
+          />
+        </div>
+        <div class="lg:mt-40 mt-15">
+          <Infocard
+            cardtitle="Dag 2"
+            cardimage="/table.webp"
+            cardimagealt="Hands on table"
+            variant=""
+            cardtext="Dag 2 begynder med tjek-ind. I dag er fokus på aktivisme og selvomsorg. Først vil Cybernauterne klæde dig på til at navigere i digital aktivisme og selvforsvar. Her vil du få strategier til, hvordan du kan indgå i debatter online, og hvordan du kan beskytte dig selv imod digital chikane. Efter frokost laver vi i grupper dilemmaøvelser,  så du kan styrket dine kompetencer til at bruge din stemme i hverdagens dilemmaer. Til sidst vil klimaaktivist, Selma de Montgomery, holde oplæg om selvomsorg og bæredygtig aktivisme. Vi slutter dagen af med fælles refleksion og tjek-ud."
+          />
+        </div>
+      </div>
+    </section>
+    <section class="bg-body-secondary">
+      <div class="lg:mx-32 mx-12 mt-28 pt-16 pb-16 lg:pt-28 lg:pb-28 lg:mt-56">
+        <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">DET FÅR DU SOM AMBASSADØR</Heading>
+        <div class="text-center lg:text-left lg:grid grid-cols-4 grid-rows-2 gap-4 mt-20">
+          <div><Quote>01.</Quote><div class="mt-4"><Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">Ny viden og inspiration indenfor ligestilling, feminisme og aktivisme. </Heading></div></div>
+          <div class="pt-8 lg:pt-0 lg:row-start-2 lg:col-start-2">
+            <Quote>02.</Quote><div class="mt-4"><Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">Et diplom på at have gennemført workshoppen. </Heading></div>
+          </div>
+          <div class="pt-8 lg:pt-0 lg:col-start-3">
+            <Quote>03.</Quote><div class="mt-4"><Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">Konkrete værktøjer i samtaleskills, der styrker din egen stemme. </Heading></div>
+          </div>
+          <div class="pt-8 lg:pt-0 lg:row-start-2 lg:col-start-4">
+            <Quote>04.</Quote><div class="mt-4"><Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">Et nyt fællesskab, som du kan fortsætte dit engagement sammen med. </Heading></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-28 mx-12 lg:mx-32 lg:mt-56">
+      <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> KOMMENDE WORKSHOPS </Heading>
+
+      <div class="md:grid grid-cols-3 items-center mt-12">
+        <!-- KØBENHAVN -->
+        <div class="col-span-1 self-end">
+          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> KØBENHAVN </Heading>
+        </div>
+
+        <!-- DATO -->
+        <div class="mt-4 md:mt-0 md:col-span-2 md:text-right">
+          <Heading htmlheading="h2" size="large" font="quote" color="primary" weight="italic"> 4. – 5. OKT. 10-16. </Heading>
+        </div>
+      </div>
+      <div class="w-full h-px bg-black my-6"></div>
+      <div class="md:grid grid-cols-3 items-center mt-4">
+        <!-- KØBENHAVN -->
+        <div class="col-span-1 self-end">
+          <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> ÅRHUS </Heading>
+        </div>
+
+        <!-- DATO -->
+        <div class="mt-4 lg:mt-0 md:col-span-2 md:text-right">
+          <Heading htmlheading="h2" size="large" font="quote" color="primary" weight="italic"> 25. – 26. OKT. 10-16. </Heading>
+        </div>
+      </div>
+      <div class="w-full h-px bg-black my-6"></div>
+      <div class="md:w-1/2"><Text teksttype="brødtekst">*Der vil være lækker forplejning med frokost og snacks. Alt er vegetarisk, og vi tager hensyn til allergener mm. <br /> <br /> Workshop location har kørestolstilgængelighed. </Text></div>
+    </section>
+    <section class="mt-28 mb-28 lg:mb-56 lg:mt-56">
+      <Form />
     </section>
   </main>
 </MainLayout>
