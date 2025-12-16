@@ -154,8 +154,8 @@
   --spacing-h3-mobile: 14px;
   --spacing-h3-desktop: 20px;
 
-  --spacing-p-mobile: 14px;
-  --spacing-p-desktop: 20px;
+  --spacing-p-mobile: 20px;
+  --spacing-p-desktop: 24px;
 
   --spacing-button-large: 16px 28px;
   --spacing-button-small: 12px 20px;
@@ -163,7 +163,7 @@
   --spacing-grid-gap-mobile: 48px;
   --spacing-grid-gap-desktop: 54px;
 
-  --spacing-card: 40px 40px;
+  --spacing-card: 20px 20px;
 }
 
 @layer base {
