@@ -132,7 +132,7 @@ import Bubble from "../components/Bubble.astro";
         <div>
           <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> FEMINISME ≠ KAMP MOD MÆND</Heading>
           <div class="mt-4">
-            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> En bevægelse for, at alle køn skal have de samme muligheder og rettigheder.</Heading>
+            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> Feminisme handler ikke om at tage noget fra mænd, men om at skabe retfærdighed og lige vilkår for alle.</Heading>
           </div>
         </div>
       </div>
@@ -200,7 +200,7 @@ import Bubble from "../components/Bubble.astro";
       </div>
       <div class="flex flex-col md:flex-row items-start justify-center mt-28 gap-10">
         <div class="flex justify-center md:justify-start w-full md:w-auto">
-          <img src="/!.svg" alt="Udråbstegn" class="w-16 md:w-14 flex-shrink-0" />
+          <img src="/!.svg" alt="Udråbstegn" class="w-16 md:w-12 flex-shrink-0" />
         </div>
         <div class="max-w-xl text-left">
           <Text teksttype="brødtekst" weight="semibold">
@@ -213,42 +213,51 @@ import Bubble from "../components/Bubble.astro";
     <section class="bg-yellow-300">
       <div class="lg:mx-32 mx-12 mt-28 pt-28 pb-28">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">DERFOR BETYDER NORMER NOGET </Heading>
-        <div class="mt-12 grid grid-cols-1 gap-10 text-center md:grid-cols-3 md:gap-20">
+        <div class="mt-12 grid grid-cols-1 gap-10 text-center lg:grid-cols-3 lg:gap-20">
           <div>
             <div><Quote>17%</Quote></div>
-            <div class="mt-4 pr-10 pl-10 md:pr-0 md:pl-0"><Text teksttype="brødtekst" weight="semibold">kvinder 15–25 år har oplevet chikane på arbejde (2 % mænd).</Text></div>
+            <div class="mt-4 pr-10 pl-10 lg:pr-0 lg:pl-0"><Text teksttype="brødtekst" weight="semibold">kvinder 15–25 år har oplevet chikane på arbejde (2 % mænd).</Text></div>
           </div>
           <div>
             <div><Quote>73%</Quote></div>
-            <div class="mt-4 pr-10 pl-10 md:pr-0 md:pl-0"><Text teksttype="brødtekst" weight="semibold">af alle selvmord i Danmark begås af mænd  (Sundhedsstyrelsen 2024).</Text></div>
+            <div class="mt-4 pr-10 pl-10 lg:pr-0 lg:pl-0"><Text teksttype="brødtekst" weight="semibold">af alle selvmord i Danmark begås af mænd  (Sundhedsstyrelsen 2024).</Text></div>
           </div>
           <div>
             <div><Quote>84%</Quote></div>
-            <div class="mt-4 pr-10 pl-10 md:pr-0 md:pl-0"><Text teksttype="brødtekst" weight="semibold">af minoritetsetniske danskere har oplevet diskrimination det seneste år.</Text></div>
+            <div class="mt-4 pr-10 pl-10 lg:pr-0 lg:pl-0"><Text teksttype="brødtekst" weight="semibold">af minoritetsetniske danskere har oplevet diskrimination det seneste år.</Text></div>
           </div>
         </div>
       </div>
     </section>
-    <section>
-      <div class="grid md:grid-cols-3 lg:mx-32 mx-12 mt-28">
-        <div><Heading htmlheading="h2" size="large" font="quote" weight="italic">HVORFOR <br />ER<br /> FEMINISME<br /> STADIG <br />RELEVANT</Heading></div>
-        <div class="justify-center"><img src="question.svg" /></div>
-        <div>
-          <div class="mb-4">
-            <Text
-              >De fleste danskere går ind for ligestilling, men der er en tydelig forskel mellem kønnene. Over 70% af danske kvinder mener, at ligestillingen halter, mens næsten 20% af unge mænd mener, at den er gået for langt (Andersen 2022).</Text
-            >
-          </div>
-          <div class="mb-4">
-            <Text>
-              Forskning viser dog, at ulighed fortsat er en realitet i Danmark. I en global måling af ligestilling ligger Danmark som nummer 23 ud af 146 lande, mens de øvrige nordiske lande ligger i top 5 (Global Gender Gap Report 2024). Det
-              udfordrer forestillingen om Danmark som et foregangsland og viser behovet for fortsat fokus på reel ligestilling.
-            </Text>
+    <section class="mx-12 lg:mx-32 mt-28">
+      <div class="lg:grid grid-cols-3">
+        <div class="grid grid-cols-2 mb-8 lg:col-span-2">
+          <div class="">
+            <Heading htmlheading="h2" size="large" font="quote" weight="italic">
+              HVORFOR <br />
+              ER <br />
+              FEMINISME <br />
+              STADIG <br />
+              RELEVANT
+            </Heading>
           </div>
 
-          <div class="mb-4">
-            <Text>Det er værd at bemærke, at rapporten kan kritiseres for vestlig bias og for primært at måle formel – og ikke altid reel – ligestilling.</Text>
+          <!-- SPØRGSMÅLSTEGN -->
+          <div class="flex items-center justify-center">
+            <img src="question.svg" alt="" class="w-26 lg:w-60 object-contain" />
           </div>
+        </div>
+        <!-- TEKST -->
+        <div class="space-y-4 lg:col-start-3">
+          <Text>
+            De fleste danskere går ind for ligestilling, men der er en tydelig forskel mellem kønnene. Over 70% af danske kvinder mener, at ligestillingen halter, mens næsten 20% af unge mænd mener, at den er gået for langt (Andersen 2022).
+          </Text>
+          <Text>
+            Forskning viser dog, at ulighed fortsat er en realitet i Danmark. I en global måling af ligestilling ligger Danmark som nummer 23 ud af 146 lande, mens de øvrige nordiske lande ligger i top 5 (Global Gender Gap Report 2024). Det udfordrer
+            forestillingen om Danmark som et foregangsland og viser behovet for fortsat fokus på reel ligestilling.</Text
+          >
+
+          <Text> Det er værd at bemærke, at rapporten kan kritiseres for vestlig bias og for primært at måle formel – og ikke altid reel – ligestilling. </Text>
         </div>
       </div>
     </section>
