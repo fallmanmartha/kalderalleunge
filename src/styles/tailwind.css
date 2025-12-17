@@ -145,6 +145,8 @@
   /* Spacing tokens */
   --spacing-section-mobile: 112px;
   --spacing-section-desktop: 224px;
+  --spacing-main-top-desktop: 112px;
+  --spacing-main-top-mobile: 64px;
 
   --spacing-section-padding: 112px;
 
@@ -175,6 +177,7 @@
 
   --spacing-input: 12px 16px;
 
+  /* Animation tokens */
   --animate-bounce-twice: bounceout 0.5s ease-out;
 }
 

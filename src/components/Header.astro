@@ -2,12 +2,10 @@
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1); // remove the first "/"
 import Button from "./Button.astro";
-import Link from "./Link.astro";
-import Text from "./Text.astro";
 ---
 
 <header x-data="{ showmenu: false }" class="">
-  <div id="navbar" class="p-margin-mobile flex flex-row justify-between items-center bg-black">
+  <div id="navbar" class="p-margin-mobile flex flex-row justify-between items-center bg-hero-primary">
     <!-- BURGER MENY KNAPP -->
     <button id="burgermenu" class="pr-30" x-on:click="showmenu = !showmenu" aria-label="Åbn menu">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-15">
@@ -33,7 +31,7 @@ import Text from "./Text.astro";
   <!-- MOBILMENU (alla skärmstorlekar) -->
   <nav
     id="mobilmenu"
-    class="bg-hero-primary flex flex-col content-left px-margin-mobile pb-section-mobile font-quote lg:text-4xl text-3xl overflow-hidden"
+    class="bg-hero-primary flex flex-col content-left px-margin-mobile pb-section-padding font-quote lg:text-4xl text-3xl overflow-hidden"
     x-show="showmenu"
     x-cloak
     x-transition:enter="transition ease-out duration-300"
@@ -46,23 +44,23 @@ import Text from "./Text.astro";
     x-on:click.outside="showmenu = false"
   >
     <ul class="text-text-secondary">
-      <li class="pb-p-mobile hover:text-text-quaternary italic font-black">
+      <li class="pb-p-mobile lg:pb-p-desktop hover:text-text-quaternary italic font-black">
         <a href="/ambassador/">BLIV AMBASSADØR</a>
       </li>
 
-      <li class="pb-p-mobile hover:text-text-quaternary italic font-black">
+      <li class="pb-p-mobile lg:pb-p-desktop hover:text-text-quaternary italic font-black">
         <a href="/">EVENTS</a>
       </li>
 
-      <li class="pb-p-mobile hover:text-text-quaternary italic font-black">
+      <li class="pb-p-mobile lg:pb-p-desktop hover:text-text-quaternary italic font-black">
         <a href="/">VÆRKTØJER</a>
       </li>
 
-      <li class="pb-p-mobile hover:text-text-quaternary italic font-black">
+      <li class="pb-p-mobile lg:pb-p-desktop hover:text-text-quaternary italic font-black">
         <a href="/ligestilling/">VIDEN OM LIGESTILLING</a>
       </li>
 
-      <li class="pt-12 hover:text-text-tertiary font-heading font-bold">
+      <li class="pt-h2-mobile lg:pt-h2-desktop hover:text-text-tertiary font-heading font-bold">
         <a href="/komponentbibliotek/">
           Dansk <br />Kvindesamfund
         </a>
