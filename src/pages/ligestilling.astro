@@ -5,7 +5,6 @@ import Ligestillningcard from "../components/Ligestillningcard.astro";
 import Herosecondary from "../components/Herosecondary.astro";
 import Instagram from "../components/Instagram.astro";
 import Form from "../components/Form.astro";
-import Text from "../components/Text.astro";
 ---
 
 <MainLayout title="Kalder alle unge">
@@ -21,50 +20,41 @@ import Text from "../components/Text.astro";
     <!-- SLUT PÅ HERO SEKTION -->
 
     <!-- CARDS SEKTION -->
-    <section class="lg:mx-margin-desktop mx-margin-mobile mt-28">
+    <section class="lg:mx-margin-desktop mx-margin-mobile lg:mt-section-desktop mt-section-mobile">
       <!-- Overskrift -->
-      <div class="lg:mb-h2-desktop mb-h2-mobile">
-        <div class="intersect:animate-flip-down animate-once">
-          <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">BLIV KLOGERE PÅ...</Heading>
-        </div>
-        <!-- indledende tekst -->
-        <div class="lg:mt-p-desktop mt-p-mobile lg:max-w-1/2 intersect:animate-fade-up animate-once">
-          <Text>
-            Videnspakkerne er for alle, der vil vide mere. Så, skal du skrive opgave om ligestilling, vil du tale med i en samfundsdebat eller vil du bare gerne forstå, hvorfor det hedder feminisme? Så er du kommet til det rette sted. Der bliver
-            løbende udgivet nye videnspakker her på siden.
-          </Text>
-        </div>
+      <div class="lg:mb-h2-image-desktop mb-h2-image-mobile">
+        <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> BLIV KLOGERE PÅ... </Heading>
       </div>
 
       <!-- Cards -->
       <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-grid-gap-desktop gap-grid-gap-mobile">
-        <div class="intersect:animate-fade-up">
+        <div>
           <Ligestillningcard cardtitle="FEMINISME" cardimage="/card1.webp" cardimagealt="Hands on table" url="/feminisme" cardtext="Lighed mellem kønnene" />
         </div>
-        <div class="intersect:animate-fade-up">
+        <div>
           <Ligestillningcard cardtitle="LGBTQ+" cardimage="/card2.webp" cardimagealt="LGBTQ+ flag" url="/feminisme" cardtext="Rettigheder og accept" />
         </div>
-        <div class="intersect:animate-fade-up">
+        <div>
           <Ligestillningcard cardtitle="ABORT" cardimage="/card3.webp" cardimagealt="Abort Sign" url="/feminisme" cardtext="Ret til at vælge" />
         </div>
 
-        <div class="intersect:animate-fade-up">
+        <div>
           <Ligestillningcard cardtitle="SAMTYKKE" cardimage="/card4.webp" cardimagealt="Kissing couple" url="/feminisme" cardtext="Nej betyder nej" />
         </div>
-        <div class="intersect:animate-fade-up">
+        <div>
           <Ligestillningcard cardtitle="DIGITALE KRÆNKELSER" cardimage="/card5.webp" cardimagealt="Computer screens" url="/feminisme" cardtext="Online respekt" />
         </div>
-        <div class="intersect:animate-fade-up">
+        <div>
           <Ligestillningcard cardtitle="KØNSBASERET VOLD" cardimage="/card6.webp" cardimagealt="Hand saying no" url="/feminisme" cardtext="Stop vold mod kvinder" />
         </div>
 
-        <div class="intersect:animate-fade-up">
+        <div>
           <Ligestillningcard cardtitle="UDANNELSE & NÆRINGSLIV" cardimage="/card7.webp" cardimagealt="Dancing on table" url="/feminisme" cardtext="Lige muligheder" />
         </div>
-        <div class="intersect:animate-fade-up">
+        <div>
           <Ligestillningcard cardtitle="KROPSIDEALER" cardimage="/card8.webp" cardimagealt="Girls in various poses" url="/feminisme" cardtext="Mangfoldige kroppe" />
         </div>
-        <div class="intersect:animate-fade-up">
+        <div>
           <Ligestillningcard cardtitle="REPRÆSENTATION" cardimage="/card9.webp" cardimagealt="Demonstration" url="/feminisme" cardtext="Alle skal ses" />
         </div>
       </section>
