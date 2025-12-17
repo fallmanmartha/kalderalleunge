@@ -86,8 +86,21 @@ import Popoutform from "../components/Popoutform.astro";
     <!-- QUOTE SEKTION -->
     <section class="mt-section-mobile lg:mt-section-desktop lg:mx-margin-desktop mx-margin-mobile uppercase">
       <div class="relative z-10 intersect:animate-fade-right intersect:duration-[8000ms]">
-        <Quote>Feminisme <br />er for<br />alle </Quote>
+        <div class="flex gap-grid-gap-small">
+          <Quote>
+            Feminisme <br />
+            er for<br class="lg:block hidden" />
+            <span class="inline-flex align-top">
+              alle
+              <span class="text-text-tertiary text-desktop-hero -mt-5 lg:block hidden">!</span>
+            </span>
+          </Quote>
+          <div class="-mt-6 lg:hidden">
+            <Quote color="tertiary" size="exclamation">!</Quote>
+          </div>
+        </div>
       </div>
+
       <div class="flex justify-end lg:-mt-90 -mt-7 relative z-0 intersect:animate-fade-left intersect:duration-[8000ms]">
         <img src="heart.webp" alt="" class="w-180" />
       </div>
