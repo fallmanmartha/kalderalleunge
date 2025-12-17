@@ -11,41 +11,143 @@ import Instagram from "../components/Instagram.astro";
 
 <MainLayout title="Kalder alle unge">
   <main class="mt-10">
+    <!-- hero seksjon -->
+    <section class="relative h-screen w-full bg-black">
+      <div
+        class="whitespace-nowrap
+      text-[20vw]
+      text-lime-300
+      -translate-x-[30vw]
+      absolute inset-0 overflow-hidden flex items-center"
+      >
+        <Quote
+          htmlheading="h1"
+          size="hero"
+          font="quote"
+          color="quarternary"
+          weight="regular">KALDER ALLE UNGE</Quote
+        >
+      </div>
+      {/* Bilder over teksten */}
+      <div class="relative z-10 w-full h-full pointer-events-none">
+        {/* Venstre bilde */}
+        <img
+          src="/hero1.webp"
+          alt=""
+          class="absolute
+        left-24
+        top-1/2
+        w-64
+        -translate-y-1/2"
+        />
+
+        {/* Midt bilde */}
+        <img
+          src="/hero2.webp"
+          alt=""
+          class="absolute
+        left-1/2
+        top-1/2
+        w-[28rem]
+        -translate-x-1/2
+        -translate-y-1/2"
+        />
+
+        {/* Høyre bilde */}
+        <img
+          src="/hero3.webp"
+          alt=""
+          class="absolute
+        right-24
+        top-1/2
+        w-64
+        -translate-y-1/2"
+        />
+      </div>
+    </section>
+
     <!-- INTRO SEKTION -->
     <section class="lg:mx-margin-desktop mx-margin-mobile">
       <!-- Overskrift -->
-      <div class="flex flex-col md:flex-row md:justify-between md:items-end lg:mb-h2-desktop mb-h2-mobile">
-        <div class="intersect:animate-flip-down animate-once"><Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> VI KALDER ALLE UNGE! </Heading></div>
+      <div
+        class="flex flex-col md:flex-row md:justify-between md:items-end lg:mb-h2-desktop mb-h2-mobile"
+      >
+        <div class="intersect:animate-flip-down animate-once">
+          <Heading
+            htmlheading="h2"
+            size="large"
+            font="heading"
+            color="primary"
+            weight="bold"
+          >
+            VI KALDER ALLE UNGE!
+          </Heading>
+        </div>
 
-        <img src="/megafon.svg" alt="" class="w-40 md:w-50 shrink-0 self-end md:self-auto hover:animate-jump intersect:animate-twice" />
+        <img
+          src="/megafon.svg"
+          alt=""
+          class="w-40 md:w-50 shrink-0 self-end md:self-auto hover:animate-jump intersect:animate-twice"
+        />
       </div>
 
       <!-- Text -->
-      <div class="flex flex-col lg:gap-grid-gap-desktop gap-grid-gap-mobile md:grid md:grid-cols-2 intersect:animate-fade-up animate-once">
+      <div
+        class="flex flex-col lg:gap-grid-gap-desktop gap-grid-gap-mobile md:grid md:grid-cols-2 intersect:animate-fade-up animate-once"
+      >
         <!-- Venstre kolonne -->
         <div>
           <div class="lg:mb-h3-desktop mb-h3-mobile">
-            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Giv unge en stærkere stemme </Heading>
+            <Heading
+              htmlheading="h3"
+              size="medium"
+              font="heading"
+              color="primary"
+              weight="medium"
+              >Giv unge en stærkere stemme
+            </Heading>
           </div>
           <div class="lg:mb-p-desktop mb-p-mobile">
-            <Text teksttype="brødttekst">KALDER ALLE UNGE giver unge en større stemme i ligestillingsdebatten. Vi hjælper dem med at deltage i debatter, skrive indlæg, holde taler og håndtere samtaler om ligestilling i hverdagen.</Text>
+            <Text teksttype="brødttekst"
+              >KALDER ALLE UNGE giver unge en større stemme i
+              ligestillingsdebatten. Vi hjælper dem med at deltage i debatter,
+              skrive indlæg, holde taler og håndtere samtaler om ligestilling i
+              hverdagen.</Text
+            >
           </div>
           <div>
-            <Text teksttype="brødttekst">Derudover udvikler vi samtaleværktøjer, videnspakker og et netværk af ligestillingsambassadører, der kan udfolde deres aktivisme på deres egen måde.</Text>
+            <Text teksttype="brødttekst"
+              >Derudover udvikler vi samtaleværktøjer, videnspakker og et
+              netværk af ligestillingsambassadører, der kan udfolde deres
+              aktivisme på deres egen måde.</Text
+            >
           </div>
         </div>
 
         <!-- Højre kolonne -->
         <div>
           <div class="lg:mb-h3-desktop mb-h3-mobile">
-            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Et fællesskab for ligestilling</Heading>
+            <Heading
+              htmlheading="h3"
+              size="medium"
+              font="heading"
+              color="primary"
+              weight="medium">Et fællesskab for ligestilling</Heading
+            >
           </div>
           <div class="lg:mb-p-desktop mb-p-mobile">
-            <Text teksttype="brødttekst">Hos KALDER ALLE UNGE arbejder vi for en bred forståelse af ligestilling, hvor alle har samme muligheder uanset køn, seksualitet, etnicitet, religion, alder eller handicap.</Text>
+            <Text teksttype="brødttekst"
+              >Hos KALDER ALLE UNGE arbejder vi for en bred forståelse af
+              ligestilling, hvor alle har samme muligheder uanset køn,
+              seksualitet, etnicitet, religion, alder eller handicap.</Text
+            >
           </div>
 
           <div>
-            <Text teksttype="brødttekst">Her får unge støtte, netværk og inspiration til at kæmpe imod ulighed og skabe forandring i deres egen hverdag.</Text>
+            <Text teksttype="brødttekst"
+              >Her får unge støtte, netværk og inspiration til at kæmpe imod
+              ulighed og skabe forandring i deres egen hverdag.</Text
+            >
           </div>
         </div>
       </div>
@@ -54,26 +156,46 @@ import Instagram from "../components/Instagram.astro";
 
     <!--QUOTE SEKTION -->
     <!-- overskrift  -->
-    <section class="lg:mt-section-desktop mt-section-mobile lg:mx-margin-desktop mx-margin-mobile uppercase">
-      <div class="relative z-10 intersect:animate-fade-right intersect:duration-[8000ms]">
+    <section
+      class="lg:mt-section-desktop mt-section-mobile lg:mx-margin-desktop mx-margin-mobile uppercase"
+    >
+      <div
+        class="relative z-10 intersect:animate-fade-right intersect:duration-[8000ms]"
+      >
         <Quote>Unge viser vejen til ligestilling.</Quote>
       </div>
       <!-- billede  -->
-      <div class="flex justify-end lg:-mt-20 -mt-7 relative z-0 intersect:animate-fade-left intersect:duration-[8000ms]">
+      <div
+        class="flex justify-end lg:-mt-20 -mt-7 relative z-0 intersect:animate-fade-left intersect:duration-[8000ms]"
+      >
         <img src="signs.webp" alt="" class="w-150" />
       </div>
     </section>
     <!--SLUT PÅ QUOTE SEKTION -->
 
     <!--INFO CARDS SEKTION -->
-    <section class="lg:mt-section-desktop mt-section-mobile lg:mx-margin-desktop mx-margin-mobile">
+    <section
+      class="lg:mt-section-desktop mt-section-mobile lg:mx-margin-desktop mx-margin-mobile"
+    >
       <!-- overskrift  -->
-      <div class="lg:mb-h2-desktop mb-h2-mobile intersect:animate-flip-down animate-once">
-        <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> UDFORSK OG ENGAGER DIG</Heading>
+      <div
+        class="lg:mb-h2-desktop mb-h2-mobile intersect:animate-flip-down animate-once"
+      >
+        <Heading
+          htmlheading="h2"
+          size="large"
+          font="heading"
+          color="primary"
+          weight="bold"
+        >
+          UDFORSK OG ENGAGER DIG</Heading
+        >
       </div>
 
       <!-- info cards -->
-      <div class="grid lg:grid-cols-2 lg:gap-grid-gap-desktop gap-grid-gap-mobile">
+      <div
+        class="grid lg:grid-cols-2 lg:gap-grid-gap-desktop gap-grid-gap-mobile"
+      >
         <!-- events card -->
         <div class="">
           <Infocard
@@ -98,7 +220,9 @@ import Instagram from "../components/Instagram.astro";
         </div>
       </div>
 
-      <div class="grid lg:grid-cols-2 lg:gap-grid-gap-desktop gap-grid-gap-mobile lg:-mt-25 mt-15">
+      <div
+        class="grid lg:grid-cols-2 lg:gap-grid-gap-desktop gap-grid-gap-mobile lg:-mt-25 mt-15"
+      >
         <!-- ambassadør card -->
         <div class="">
           <Infocard
@@ -125,23 +249,47 @@ import Instagram from "../components/Instagram.astro";
     <!-- SLUT PÅ INFO CARDS SEKTION -->
 
     <!-- INFOGRAFIK SEKTION -->
-    <section class="bg-body-secondary lg:mt-section-desktop mt-section-mobile lg:p-margin-desktop p-margin-mobile">
+    <section
+      class="bg-body-secondary lg:mt-section-desktop mt-section-mobile lg:p-margin-desktop p-margin-mobile"
+    >
       <!-- Infografik overskrifter-->
       <div class="bg-body-secondary pb-h2-mobile">
         <div class="uppercase intersect:animate-flip-down animate-once">
-          <Heading htmlheading="span" size="large" font="heading" color="primary" weight="bold">
-            <span class="font-quote font-black italic">1</span> ud af <span class="font-quote font-black italic">4</span> unge i Europa mener ligestilling er en vigtig værdi
+          <Heading
+            htmlheading="span"
+            size="large"
+            font="heading"
+            color="primary"
+            weight="bold"
+          >
+            <span class="font-quote font-black italic">1</span> ud af <span
+              class="font-quote font-black italic">4</span
+            > unge i Europa mener ligestilling er en vigtig værdi
           </Heading>
         </div>
       </div>
       <div class="lg:mb-30 intersect:animate-fade-up animate-once">
-        <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold">Er du med til at løfte antallet?</Heading>
+        <Heading
+          htmlheading="h3"
+          size="medium"
+          font="heading"
+          color="primary"
+          weight="bold">Er du med til at løfte antallet?</Heading
+        >
       </div>
 
       <!-- Infografik illustration-->
       <div class="lg:grid lg:grid-cols-12 gap-grid-gap-desktop mx-auto">
-        <img src="infografik.svg" alt="" class="col-span-9 mt-8 w-80 lg:w-180 lg:mt-0 intersect:animate-fade-up animate-once" />
-        <img src="signgrafik.svg" alt="" class="col-span-3 lg:block hidden hover:animate-jump intersect:animate-twice" />
+        <img
+          src="infografik.svg"
+          alt=""
+          class="col-span-9 mt-8 w-80 lg:w-180 lg:mt-0 intersect:animate-fade-up animate-once"
+        />
+        <img
+          src="signgrafik.svg"
+          alt=""
+          class="col-span-3 lg:block hidden hover:animate-jump intersect:animate-twice"
+        />
       </div>
     </section>
     <!-- SLUT PÅ INFOGRAFIK SEKTION -->
@@ -150,45 +298,85 @@ import Instagram from "../components/Instagram.astro";
     <section>
       <div class="relative w-full">
         <!-- bakgrundsbild -->
-        <img src="/hug.webp" alt="people hugging" class="lg:w-full lg:h-auto object-cover h-130" />
+        <img
+          src="/hug.webp"
+          alt="people hugging"
+          class="lg:w-full lg:h-auto object-cover h-130"
+        />
 
         <!-- BUBBLE -->
-        <div class="absolute left-12 top-16 lg:left-32 lg:top-28 z-20 lg:max-w-lg max-w-sm intersect:animate-shake">
-          <Bubble><Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold">ER I KLAR TIL AT FORME FREMTIDEN SAMMEN?</Heading></Bubble>
+        <div
+          class="absolute left-12 top-16 lg:left-32 lg:top-28 z-20 lg:max-w-lg max-w-sm intersect:animate-shake"
+        >
+          <Bubble
+            ><Heading
+              htmlheading="h3"
+              size="medium"
+              font="heading"
+              color="primary"
+              weight="bold">ER I KLAR TIL AT FORME FREMTIDEN SAMMEN?</Heading
+            ></Bubble
+          >
         </div>
       </div>
 
       <!-- nedre billede  -->
-      <div class="ml-auto w-fit -mt-50 relative z-30 lg:px-32 px-12 intersect:animate-fade-up animate-once">
+      <div
+        class="ml-auto w-fit -mt-50 relative z-30 lg:px-32 px-12 intersect:animate-fade-up animate-once"
+      >
         <img src="/sittinggroup.webp" alt="group sitting on sofa" />
       </div>
     </section>
     <!--SLUT PÅ BILLEDE + BUBBLE SEKTION -->
 
     <!-- GØR EN FORSKEL SEKTION -->
-    <section class="lg:mt-section-desktop mt-section-mobile lg:mx-margin-desktop mx-margin-mobile">
+    <section
+      class="lg:mt-section-desktop mt-section-mobile lg:mx-margin-desktop mx-margin-mobile"
+    >
       <!-- quote -->
-      <div class="uppercase mb-h2-desktop intersect:animate-fade-right intersect:duration-[8000ms]">
+      <div
+        class="uppercase mb-h2-desktop intersect:animate-fade-right intersect:duration-[8000ms]"
+      >
         <Quote>Gør en forskel</Quote>
       </div>
-      <div class="flex lg:flex-row flex-col ml-auto gap-grid-gap-desktop max-w-4xl">
+      <div
+        class="flex lg:flex-row flex-col ml-auto gap-grid-gap-desktop max-w-4xl"
+      >
         <!-- & ikon -->
-        <img src="and.svg" alt="&" class="w-80 intersect:animate-jump animate-once" />
+        <img
+          src="and.svg"
+          alt="&"
+          class="w-80 intersect:animate-jump animate-once"
+        />
         <div class="intersect:animate-fade-left intersect:duration-[8000ms]">
           <!-- overskrift -->
           <div class="mb-h3-desktop">
-            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> Bliv ambassadør</Heading>
+            <Heading
+              htmlheading="h3"
+              size="medium"
+              font="heading"
+              color="primary"
+              weight="medium"
+            >
+              Bliv ambassadør</Heading
+            >
           </div>
 
           <!-- tekst -->
           <div class="lg:mb-p-desktop mb-p-desktop">
             <Text
-              >Som ambassadør bliver du en del af et engageret fællesskab af unge, der arbejder for ligestilling, trygge fællesskaber og stærke ungestemmer. Du får mulighed for at udvikle dine kompetencer og inspirere andre til at tage del i
-              fællesskabet.
+              >Som ambassadør bliver du en del af et engageret fællesskab af
+              unge, der arbejder for ligestilling, trygge fællesskaber og stærke
+              ungestemmer. Du får mulighed for at udvikle dine kompetencer og
+              inspirere andre til at tage del i fællesskabet.
             </Text>
           </div>
           <div class="lg:mb-p-desktop mb-p-mobile">
-            <Text>Som ambassadør står du ikke alene - du bliver en del af et netværk, der støtter hinanden og arbejder sammen om at skabe plads til flere.</Text>
+            <Text
+              >Som ambassadør står du ikke alene - du bliver en del af et
+              netværk, der støtter hinanden og arbejder sammen om at skabe plads
+              til flere.</Text
+            >
           </div>
           <!-- knap -->
           <Button href="/ambassador">Læs mere</Button>

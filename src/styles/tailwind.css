@@ -71,17 +71,18 @@
   --text-mobile-h3: 24px;
   --text-mobile-h4: 20px;
   --text-mobile-h5: 18px;
-
   --text-mobile-p: 16px;
   --text-mobile-quote: 65px;
+  --text-mobile-hero: 100px;
 
   --text-desktop-h1: 105px;
   --text-desktop-h2: 80px;
   --text-desktop-h3: 36px;
   --text-desktop-h4: 24px;
-  --text-mobile-h5: 20px;
+  --text-desktop-h5: 20px;
   --text-desktop-p: 18px;
   --text-desktop-quote: 160px;
+  --text-desktop-hero: 250px;
 
   /* CTA */
   --text-cta-large: 20px;
