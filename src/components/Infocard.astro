@@ -3,7 +3,7 @@ import Heading from "./Heading.astro";
 import Text from "./Text.astro";
 import Button from "./Button.astro";
 
-const { url = "#", cardimage = "", cardimagealt = "", cardtitle = "", cardsubtitle = "", cardtext_1 = "", cardtext_2 = "", variant = "button" } = Astro.props;
+const { url = "/", cardimage = "", cardimagealt = "", cardtitle = "", cardsubtitle = "", cardtext_1 = "", cardtext_2 = "", variant = "button" } = Astro.props;
 ---
 
 <div class="relative inline-block mt-grid-gap-desktop mr-grid-gap-desktop">
@@ -48,9 +48,11 @@ const { url = "#", cardimage = "", cardimagealt = "", cardtitle = "", cardsubtit
         {
           variant === "button" && (
             <div class="mt-auto ml-auto pt-10">
-              <Button variant="primary" size="large" shadow="noeffect">
-                Udforsk
-              </Button>
+              <a href={url}>
+                <Button variant="primary" size="large" shadow="noeffect">
+                  Udforsk
+                </Button>
+              </a>
             </div>
           )
         }
