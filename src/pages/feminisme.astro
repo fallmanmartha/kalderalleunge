@@ -157,11 +157,20 @@ import Infocard from "../components/Infocard.astro";
       <div class="mt-section-mobile lg:mt-section-desktop py-section-mobile lg:mx-margin-desktop mx-margin-mobile">
         <!-- INFO 1 -->
         <div class="mb-12 lg:mb-20">
-          <div class="intersect:animate-flip-down animate-once">
-            <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> FEMINISME = LIGESTILLING</Heading>
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <!-- Megafon -->
+            <div class="order-1 lg:order-2 flex lg:justify-end mb-8 lg:mb-4">
+              <img src="/megafon.svg" class="w-50 hover:animate-jump intersect:animate-twice" />
+            </div>
+
+            <!-- Heading -->
+            <div class="order-2 lg:order-1 lg:self-end text-left intersect:animate-flip-down animate-once">
+              <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> FEMINISME = LIGESTILLING </Heading>
+            </div>
           </div>
-          <div class="lg:mt-h3-desktop mt-h3-mobile intersect:animate-fade-up animate-once">
-            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> En bevægelse for, at alle køn skal have de samme muligheder og rettigheder.</Heading>
+
+          <div class="lg:mt-h3-desktop mt-h3-mobile intersect:animate-fade-up animate-once text-left">
+            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> En bevægelse for, at alle køn skal have de samme muligheder og rettigheder. </Heading>
           </div>
         </div>
 
@@ -355,7 +364,7 @@ import Infocard from "../components/Infocard.astro";
 
       <!-- info cards -->
       <div class="lg:grid lg:grid-cols-2 gap-grid-gap-desktop mt-10 lg:mt-20">
-        <div class="intersect:animate-fade-right intersect:duration-[8000ms]">
+        <div class="">
           <!-- card 1 -->
           <Infocard
             cardtitle="Første bølge"
@@ -367,7 +376,7 @@ import Infocard from "../components/Infocard.astro";
             cardtext_2="Denne kamp var ret fredelig i modsætning til andre steder. I Storbritannien kæmpede suffragetterne for kvinderettigheder. De brugte ofte militante taktikker såsom bombning af offentlige bygninger, sabotage af telefonledninger og afbrænding af politikernes hjem og ofrede livet for deres sag (Militant Suffragettes 2024)."
           />
         </div>
-        <div class="lg:mt-40 mt-15 intersect:animate-fade-left intersect:duration-[8000ms]">
+        <div class="lg:mt-40 mt-15">
           <!-- card 2 -->
           <Infocard
             cardtitle="Anden bølge "
@@ -382,7 +391,7 @@ import Infocard from "../components/Infocard.astro";
       </div>
 
       <div class="lg:grid lg:grid-cols-2 gap-grid-gap-desktop lg:-mt-10 mt-15">
-        <div class="intersect:animate-fade-right intersect:duration-[8000ms]">
+        <div class="">
           <!-- card 3 -->
           <Infocard
             cardtitle="Tredje bølge "
@@ -394,7 +403,7 @@ import Infocard from "../components/Infocard.astro";
             cardtext_2="Tredje bølge havde også en poststrukturalistisk fortolkning af køn og seksualitet, hvor de forstod køn og seksualitet som sociale konstruktioner, der blev skabt og formet af sprog og kultur frem for faste, biologisk bestemte kategorier (Butler 1990)."
           />
         </div>
-        <div class="lg:mt-40 mt-15 intersect:animate-fade-left intersect:duration-[8000ms]">
+        <div class="lg:mt-40 mt-15">
           <!-- card 4 -->
           <Infocard
             cardtitle="Fjerde bølge "
