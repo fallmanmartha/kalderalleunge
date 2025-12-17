@@ -165,9 +165,12 @@
 
   --spacing-grid-gap-mobile: 48px;
   --spacing-grid-gap-desktop: 54px;
+  --spacing-grid-gap-small: 20px;
 
   --spacing-card: 48px 48px;
   --spacing-card-image-offset: 40px;
+
+  --spacing-input: 12px 16px;
 
   --animate-bounce-twice: bounceout 0.5s ease-out;
 }
