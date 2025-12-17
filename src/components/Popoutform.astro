@@ -1,7 +1,5 @@
 ---
 import Heading from "../components/Heading.astro";
-import Text from "../components/Text.astro";
-import Quote from "./Quote.astro";
 ---
 
 <!-- FIXED SIDE-BUTTONS + POP OUT FORM -->
@@ -9,7 +7,7 @@ import Quote from "./Quote.astro";
   <!-- pop out knap: Tilmeld dig (synes kun når lukket)-->
   <button
     type="button"
-    class="fixed top-45 right-0 z-50 bg-button-tertiary-default text-text-button-primary px-6 py-3 uppercase rounded-tr-2xl rounded-br-2xl
+    class="fixed top-65 right-0 z-50 bg-button-tertiary-default text-text-button-primary px-6 py-3 uppercase rounded-tr-2xl rounded-br-2xl
            [writing-mode:vertical-rl] rotate-180"
     x-on:click="open = true; step = 1; showThanks = false"
   >
@@ -19,7 +17,7 @@ import Quote from "./Quote.astro";
   <!--  Luk formular knap (synes kun når open) -->
   <button
     type="button"
-    class="fixed top-45 right-130 z-50 bg-button-tertiary-default text-text-button-primary px-6 py-3 uppercase rounded-tr-2xl rounded-br-2xl
+    class="fixed top-65 right-130 z-100 bg-button-tertiary-default text-text-button-primary px-6 py-3 uppercase rounded-tr-2xl rounded-br-2xl
            [writing-mode:vertical-rl] rotate-180"
     x-show="open"
     x-cloak
@@ -61,25 +59,25 @@ import Quote from "./Quote.astro";
                     <Heading htmlheading="h3" size="medium" color="primary" font="heading" weight="medium"> De praktiske informationer </Heading>
                   </div>
 
-                  <div class="mb-6">
+                  <div class="mb-p-mobile lg:mb-p-desktop">
                     <label class="block text-text-primary text-xl mb-p-mobile lg:mb-p-desktop"> *Navn </label>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-grid-gap-small">
-                      <div>
+                    <div>
+                      <div class="space-y-p-mobile lg:space-y-p-desktop">
                         <label class="text-text-primary">Fornavn</label>
-                        <input type="text" name="fornavn" placeholder="Rosa" class="w-full bg-body-primary text-text-primary p-input outline-none placeholder:text-text-placeholder focus:ring-focus-primary" />
+                        <input type="text" name="fornavn" placeholder="Fornavn" class="w-full bg-body-primary text-text-primary p-input outline-none placeholder:text-text-placeholder focus:ring-focus-primary" />
                       </div>
 
                       <div>
                         <label class="text-text-primary">Efternavn</label>
-                        <input type="text" name="efternavn" placeholder="Parks" class="w-full bg-body-primary text-text-primary p-input outline-none placeholder:text-text-placeholder focus:ring-focus-primary" />
+                        <input type="text" name="efternavn" placeholder="Efternavn" class="w-full bg-body-primary text-text-primary p-input outline-none placeholder:text-text-placeholder focus:ring-focus-primary" />
                       </div>
                     </div>
                   </div>
 
                   <div class="lg:mb-p-desktop mb-p-mobile">
                     <label class="text-text-primary text-xl">*Email</label>
-                    <input type="email" name="email" placeholder="rosaparks@email.com" class="w-full bg-body-primary text-text-primary p-input outline-none placeholder:text-text-placeholder focus:ring-focus-primary" />
+                    <input type="email" name="email" placeholder="email@example.com" class="w-full bg-body-primary text-text-primary p-input outline-none placeholder:text-text-placeholder focus:ring-focus-primary" />
                   </div>
 
                   <div class="lg:mb-p-desktop mb-p-mobile">
