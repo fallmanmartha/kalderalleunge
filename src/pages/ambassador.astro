@@ -25,11 +25,11 @@ import Instagram from "../components/Instagram.astro";
 
     <!-- INTRODUKTION SEKTION -->
     <section class="lg:mx-margin-desktop mx-margin-mobile mt-28">
-      <div class="lg:mb-h2-desktop mb-h2-mobile">
+      <div class="lg:mb-h2-desktop mb-h2-mobile intersect:animate-flip-down animate-once">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> HVAD VIL DET SIGE AT VÆRE AMBASSADØR? </Heading>
       </div>
 
-      <div class="flex flex-col gap-grid-gap-desktop md:grid md:grid-cols-3 md:gap-grid-gap-desktop">
+      <div class="flex flex-col gap-grid-gap-desktop md:grid md:grid-cols-3 md:gap-grid-gap-desktop intersect:animate-fade-up animate-once">
         <!-- kolonne 1 -->
         <div>
           <div class="lg:mb-h3-desktop mb-h3-mobile">
@@ -74,10 +74,10 @@ import Instagram from "../components/Instagram.astro";
     <!-- TILLMELD DIG SEKTION -->
     <section class="flex lg:flex-row flex-col max-w-4xl lg:gap-grid-gap-desktop gap-grid-gap-mobile items-center mt-section-mobile lg:mt-section-desktop mx-auto">
       <!-- illustration -->
-      <img src="/handshake.svg" alt="handshake illustration" class="w-45 h-auto lg:w-70" />
+      <img src="/handshake.svg" alt="handshake illustration" class="w-45 h-auto lg:w-70 hover:animate-wiggle intersect:animate-twice" />
 
       <!-- tekst -->
-      <div class="mx-margin-mobile lg:mx-0">
+      <div class="mx-margin-mobile lg:mx-0 intersect:animate-fade-left animate-once">
         <div class="lg:mb-h3-desktop mb-h3-mobile">
           <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> Synes du, det ovenstående lyder spændende og interessant? </Heading>
         </div>
@@ -94,15 +94,15 @@ import Instagram from "../components/Instagram.astro";
 
     <!-- VIL DU GØRE EN FORSKEL SEKTION -->
     <section class="mt-section-mobile lg:mx-margin-desktop mx-margin-mobile lg:mt-section-desktop">
-      <div class="relative z-10">
+      <div class="relative z-10 intersect:animate-fade-right animate-once">
         <Quote>VIL DU GØRE <br /> EN FORSKEL?</Quote>
       </div>
-      <div class="flex justify-end lg:-mt-12 -mt-7 relative z-0">
+      <div class="flex justify-end lg:-mt-12 -mt-7 relative z-0 intersect:animate-fade-left animate-once">
         <img src="/ambassadør.webp" alt="" class="w-240" />
       </div>
 
       <!-- bubble -->
-      <div class="md:w-1/2 relative z-10 lg:-mt-80 mt-4">
+      <div class="md:w-1/2 relative z-10 lg:-mt-80 mt-4 intersect:animate-shake">
         <Bubble variant="left">
           <div class="lg:mt-h3-desktop mt-h3-mobile">
             <Heading htmlheading="h3" size="medium" weight="medium"
@@ -120,12 +120,12 @@ import Instagram from "../components/Instagram.astro";
     <!-- AMBASSADØRWORKSHOPS SEKTION -->
     <section class="mt-section-mobile lg:mx-margin-desktop mx-margin-mobile lg:mt-section-desktop">
       <!-- Overskrift -->
-      <div class="lg:mb-h2-desktop mb-h2-mobile">
+      <div class="lg:mb-h2-desktop mb-h2-mobile intersect:animate-flip-down animate-once">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">AMBASSADØR<br />WORKSHOPS</Heading>
       </div>
 
       <!-- tekst -->
-      <div class="flex flex-col lg:gap-grid-gap-desktop gap-grid-gap-mobile md:grid md:grid-cols-2">
+      <div class="flex flex-col lg:gap-grid-gap-desktop gap-grid-gap-mobile md:grid md:grid-cols-2 intersect:animate-fade-up animate-once">
         <div>
           <div>
             <Text>Som ambassadør deltager du i en gratis to-dages workshop weekend, hvor vi dykker ned i emner som ligestilling og feminisme, hverdagsaktivisme og selvomsorg. </Text>
@@ -140,18 +140,20 @@ import Instagram from "../components/Instagram.astro";
 
       <!-- workshop dage cards -->
       <div class="lg:grid lg:grid-cols-2 lg:gap-grid-gap-desktop gap-grid-gap-mobile mt-section-mobile">
-        <div>
+        <div class="intersect:animate-fade-right animate-once">
           <Infocard
             cardtitle="Dag 1"
+            cardsubtitle="Introduktion, fællesskab og stemme"
             cardimage="/hands.png"
             cardimagealt="Hands on table"
             variant=""
             cardtext="Dag 1 starter med velkomst og introduktion til både projektet og hinanden. Vi laver små øvelser, sætter rammerne for et safer space og får en introduktion til ligestilling og feminisme. Efter frokost arbejder vi med styrke din stemme, når Ibrahim fra Mellemfolkeligt Samvirke byder på et oplæg om debat og dialog. Bagefter skal vi lave forumteater, hvor du får mulighed for at afprøve dine nye værktøjet til at navigere i realistiske hverdagsscenarier. Dagen byder også på en inspirationstalk med ambassadører fra KALDER ALLE UNGE, der vil fortælle mere om netværket, og hvilke aktiviteter, der er igangsat. Vi slutter af med en fælles tjek-ud!"
           />
         </div>
-        <div class="lg:mt-40 mt-15">
+        <div class="lg:mt-40 mt-15 intersect:animate-fade-left animate-once">
           <Infocard
             cardtitle="Dag 2"
+            cardsubtitle="Aktivisme, digitale rum og selvomsorg"
             cardimage="/table.webp"
             cardimagealt="Hands on table"
             variant=""
@@ -166,22 +168,30 @@ import Instagram from "../components/Instagram.astro";
     <section class="bg-body-secondary">
       <div class="lg:mx-margin-desktop mx-margin-mobile mt-section-mobile py-section-mobile lg:mt-section-desktop">
         <!-- Overskrift -->
-        <div class="lg:mb-h2-desktop mb-h2-mobile">
+        <div class="lg:mb-h2-desktop mb-h2-mobile intersect:animate-flip-down animate-once">
           <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold">DET FÅR DU SOM AMBASSADØR</Heading>
         </div>
         <!-- Statistik -->
         <div class="text-center lg:text-left lg:grid grid-cols-4 grid-rows-2 gap-4">
           <div>
-            <Quote>01.</Quote><div class="lg:mt-h3-desktop mt-h3-mobile"><Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">Ny viden og inspiration indenfor ligestilling, feminisme og aktivisme. </Heading></div>
+            <div class="intersect:animate-jump animate-once"><Quote>01.</Quote></div><div class="lg:mt-h3-desktop mt-h3-mobile intersect:animate-fade-up animate-once">
+              <Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">Ny viden og inspiration indenfor ligestilling, feminisme og aktivisme. </Heading>
+            </div>
           </div>
           <div class="pt-8 lg:pt-0 lg:row-start-2 lg:col-start-2">
-            <Quote>02.</Quote><div class="lg:mt-h3-desktop mt-h3-mobile"><Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">Et diplom på at have gennemført workshoppen. </Heading></div>
+            <div class="intersect:animate-jump animate-once"><Quote>02.</Quote></div><div class="lg:mt-h3-desktop mt-h3-mobile intersect:animate-fade-up animate-once">
+              <Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">Et diplom på at have gennemført workshoppen. </Heading>
+            </div>
           </div>
           <div class="pt-8 lg:pt-0 lg:col-start-3">
-            <Quote>03.</Quote><div class="lg:mt-h3-desktop mt-h3-mobile"><Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">Konkrete værktøjer i samtaleskills, der styrker din egen stemme. </Heading></div>
+            <div class="intersect:animate-jump animate-once"><Quote>03.</Quote></div><div class="lg:mt-h3-desktop mt-h3-mobile intersect:animate-fade-up animate-once">
+              <Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">Konkrete værktøjer i samtaleskills, der styrker din egen stemme. </Heading>
+            </div>
           </div>
           <div class="pt-8 lg:pt-0 lg:row-start-2 lg:col-start-4">
-            <Quote>04.</Quote><div class="lg:mt-h3-desktop mt-h3-mobile"><Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">Et nyt fællesskab, som du kan fortsætte dit engagement sammen med.</Heading></div>
+            <div class="intersect:animate-jump animate-once"><Quote>04.</Quote></div><div class="lg:mt-h3-desktop mt-h3-mobile intersect:animate-fade-up animate-once">
+              <Heading htmlheading="h4" size="small" font="heading" color="primary" weight="medium">Et nyt fællesskab, som du kan fortsætte dit engagement sammen med.</Heading>
+            </div>
           </div>
         </div>
       </div>
@@ -191,10 +201,10 @@ import Instagram from "../components/Instagram.astro";
     <!-- KOMMENDE WORKSHOPS SEKTION -->
     <section class="mt-section-mobile mx-margin-mobile lg:mx-margin-desktop lg:mt-section-desktop">
       <!-- Overskrift -->
-      <div class="lg:mb-h2-desktop mb-h2-mobile">
+      <div class="lg:mb-h2-desktop mb-h2-mobile intersect:animate-flip-down animate-once">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> KOMMENDE WORKSHOPS </Heading>
       </div>
-      <div class="md:grid grid-cols-3 items-center">
+      <div class="md:grid grid-cols-3 items-center intersect:animate-jump animate-once">
         <!-- KØBENHAVN -->
         <div class="col-span-1 self-end md:mb-0 mb-h3-mobile">
           <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> KØBENHAVN </Heading>
@@ -206,7 +216,7 @@ import Instagram from "../components/Instagram.astro";
         </div>
       </div>
       <div class="w-full h-px bg-black md:my-p-desktop my-p-mobile"></div>
-      <div class="md:grid grid-cols-3 items-center mt-4">
+      <div class="md:grid grid-cols-3 items-center mt-4 intersect:animate-jump animate-once">
         <!-- ÅRHUS -->
         <div class="col-span-1 self-end md:mb-0 mb-h3-mobile">
           <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> ÅRHUS </Heading>
@@ -218,12 +228,14 @@ import Instagram from "../components/Instagram.astro";
         </div>
       </div>
       <div class="w-full h-px bg-black md:my-p-desktop my-p-mobile"></div>
-      <div class="md:w-1/2"><Text>*Der vil være lækker forplejning med frokost og snacks. Alt er vegetarisk, og vi tager hensyn til allergener mm. <br /> <br /> Workshop location har kørestolstilgængelighed. </Text></div>
+      <div class="md:w-1/2 intersect:animate-fade-up animate-once">
+        <Text>*Der vil være lækker forplejning med frokost og snacks. Alt er vegetarisk, og vi tager hensyn til allergener mm. <br /> <br /> Workshop location har kørestolstilgængelighed. </Text>
+      </div>
     </section>
     <!-- SLUT PÅ WORKSHOP SEKTION -->
 
     <!-- FORM SEKTION -->
-    <section class="my-section-mobile lg:my-section-desktop mx-margin-mobile lg:mx-margin-desktop">
+    <section class="my-section-mobile lg:my-section-desktop mx-margin-mobile lg:mx-margin-desktop intersect:animate-fade-left animate-once">
       <Form />
     </section>
     <!-- SLUT PÅ FORM SEKTION -->
