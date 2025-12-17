@@ -18,12 +18,14 @@ const { url = "#", cardimage = "", cardimagealt = "", cardtitle = "", cardsubtit
       <div class="relative bg-cards-primary text-text-secondary z-10 max-w-2xl lg:min-h-90
                 flex flex-col">
         <!-- Overskrift H3 - cardtitle -->
-        <Heading htmlheading="h3" size="medium" font="heading" color="secondary" weight="medium">
-          {cardtitle}
-        </Heading>
+        <div class="lg:mb-h3-desktop mb-h3-mobile">
+          <Heading htmlheading="h3" size="medium" font="heading" color="secondary" weight="medium">
+            {cardtitle}
+          </Heading>
+        </div>
 
         <!-- Overskrift H4 - cardsubtitle -->
-        <div class="mt-5">
+        <div>
           <Heading htmlheading="h4" size="small" font="heading" color="secondary" weight="medium">
             {cardsubtitle}
           </Heading>

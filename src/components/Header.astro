@@ -7,13 +7,14 @@ import Text from "./Text.astro";
 ---
 
 <header x-data="{ showmenu: false }" class="">
-  <div id="navbar" class="p-10 flex flex-row justify-between items-center bg-black">
-    <!-- BURGER MENY KNAPP-->
-    <button id="burgermenu" class="pr-30" x-on:click="showmenu = !showmenu">
+  <div id="navbar" class="p-margin-mobile flex flex-row justify-between items-center bg-black">
+    <!-- BURGER MENY KNAPP -->
+    <button id="burgermenu" class="pr-30" x-on:click="showmenu = !showmenu" aria-label="Åbn menu">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-15">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
       </svg>
     </button>
+
     <!-- LOGO -->
     <div id="logo" class="lg:w-35 lg:h-35 w-20 h-20">
       <a href="/">
@@ -21,6 +22,7 @@ import Text from "./Text.astro";
       </a>
     </div>
 
+    <!-- DESKTOP CTA -->
     <div class="hidden lg:block">
       <a href="/ambassador">
         <Button variant="tertiary" size="large">Bliv ambassadør</Button>
@@ -28,23 +30,42 @@ import Text from "./Text.astro";
     </div>
   </div>
 
-  <!-- Samma menu för ALLA skärmstorlekar -->
-  <nav id="mobilmenu" class="bg-hero-primary flex flex-col content-left px-10 pb-25 font-quote lg:text-4xl text-3xl" x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+  <!-- MOBILMENU (alla skärmstorlekar) -->
+  <nav
+    id="mobilmenu"
+    class="bg-hero-primary flex flex-col content-left px-margin-mobile pb-section-mobile font-quote lg:text-4xl text-3xl overflow-hidden"
+    x-show="showmenu"
+    x-cloak
+    x-transition:enter="transition ease-out duration-300"
+    x-transition:enter-start="opacity-0 -translate-y-4"
+    x-transition:enter-end="opacity-100 translate-y-0"
+    x-transition:leave="transition ease-in duration-200"
+    x-transition:leave-start="opacity-100 translate-y-0"
+    x-transition:leave-end="opacity-0 -translate-y-4"
+    x-on:click="showmenu = false"
+    x-on:click.outside="showmenu = false"
+  >
     <ul class="text-text-secondary">
-      <li class="py-3 hover:text-text-quaternary italic font-black">
-        <a href="/ambassador/" class={currentPath === "" ? " font-black" : ""}>BLIV AMBASSADØR</a>
+      <li class="py-p-mobile hover:text-text-quaternary italic font-black">
+        <a href="/ambassador/">BLIV AMBASSADØR</a>
       </li>
-      <li class="py-3 hover:text-text-quaternary italic font-black">
-        <a href="/" class={currentPath === "" ? " font-black" : ""}>EVENTS</a>
+
+      <li class="py-p-mobile hover:text-text-quaternary italic font-black">
+        <a href="/">EVENTS</a>
       </li>
-      <li class="py-3 hover:text-text-quaternary italic font-black">
-        <a href="/" class={currentPath === "" ? " font-black" : ""}>VÆRKTØJER</a>
+
+      <li class="py-p-mobile hover:text-text-quaternary italic font-black">
+        <a href="/">VÆRKTØJER</a>
       </li>
-      <li class="py-3 hover:text-text-quaternary italic font-black">
-        <a href="/ligestilling/" class={currentPath === "" ? " font-black" : ""}>VIDEN OM LIGESTILLING</a>
+
+      <li class="py-p-mobile hover:text-text-quaternary italic font-black">
+        <a href="/ligestilling/">VIDEN OM LIGESTILLING</a>
       </li>
-      <li class="pt-12 hover:text-text-tertiary font-heading">
-        <a href="/komponentbibliotek/" class={currentPath === "" ? " font-bold" : ""}>Dansk <br />Kvindesamfund</a>
+
+      <li class="pt-12 hover:text-text-tertiary font-heading font-bold">
+        <a href="/komponentbibliotek/">
+          Dansk <br />Kvindesamfund
+        </a>
       </li>
     </ul>
   </nav>
