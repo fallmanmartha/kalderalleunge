@@ -70,6 +70,8 @@
   --text-mobile-h2: 38px;
   --text-mobile-h3: 24px;
   --text-mobile-h4: 20px;
+  --text-mobile-h5: 18px;
+
   --text-mobile-p: 16px;
   --text-mobile-quote: 65px;
 
@@ -77,6 +79,7 @@
   --text-desktop-h2: 80px;
   --text-desktop-h3: 36px;
   --text-desktop-h4: 24px;
+  --text-mobile-h5: 20px;
   --text-desktop-p: 18px;
   --text-desktop-quote: 160px;
 
@@ -163,7 +166,8 @@
   --spacing-grid-gap-mobile: 48px;
   --spacing-grid-gap-desktop: 54px;
 
-  --spacing-card: 20px 20px;
+  --spacing-card: 48px 48px;
+  --spacing-card-image-offset: 40px;
 }
 
 @layer base {

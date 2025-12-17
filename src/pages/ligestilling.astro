@@ -9,6 +9,7 @@ import Form from "../components/Form.astro";
 
 <MainLayout title="Kalder alle unge">
   <main>
+    <!-- SEKTION HERO SECKTION -->
     <section>
       <Herosecondary
         herotitle="VIDEN OM LIGESTILLING"
@@ -16,10 +17,16 @@ import Form from "../components/Form.astro";
         herotext_2="KALDER ALLE UNGEs videnspakker er baseret på viden frem for holdninger, og giver dig pålidelig og faktabaseret indsigt. Emnerne er udvalgt på baggrund af over 800 unges interesser indenfor ligestilling."
       />
     </section>
+    <!-- SLUT PÅ HERO SEKTION -->
+
+    <!-- CARDS SEKTION -->
     <section class="lg:mx-margin-desktop mx-margin-mobile lg:mt-section-desktop mt-section-mobile">
+      <!-- Overskrift -->
       <div class="lg:mb-h2-image-desktop mb-h2-image-mobile">
         <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> BLIV KLOGERE PÅ... </Heading>
       </div>
+
+      <!-- Cards -->
       <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-grid-gap-desktop gap-grid-gap-mobile">
         <div>
           <Ligestillningcard cardtitle="FEMINISME" cardimage="/card1.webp" cardimagealt="Hands on table" url="/feminisme" cardtext="Lighed mellem kønnene" />
@@ -52,9 +59,12 @@ import Form from "../components/Form.astro";
         </div>
       </section>
     </section>
+    <!-- SLUT PÅ CARDS SEKTION -->
 
+    <!-- SEKTION INSTAGRAM -->
     <section>
       <Instagram />
     </section>
+    <!-- SLUT PÅ SEKTION INSTAGRAM -->
   </main>
 </MainLayout>
