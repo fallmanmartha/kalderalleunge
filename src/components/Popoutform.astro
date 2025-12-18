@@ -8,7 +8,7 @@ import Heading from "../components/Heading.astro";
   <button
     type="button"
     class="fixed top-55 right-0 z-50 bg-button-tertiary-default text-text-button-primary px-6 py-3 uppercase rounded-tr-2xl rounded-br-2xl
-           [writing-mode:vertical-rl] rotate-180"
+           [writing-mode:vertical-rl] rotate-180 transition-transform duration-200 hover:scale-110 cursor-pointer"
     x-on:click="open = true; step = 1; showThanks = false"
   >
     Tilmeld dig
@@ -18,7 +18,7 @@ import Heading from "../components/Heading.astro";
   <button
     type="button"
     class="fixed top-55 right-130 z-60 bg-button-tertiary-default text-text-button-primary px-6 py-3 uppercase rounded-tr-2xl rounded-br-2xl
-           [writing-mode:vertical-rl] rotate-180"
+           [writing-mode:vertical-rl] rotate-180 transition-transform duration-200 hover:scale-110 cursor-pointer"
     x-show="open"
     x-cloak
     x-on:click="open = false; showThanks = false; step = 1"
@@ -145,13 +145,13 @@ import Heading from "../components/Heading.astro";
                   </div>
 
                   <div class="flex gap-grid-gap-small">
-                    <button type="button" x-show="step > 1" x-on:click="step--" class="px-6 py-3 rounded-full border-2 border-text-primary text-text-primary hover:rounded-none transition-all ease-in-out"> Tilbage </button>
+                    <button type="button" x-show="step > 1" x-on:click="step--" class="px-6 py-3 rounded-full border-2 border-text-primary text-text-primary hover:rounded-none transition-all ease-in-out cursor-pointer"> Tilbage </button>
 
                     <button
                       type="button"
                       x-show="step < 3"
                       x-on:click="step++"
-                      class="px-6 py-3 rounded-full bg-button-primary-default active:bg-button-primary-active hover:bg-button-primary-hover text-text-button-primary hover:rounded-none transition-all ease-in-out"
+                      class="px-6 py-3 rounded-full bg-button-primary-default active:bg-button-primary-active hover:bg-button-primary-hover text-text-button-primary hover:rounded-none transition-all ease-in-out cursor-pointer"
                     >
                       Næste
                     </button>
@@ -159,7 +159,7 @@ import Heading from "../components/Heading.astro";
                     <button
                       type="submit"
                       x-show="step === 3"
-                      class="px-6 py-3 rounded-full bg-button-primary-default active:bg-button-primary-active hover:bg-button-primary-hover text-text-button-primary hover:rounded-none transition-all ease-in-out"
+                      class="px-6 py-3 rounded-full bg-button-primary-default active:bg-button-primary-active hover:bg-button-primary-hover text-text-button-primary hover:rounded-none transition-all ease-in-out cursor-pointer"
                     >
                       Send
                     </button>
@@ -185,7 +185,7 @@ import Heading from "../components/Heading.astro";
       <p class="mb-6">Vi kontakter dig snart på den email, du har angivet.</p>
 
       <button
-        class="px-8 py-3 rounded-full bg-button-primary-default active:bg-button-primary-active hover:bg-button-primary-hover text-text-button-primary hover:rounded-none transition-all ease-in-out"
+        class="px-8 py-3 rounded-full bg-button-primary-default active:bg-button-primary-active hover:bg-button-primary-hover text-text-button-primary hover:rounded-none transition-all ease-in-out cursor-pointer"
         x-on:click="showThanks = false; open = false; step = 1"
       >
         Luk
