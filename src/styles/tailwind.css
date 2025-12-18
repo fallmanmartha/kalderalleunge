@@ -82,7 +82,7 @@
   --text-desktop-h5: 20px;
   --text-desktop-p: 18px;
   --text-desktop-quote: 160px;
-  --text-desktop-hero: 250px;
+  --text-desktop-hero: 350px;
 
   /* CTA */
   --text-cta-large: 20px;
@@ -200,5 +200,63 @@
     100% {
       transform: scale(1);
     }
+  }
+}
+
+@layer utilities {
+  /* TEKST: slide fra høyre */
+  @keyframes slide-in-text {
+    0% {
+      transform: translate(100%, -35%);
+    }
+    100% {
+      transform: translate(-45%, -35%);
+    }
+  }
+
+  .animate-slide-in-text {
+    animation: slide-in-text 5000ms ease-out forwards;
+  }
+
+  /* BILDER: pop inn */
+  @keyframes pop-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .animate-pop-1 {
+    animation: pop-in 800ms ease-out forwards;
+    animation-delay: 5200ms;
+  }
+
+  .animate-pop-2 {
+    animation: pop-in 800ms ease-out forwards;
+    animation-delay: 5600ms;
+  }
+
+  .animate-pop-3 {
+    animation: pop-in 800ms ease-out forwards;
+    animation-delay: 6000ms;
+  }
+
+  /* TEKST: fade inn */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1000ms ease-out forwards;
+    animation-delay: 6800ms;
   }
 }

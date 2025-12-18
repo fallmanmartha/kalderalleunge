@@ -11,240 +11,425 @@ import Popoutform from "../components/Popoutform.astro";
 ---
 
 <MainLayout title="Kalder alle unge">
-  <main class="mt-10">
-    <!-- hero seksjon -->
-    <section class="relative h-screen w-full bg-black">
-      <div class="whitespace-nowrap
-      text-[20vw]
+  <main class="mb-10">
+    <!-- hero seksjon desktop -->
+    <section
+      class="relative h-[700px] bg-black overflow-hidden hidden md:block"
+    >
+      <!-- herotext -->
+      <div
+        class="absolute top-1/2 left-0 -translate-y-1/2
+      whitespace-nowrap
+      text-[20rem]
       text-lime-300
-      -translate-x-[30vw]
-      absolute inset-0 overflow-hidden flex items-center">
-        <Quote htmlheading="h1" size="hero" font="quote" color="quarternary" weight="regular">KALDER ALLE UNGE</Quote>
+      animate-slide-in-text"
+      >
+        <Quote
+          htmlheading="h1"
+          size="hero"
+          font="quote"
+          color="quarternary"
+          weight="regular">KALDER ALLE UNGE</Quote
+        >
       </div>
-      {/* Bilder over teksten */}
-      <div class="relative z-10 w-full h-full pointer-events-none">
-        {/* Venstre bilde */}
-        <img src="/hero1.webp" alt="" class="absolute
-        left-24
-        top-1/2
-        w-64
-        -translate-y-1/2" />
-
-        {/* Midt bilde */}
-        <img src="/hero2.webp" alt="" class="absolute
-        left-1/2
-        top-1/2
-        w-[28rem]
-        -translate-x-1/2
-        -translate-y-1/2" />
-
-        {/* Høyre bilde */}
-        <img src="/hero3.webp" alt="" class="absolute
-        right-24
-        top-1/2
-        w-64
-        -translate-y-1/2" />
-      </div>
-    </section>
-
-    <!-- INTRO SEKTION -->
-    <section class="lg:mx-margin-desktop mx-margin-mobile">
-      <!-- Overskrift -->
-      <div class="flex flex-col md:flex-row md:justify-between md:items-end lg:mb-h2-desktop mb-h2-mobile">
-        <div class="intersect:animate-flip-down animate-once">
-          <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> VI KALDER ALLE UNGE! </Heading>
-        </div>
-
-        <img src="/megafon.svg" alt="" class="w-40 md:w-50 shrink-0 self-end md:self-auto hover:animate-jump intersect:animate-twice" />
-      </div>
-
-      <!-- Text -->
-      <div class="flex flex-col lg:gap-grid-gap-desktop gap-grid-gap-mobile md:grid md:grid-cols-2 intersect:animate-fade-up animate-once">
-        <!-- Venstre kolonne -->
-        <div>
-          <div class="lg:mb-h3-desktop mb-h3-mobile">
-            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Giv unge en stærkere stemme </Heading>
-          </div>
-          <div class="lg:mb-p-desktop mb-p-mobile">
-            <Text teksttype="brødttekst">KALDER ALLE UNGE giver unge en større stemme i ligestillingsdebatten. Vi hjælper dem med at deltage i debatter, skrive indlæg, holde taler og håndtere samtaler om ligestilling i hverdagen.</Text>
-          </div>
-          <div>
-            <Text teksttype="brødttekst">Derudover udvikler vi samtaleværktøjer, videnspakker og et netværk af ligestillingsambassadører, der kan udfolde deres aktivisme på deres egen måde.</Text>
-          </div>
-        </div>
-
-        <!-- Højre kolonne -->
-        <div>
-          <div class="lg:mb-h3-desktop mb-h3-mobile">
-            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium">Et fællesskab for ligestilling</Heading>
-          </div>
-          <div class="lg:mb-p-desktop mb-p-mobile">
-            <Text teksttype="brødttekst">Hos KALDER ALLE UNGE arbejder vi for en bred forståelse af ligestilling, hvor alle har samme muligheder uanset køn, seksualitet, etnicitet, religion, alder eller handicap.</Text>
-          </div>
-
-          <div>
-            <Text teksttype="brødttekst">Her får unge støtte, netværk og inspiration til at kæmpe imod ulighed og skabe forandring i deres egen hverdag.</Text>
-          </div>
-        </div>
+      <!-- Bilde 1 -->
+      <img
+        src="/hero1.webp"
+        class="absolute top-12 left-35 w-64 aspect-[269/313] object-cover opacity-0 animate-pop-1"
+      />
+      <!-- Bilde 2 -->
+      <img
+        src="/hero2.webp"
+        class="absolute top-85 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 aspect-[425/349] object-cover opacity-0 animate-pop-2"
+      />
+      <!-- Bilde 3 -->
+      <img
+        src="/hero3.webp"
+        class="absolute top-25 right-32 w-64 aspect-[252/321] object-cover opacity-0 animate-pop-3"
+      />
+      <!-- tekst boks -->
+      <div
+        class="absolute bottom-16 right-20 max-w-sm opacity-0 animate-fade-in"
+      >
+        <Text teksttype="brødttekst" color="secondary"
+          ><strong>KALDER ALLE UNGE</strong> er dansk Kvindesamfunds ungeprojekt,
+          der giver unge en større stemme i ligestillingsdebatten. Vi har brug for
+          din stemme!</Text
+        >
       </div>
     </section>
-    <!--SLUT PÅ INTRO SEKTION -->
 
-    <!--QUOTE SEKTION -->
-    <!-- overskrift  -->
-    <section class="lg:mt-section-desktop mt-section-mobile lg:mx-margin-desktop mx-margin-mobile uppercase">
-      <div class="relative z-10 intersect:animate-fade-right intersect:duration-[8000ms]">
-        <Quote>Unge viser vejen til ligestilling.</Quote>
+    <!-- hero seksjon mobil -->
+    <section class="bg-black block md:hidde px-10">
+      <div class="relative z-0">
+        <div class="animate-fade-right">
+          <Quote
+            htmlheading="h1"
+            size="hero"
+            font="quote"
+            color="quarternary"
+            weight="regular">KALDER</Quote
+          >
+        </div>
+        <div class="text-right animate-fade-left">
+          <Quote
+            htmlheading="h1"
+            size="hero"
+            font="quote"
+            color="quarternary"
+            weight="regular">ALLE</Quote
+          >
+        </div>
+        <div class="animate-fade-right">
+          <Quote
+            htmlheading="h1"
+            size="hero"
+            font="quote"
+            color="quarternary"
+            weight="regular">UNGE</Quote
+          >
+        </div>
       </div>
-      <!-- billede  -->
-      <div class="flex justify-end lg:-mt-20 -mt-7 relative z-0 intersect:animate-fade-left intersect:duration-[8000ms]">
-        <img src="signs.webp" alt="" class="w-150" />
+      <div class="px-10 flex justify-end lg:-mt-12 -mt-7 relative z-10">
+        <img src="/hero2.webp" alt="" />
+      </div>
+      <div class="px-10 py-15">
+        <Text teksttype="brødttekst" color="secondary"
+          ><strong>KALDER ALLE UNGE</strong> er dansk Kvindesamfunds ungeprojekt,
+          der giver unge en større stemme i ligestillingsdebatten. Vi har brug for
+          din stemme!</Text
+        >
       </div>
     </section>
-    <!--SLUT PÅ QUOTE SEKTION -->
+  </main>
 
-    <!--INFO CARDS SEKTION -->
-    <section class="lg:mt-section-desktop mt-section-mobile lg:mx-margin-desktop mx-margin-mobile">
-      <!-- overskrift  -->
-      <div class="lg:mb-h2-desktop mb-h2-mobile intersect:animate-flip-down animate-once">
-        <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> UDFORSK OG ENGAGER DIG</Heading>
+  <!-- INTRO SEKTION -->
+  <section class="lg:mx-margin-desktop mx-margin-mobile">
+    <!-- Overskrift -->
+    <div
+      class="flex flex-col md:flex-row md:justify-between md:items-end lg:mb-h2-desktop mb-h2-mobile"
+    >
+      <div class="intersect:animate-flip-down animate-once">
+        <Heading
+          htmlheading="h2"
+          size="large"
+          font="heading"
+          color="primary"
+          weight="bold"
+        >
+          VI KALDER ALLE UNGE!
+        </Heading>
       </div>
 
-      <!-- info cards -->
-      <div class="grid lg:grid-cols-2 lg:gap-grid-gap-desktop gap-grid-gap-mobile">
-        <!-- events card -->
-        <div>
-          <Infocard
-            cardtitle="Events"
-            cardimage="/party.webp"
-            cardimagealt="Hands on table"
-            url="/"
-            subtitle=""
-            cardtext_1="KALDER ALLE UNGE afholder events rundt om i landet, der giver unge ny viden og inspiration til at tage del i ligestillingsdebatten. "
-          />
-        </div>
+      <img
+        src="/megafon.svg"
+        alt=""
+        class="w-40 md:w-50 shrink-0 self-end md:self-auto hover:animate-jump intersect:animate-twice"
+      />
+    </div>
 
-        <!-- værktøjer card -->
-        <div class="lg:mt-40">
-          <Infocard
-            cardtitle="Værktøjer"
-            cardimage="/hands.png"
-            cardimagealt="Hands on table"
-            url="/"
-            cardtext_1="Her er en række samtaleværktøjer, du kan bruge til starte samtaler om ligestilling med venner og familie eller større grupper. Der er også individuelle refleksionsøvelser, og øvelser, hvor man i fællesskab kan skabe løsninger på konkrete ligestillingsproblemer."
-          />
-        </div>
-      </div>
-
-      <div class="grid lg:grid-cols-2 lg:gap-grid-gap-desktop gap-grid-gap-mobile lg:-mt-25 mt-15">
-        <!-- ambassadør card -->
-        <div class="">
-          <Infocard
-            cardtitle="Bliv ambassadør"
-            cardimage="/hug.webp"
-            cardimagealt="Hands on table"
-            url="/ambassador"
-            cardtext_1="KALDER ALLE UNGE etablerer et ambassadørnetværk, hvor unge kan udfolde deres aktivistiske evner og sætte deres præg på debatten."
-          />
-        </div>
-
-        <!-- viden om ligestilling card -->
-        <div class="lg:mt-40">
-          <Infocard
-            cardtitle="Viden om ligestilling"
-            cardimage="/signs.webp"
-            cardimagealt="Hands on table"
-            url="/ligestilling"
-            cardtext_1="KALDER ALLE UNGE udvikler værktøjer og videnspakker, der åbner op for dialogen om ligestillingsemner og styrker unges engagement."
-          />
-        </div>
-      </div>
-    </section>
-    <!-- SLUT PÅ INFO CARDS SEKTION -->
-
-    <!-- INFOGRAFIK SEKTION -->
-    <section class="bg-body-secondary lg:mt-section-desktop mt-section-mobile lg:px-margin-desktop px-margin-mobile py-section-padding">
-      <!-- Infografik overskrifter-->
-      <div class="bg-body-secondary pb-h2-mobile">
-        <div class="uppercase intersect:animate-flip-down animate-once">
-          <Heading htmlheading="span" size="large" font="heading" color="primary" weight="bold">
-            <span class="font-quote font-black italic">1</span> ud af <span class="font-quote font-black italic">4</span> unge i Europa mener ligestilling er en vigtig værdi
+    <!-- Text -->
+    <div
+      class="flex flex-col lg:gap-grid-gap-desktop gap-grid-gap-mobile md:grid md:grid-cols-2 intersect:animate-fade-up animate-once"
+    >
+      <!-- Venstre kolonne -->
+      <div>
+        <div class="lg:mb-h3-desktop mb-h3-mobile">
+          <Heading
+            htmlheading="h3"
+            size="medium"
+            font="heading"
+            color="primary"
+            weight="medium"
+            >Giv unge en stærkere stemme
           </Heading>
         </div>
-      </div>
-      <div class="lg:mb-30 intersect:animate-fade-up animate-once">
-        <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold">Er du med til at løfte antallet?</Heading>
-      </div>
-
-      <!-- Infografik illustration-->
-      <div class="lg:grid lg:grid-cols-12 gap-grid-gap-desktop mx-auto">
-        <img src="infografik.svg" alt="" class="col-span-9 mt-8 w-80 lg:w-180 lg:mt-0 intersect:animate-fade-up animate-once" />
-        <img src="signgrafik.svg" alt="" class="col-span-3 lg:block hidden hover:animate-jump intersect:animate-twice" />
-      </div>
-    </section>
-    <!-- SLUT PÅ INFOGRAFIK SEKTION -->
-
-    <!-- BILLEDE + BUBBLE SEKTION -->
-    <section>
-      <div class="relative w-full">
-        <!-- bakgrundsbild -->
-        <img src="/hug.webp" alt="people hugging" class="lg:w-full lg:h-auto object-cover h-130" />
-
-        <!-- BUBBLE -->
-        <div class="absolute left-12 top-16 lg:left-32 lg:top-28 z-20 lg:max-w-lg max-w-sm intersect:animate-shake">
-          <Bubble><Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="bold">ER I KLAR TIL AT FORME FREMTIDEN SAMMEN?</Heading></Bubble>
+        <div class="lg:mb-p-desktop mb-p-mobile">
+          <Text teksttype="brødttekst"
+            >KALDER ALLE UNGE giver unge en større stemme i
+            ligestillingsdebatten. Vi hjælper dem med at deltage i debatter,
+            skrive indlæg, holde taler og håndtere samtaler om ligestilling i
+            hverdagen.</Text
+          >
+        </div>
+        <div>
+          <Text teksttype="brødttekst"
+            >Derudover udvikler vi samtaleværktøjer, videnspakker og et netværk
+            af ligestillingsambassadører, der kan udfolde deres aktivisme på
+            deres egen måde.</Text
+          >
         </div>
       </div>
 
-      <!-- nedre billede  -->
-      <div class="ml-auto w-fit -mt-50 relative z-30 lg:px-32 px-12 intersect:animate-fade-up animate-once">
-        <img src="/sittinggroup.webp" alt="group sitting on sofa" />
-      </div>
-    </section>
-    <!--SLUT PÅ BILLEDE + BUBBLE SEKTION -->
+      <!-- Højre kolonne -->
+      <div>
+        <div class="lg:mb-h3-desktop mb-h3-mobile">
+          <Heading
+            htmlheading="h3"
+            size="medium"
+            font="heading"
+            color="primary"
+            weight="medium">Et fællesskab for ligestilling</Heading
+          >
+        </div>
+        <div class="lg:mb-p-desktop mb-p-mobile">
+          <Text teksttype="brødttekst"
+            >Hos KALDER ALLE UNGE arbejder vi for en bred forståelse af
+            ligestilling, hvor alle har samme muligheder uanset køn,
+            seksualitet, etnicitet, religion, alder eller handicap.</Text
+          >
+        </div>
 
-    <!-- GØR EN FORSKEL SEKTION -->
-    <section class="lg:mt-section-desktop mt-section-mobile lg:mx-margin-desktop mx-margin-mobile">
-      <!-- quote -->
-      <div class="uppercase mb-h2-desktop intersect:animate-fade-right intersect:duration-[8000ms]">
-        <Quote>Gør en forskel</Quote>
-      </div>
-      <div class="flex lg:flex-row flex-col ml-auto gap-grid-gap-desktop max-w-4xl">
-        <!-- & ikon -->
-        <img src="and.svg" alt="&" class="w-80 intersect:animate-jump animate-once" />
-        <div class="intersect:animate-fade-left intersect:duration-[8000ms]">
-          <!-- overskrift -->
-          <div class="mb-h3-desktop">
-            <Heading htmlheading="h3" size="medium" font="heading" color="primary" weight="medium"> Bliv ambassadør</Heading>
-          </div>
-
-          <!-- tekst -->
-          <div class="lg:mb-p-desktop mb-p-desktop">
-            <Text
-              >Som ambassadør bliver du en del af et engageret fællesskab af unge, der arbejder for ligestilling, trygge fællesskaber og stærke ungestemmer. Du får mulighed for at udvikle dine kompetencer og inspirere andre til at tage del i
-              fællesskabet.
-            </Text>
-          </div>
-          <div class="lg:mb-p-desktop mb-p-mobile">
-            <Text>Som ambassadør står du ikke alene - du bliver en del af et netværk, der støtter hinanden og arbejder sammen om at skabe plads til flere.</Text>
-          </div>
-          <!-- knap -->
-          <a href="/ambassador">
-            <Button>Læs mere</Button>
-          </a>
+        <div>
+          <Text teksttype="brødttekst"
+            >Her får unge støtte, netværk og inspiration til at kæmpe imod
+            ulighed og skabe forandring i deres egen hverdag.</Text
+          >
         </div>
       </div>
-    </section>
-    <!--SLUT PÅ GØR EN FORSKEL SEKTION -->
+    </div>
+  </section>
+  <!--SLUT PÅ INTRO SEKTION -->
 
-    <!-- POP UP FORM -->
-    <section><Popoutform /></section>
-    <!-- SLUT PÅ POP UP FORM -->
+  <!--QUOTE SEKTION -->
+  <!-- overskrift  -->
+  <section
+    class="lg:mt-section-desktop mt-section-mobile lg:mx-margin-desktop mx-margin-mobile uppercase"
+  >
+    <div
+      class="relative z-10 intersect:animate-fade-right intersect:duration-[8000ms]"
+    >
+      <Quote>Unge viser vejen til ligestilling.</Quote>
+    </div>
+    <!-- billede  -->
+    <div
+      class="flex justify-end lg:-mt-20 -mt-7 relative z-0 intersect:animate-fade-left intersect:duration-[8000ms]"
+    >
+      <img src="signs.webp" alt="" class="w-150" />
+    </div>
+  </section>
+  <!--SLUT PÅ QUOTE SEKTION -->
 
-    <!-- SEKTION INSTAGRAM -->
-    <section>
-      <Instagram />
-    </section>
-    <!-- SLUT PÅ SEKTION INSTAGRAM -->
-  </main>
+  <!--INFO CARDS SEKTION -->
+  <section
+    class="lg:mt-section-desktop mt-section-mobile lg:mx-margin-desktop mx-margin-mobile"
+  >
+    <!-- overskrift  -->
+    <div
+      class="lg:mb-h2-desktop mb-h2-mobile intersect:animate-flip-down animate-once"
+    >
+      <Heading
+        htmlheading="h2"
+        size="large"
+        font="heading"
+        color="primary"
+        weight="bold"
+      >
+        UDFORSK OG ENGAGER DIG</Heading
+      >
+    </div>
+
+    <!-- info cards -->
+    <div
+      class="grid lg:grid-cols-2 lg:gap-grid-gap-desktop gap-grid-gap-mobile"
+    >
+      <!-- events card -->
+      <div>
+        <Infocard
+          cardtitle="Events"
+          cardimage="/party.webp"
+          cardimagealt="Hands on table"
+          url="/"
+          subtitle=""
+          cardtext_1="KALDER ALLE UNGE afholder events rundt om i landet, der giver unge ny viden og inspiration til at tage del i ligestillingsdebatten. "
+        />
+      </div>
+
+      <!-- værktøjer card -->
+      <div class="lg:mt-40">
+        <Infocard
+          cardtitle="Værktøjer"
+          cardimage="/hands.png"
+          cardimagealt="Hands on table"
+          url="/"
+          cardtext_1="Her er en række samtaleværktøjer, du kan bruge til starte samtaler om ligestilling med venner og familie eller større grupper. Der er også individuelle refleksionsøvelser, og øvelser, hvor man i fællesskab kan skabe løsninger på konkrete ligestillingsproblemer."
+        />
+      </div>
+    </div>
+
+    <div
+      class="grid lg:grid-cols-2 lg:gap-grid-gap-desktop gap-grid-gap-mobile lg:-mt-25 mt-15"
+    >
+      <!-- ambassadør card -->
+      <div class="">
+        <Infocard
+          cardtitle="Bliv ambassadør"
+          cardimage="/hug.webp"
+          cardimagealt="Hands on table"
+          url="/ambassador"
+          cardtext_1="KALDER ALLE UNGE etablerer et ambassadørnetværk, hvor unge kan udfolde deres aktivistiske evner og sætte deres præg på debatten."
+        />
+      </div>
+
+      <!-- viden om ligestilling card -->
+      <div class="lg:mt-40">
+        <Infocard
+          cardtitle="Viden om ligestilling"
+          cardimage="/signs.webp"
+          cardimagealt="Hands on table"
+          url="/ligestilling"
+          cardtext_1="KALDER ALLE UNGE udvikler værktøjer og videnspakker, der åbner op for dialogen om ligestillingsemner og styrker unges engagement."
+        />
+      </div>
+    </div>
+  </section>
+  <!-- SLUT PÅ INFO CARDS SEKTION -->
+
+  <!-- INFOGRAFIK SEKTION -->
+  <section
+    class="bg-body-secondary lg:mt-section-desktop mt-section-mobile lg:px-margin-desktop px-margin-mobile py-section-padding"
+  >
+    <!-- Infografik overskrifter-->
+    <div class="bg-body-secondary pb-h2-mobile">
+      <div class="uppercase intersect:animate-flip-down animate-once">
+        <Heading
+          htmlheading="span"
+          size="large"
+          font="heading"
+          color="primary"
+          weight="bold"
+        >
+          <span class="font-quote font-black italic">1</span> ud af <span
+            class="font-quote font-black italic">4</span
+          > unge i Europa mener ligestilling er en vigtig værdi
+        </Heading>
+      </div>
+    </div>
+    <div class="lg:mb-30 intersect:animate-fade-up animate-once">
+      <Heading
+        htmlheading="h3"
+        size="medium"
+        font="heading"
+        color="primary"
+        weight="bold">Er du med til at løfte antallet?</Heading
+      >
+    </div>
+
+    <!-- Infografik illustration-->
+    <div class="lg:grid lg:grid-cols-12 gap-grid-gap-desktop mx-auto">
+      <img
+        src="infografik.svg"
+        alt=""
+        class="col-span-9 mt-8 w-80 lg:w-180 lg:mt-0 intersect:animate-fade-up animate-once"
+      />
+      <img
+        src="signgrafik.svg"
+        alt=""
+        class="col-span-3 lg:block hidden hover:animate-jump intersect:animate-twice"
+      />
+    </div>
+  </section>
+  <!-- SLUT PÅ INFOGRAFIK SEKTION -->
+
+  <!-- BILLEDE + BUBBLE SEKTION -->
+  <section>
+    <div class="relative w-full">
+      <!-- bakgrundsbild -->
+      <img
+        src="/hug.webp"
+        alt="people hugging"
+        class="lg:w-full lg:h-auto object-cover h-130"
+      />
+
+      <!-- BUBBLE -->
+      <div
+        class="absolute left-12 top-16 lg:left-32 lg:top-28 z-20 lg:max-w-lg max-w-sm intersect:animate-shake"
+      >
+        <Bubble
+          ><Heading
+            htmlheading="h3"
+            size="medium"
+            font="heading"
+            color="primary"
+            weight="bold">ER I KLAR TIL AT FORME FREMTIDEN SAMMEN?</Heading
+          ></Bubble
+        >
+      </div>
+    </div>
+
+    <!-- nedre billede  -->
+    <div
+      class="ml-auto w-fit -mt-50 relative z-30 lg:px-32 px-12 intersect:animate-fade-up animate-once"
+    >
+      <img src="/sittinggroup.webp" alt="group sitting on sofa" />
+    </div>
+  </section>
+  <!--SLUT PÅ BILLEDE + BUBBLE SEKTION -->
+
+  <!-- GØR EN FORSKEL SEKTION -->
+  <section
+    class="lg:mt-section-desktop mt-section-mobile lg:mx-margin-desktop mx-margin-mobile"
+  >
+    <!-- quote -->
+    <div
+      class="uppercase mb-h2-desktop intersect:animate-fade-right intersect:duration-[8000ms]"
+    >
+      <Quote>Gør en forskel</Quote>
+    </div>
+    <div
+      class="flex lg:flex-row flex-col ml-auto gap-grid-gap-desktop max-w-4xl"
+    >
+      <!-- & ikon -->
+      <img
+        src="and.svg"
+        alt="&"
+        class="w-80 intersect:animate-jump animate-once"
+      />
+      <div class="intersect:animate-fade-left intersect:duration-[8000ms]">
+        <!-- overskrift -->
+        <div class="mb-h3-desktop">
+          <Heading
+            htmlheading="h3"
+            size="medium"
+            font="heading"
+            color="primary"
+            weight="medium"
+          >
+            Bliv ambassadør</Heading
+          >
+        </div>
+
+        <!-- tekst -->
+        <div class="lg:mb-p-desktop mb-p-desktop">
+          <Text
+            >Som ambassadør bliver du en del af et engageret fællesskab af unge,
+            der arbejder for ligestilling, trygge fællesskaber og stærke
+            ungestemmer. Du får mulighed for at udvikle dine kompetencer og
+            inspirere andre til at tage del i fællesskabet.
+          </Text>
+        </div>
+        <div class="lg:mb-p-desktop mb-p-mobile">
+          <Text
+            >Som ambassadør står du ikke alene - du bliver en del af et netværk,
+            der støtter hinanden og arbejder sammen om at skabe plads til flere.</Text
+          >
+        </div>
+        <!-- knap -->
+        <a href="/ambassador">
+          <Button>Læs mere</Button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!--SLUT PÅ GØR EN FORSKEL SEKTION -->
+
+  <!-- POP UP FORM -->
+  <section><Popoutform /></section>
+  <!-- SLUT PÅ POP UP FORM -->
+
+  <!-- SEKTION INSTAGRAM -->
+  <section>
+    <Instagram />
+  </section>
+  <!-- SLUT PÅ SEKTION INSTAGRAM -->
 </MainLayout>
