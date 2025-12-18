@@ -1,22 +1,29 @@
 ---
 const pathname = new URL(Astro.request.url).pathname;
-const currentPath = pathname.slice(1); // remove the first "/"
+const currentPath = pathname.slice(1);
 import Button from "./Button.astro";
 ---
 
 <header x-data="{ showmenu: false }" class="fixed top-0 left-0 w-full z-50">
-  <div id="navbar" class="py-3 px-margin-mobile flex flex-row justify-between items-center bg-hero-primary">
-    <!-- BURGER MENY KNAPP -->
+  <!-- TOP BAR -->
+  <div id="navbar" class="py-3 px-margin-mobile flex justify-between items-center bg-hero-primary">
+    <!-- BURGER / KRYSS -->
     <button id="burgermenu" class="pr-30 animate-fade-down animate-once transform transition-transform duration-200 hover:scale-110 cursor-pointer" x-on:click="showmenu = !showmenu" aria-label="Åbn menu">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-15">
+      <!-- BURGER -->
+      <svg x-show="!showmenu" x-cloak xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-15">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+      </svg>
+
+      <!-- KRYSS -->
+      <svg x-show="showmenu" x-cloak xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-15">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
       </svg>
     </button>
 
     <!-- LOGO -->
     <div id="logo" class="lg:w-25 lg:h-25 w-15 h-15 animate-fade-down animate-once">
       <a href="/">
-        <img src="/logo.svg" alt="logo" class="hover:animate-jump hover:animate-once" />
+        <img src="/logo.svg" alt="Kalder Alle Unge logo" class="hover:animate-jump hover:animate-once" />
       </a>
     </div>
 
@@ -28,10 +35,10 @@ import Button from "./Button.astro";
     </div>
   </div>
 
-  <!-- MOBILMENU (alla skärmstorlekar) -->
+  <!-- MOBILMENU -->
   <nav
     id="mobilmenu"
-    class="bg-hero-primary flex flex-col content-left pt-10 px-margin-mobile pb-section-padding font-quote lg:text-4xl text-3xl overflow-hidden fixed w-full"
+    class="bg-hero-primary flex flex-col px-margin-mobile pt-10 pb-section-padding font-quote lg:text-4xl text-3xl fixed w-full overflow-hidden"
     x-show="showmenu"
     x-cloak
     x-transition:enter="transition ease-out duration-300"
@@ -65,7 +72,7 @@ import Button from "./Button.astro";
       </li>
 
       <li class="pt-h2-mobile lg:pt-h2-desktop hover:text-text-tertiary font-heading font-bold">
-        <a href="https://www.danskkvindesamfund.dk/">
+        <a href="https://www.danskkvindesamfund.dk/" target="_blank" rel="noopener noreferrer">
           Dansk <br />Kvindesamfund
         </a>
       </li>
