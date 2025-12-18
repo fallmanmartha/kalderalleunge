@@ -145,11 +145,24 @@ import Heading from "../components/Heading.astro";
                   </div>
 
                   <div class="flex gap-grid-gap-small">
-                    <button type="button" x-show="step > 1" x-on:click="step--" class="px-6 py-3 rounded-full border-2 border-text-primary text-text-primary"> Tilbage </button>
+                    <button type="button" x-show="step > 1" x-on:click="step--" class="px-6 py-3 rounded-full border-2 border-text-primary text-text-primary hover:rounded-none transition-all ease-in-out"> Tilbage </button>
 
-                    <button type="button" x-show="step < 3" x-on:click="step++" class="px-6 py-3 rounded-full bg-button-primary-default text-text-button-primary"> Næste </button>
+                    <button
+                      type="button"
+                      x-show="step < 3"
+                      x-on:click="step++"
+                      class="px-6 py-3 rounded-full bg-button-primary-default active:bg-button-primary-active hover:bg-button-primary-hover text-text-button-primary hover:rounded-none transition-all ease-in-out"
+                    >
+                      Næste
+                    </button>
 
-                    <button type="submit" x-show="step === 3" class="px-6 py-3 rounded-full bg-button-primary-default text-text-button-primary"> Send </button>
+                    <button
+                      type="submit"
+                      x-show="step === 3"
+                      class="px-6 py-3 rounded-full bg-button-primary-default active:bg-button-primary-active hover:bg-button-primary-hover text-text-button-primary hover:rounded-none transition-all ease-in-out"
+                    >
+                      Send
+                    </button>
                   </div>
                 </div>
               </form>
@@ -171,7 +184,12 @@ import Heading from "../components/Heading.astro";
       <h2 class="text-2xl font-semibold mb-4">Tak for din tilmelding!</h2>
       <p class="mb-6">Vi kontakter dig snart på den email, du har angivet.</p>
 
-      <button class="px-8 py-3 rounded-full bg-button-primary-default text-text-button-primary" x-on:click="showThanks = false; open = false; step = 1"> Luk </button>
+      <button
+        class="px-8 py-3 rounded-full bg-button-primary-default active:bg-button-primary-active hover:bg-button-primary-hover text-text-button-primary hover:rounded-none transition-all ease-in-out"
+        x-on:click="showThanks = false; open = false; step = 1"
+      >
+        Luk
+      </button>
     </div>
   </div>
 </div>

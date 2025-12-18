@@ -1,0 +1,51 @@
+---
+const { children, title = "Case låst bag login" } = Astro.props;
+import Heading from "./Heading.astro";
+---
+
+<section
+  x-data="{
+    unlocked: false,
+    password: '',
+    error: '',
+    init() {
+      if (localStorage.getItem('locked_case_access') === 'ok') {
+        this.unlocked = true;
+      }
+    },
+    tryUnlock() {
+      if (this.password === 'team05') {
+        this.unlocked = true;
+        this.error = '';
+        localStorage.setItem('locked_case_access', 'ok');
+      } else {
+        this.error = 'Forkert kode, prøv igen.';
+      }
+    }
+  }"
+  class="relative z-100"
+>
+  <!-- Overlay login gate -->
+  <div x-show="!unlocked" x-cloak class="fixed inset-0 z-50 flex items-center justify-center bg-cards-primary px-4">
+    <div class="bg-body-tertiary rounded-3xl p-8 max-w-md w-full text-main-text-primary shadow-2xl">
+      <p class="text-sm text-main-text-secondary mb-2 italic">Websitet gemmes bag et login (det er en “unsolicited redesign case”).</p>
+
+      <Heading htmlheading="h4" size="small" color="primary" class="mb-2"> Indtast adgangskode for at låse op </Heading>
+
+      <form @submit.prevent="tryUnlock" class="flex flex-col gap-3 mt-5">
+        <input type="password" x-model="password" placeholder="Adgangskode" class="w-full border border-button-quaternary-disabled/40 px-4 py-3 text-main-text-primary outline-none" />
+
+        <button type="submit" class="mt-1 inline-flex items-center justify-center rounded-full hover:rounded-none bg-button-primary-default px-4 py-3 text-main-text-secondary font-medium hover:scale-[1.02] transition"> Log ind </button>
+
+        <p x-show="error" x-text="error" class="text-sm text-yellow-400 mt-1"></p>
+      </form>
+
+      <p class="text-xs text-main-text-secondary mt-4">Dette projekt er et selvstændigt unsolicited redesign.</p>
+    </div>
+  </div>
+
+  <!-- Indholdet af casen -->
+  <div x-show="unlocked" x-cloak>
+    {children}
+  </div>
+</section>
