@@ -4,7 +4,7 @@ const currentPath = pathname.slice(1); // remove the first "/"
 import Button from "./Button.astro";
 ---
 
-<header x-data="{ showmenu: false }" class="">
+<header x-data="{ showmenu: false }" class="animate-fade-down animate-once">
   <div id="navbar" class="p-margin-mobile flex flex-row justify-between items-center bg-hero-primary">
     <!-- BURGER MENY KNAPP -->
     <button id="burgermenu" class="pr-30" x-on:click="showmenu = !showmenu" aria-label="Åbn menu">
