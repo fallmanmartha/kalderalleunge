@@ -7,19 +7,24 @@ import Text from "./Text.astro";
 <section class="bg-body-tertiary lg:mt-section-desktop mt-section-mobile overflow-hidden lg:-mb-25 -mb-5 relative z-0">
   <div class="lg:mx-margin-desktop mx-margin-mobile py-section-padding">
     <!-- Overskrifter -->
-    <div class="lg:mb-h2-desktop mb-h2-mobile uppercase">
+    <div class="lg:mb-h2-desktop mb-h2-mobile uppercase intersect:animate-flip-down animate-once">
       <Heading htmlheading="h2" size="large" font="heading" color="primary" weight="bold"> Følg os på Instagram </Heading>
     </div>
-    <Text teksttype="brødttekst" class="text-center"> Følg os @kalderalleunge, og vær med til at styrke unges stemme i ligestillingsdebatten.</Text>
+    <div class="intersect:animate-fade-up animate-once">
+      <Text teksttype="brødttekst" class="text-center">
+        Følg os
+        <a href="https://www.instagram.com/kalderalleunge/" target="_blank" rel="noopener noreferrer" class="font-bold text-current no-underline"> @kalderalleunge </a>, og vær med til at styrke unges stemme i ligestillingsdebatten.
+      </Text>
+    </div>
   </div>
 
   <!-- image row -->
   <div class="flex">
-    <img src="/instagram1.webp" alt="Instagram billede 1" class="w-full h-auto object-cover rotate-4" />
-    <img src="/instagram2.webp" alt="Instagram billede 2" class="w-full h-auto object-cover -rotate-3" />
-    <img src="/instagram3.webp" alt="Instagram billede 3" class="w-full h-auto object-cover rotate-1" />
-    <img src="/instagram4.webp" alt="Instagram billede 4" class="w-full h-auto object-cover -rotate-8" />
-    <img src="/instagram5.webp" alt="Instagram billede 5" class="w-full h-auto object-cover rotate-9" />
+    <img src="/instagram1.webp" alt="Instagram billede 1" class="w-full h-auto object-cover rotate-4 hover:animate-jump animate-once" />
+    <img src="/instagram2.webp" alt="Instagram billede 2" class="w-full h-auto object-cover -rotate-3 hover:animate-jump animate-once" />
+    <img src="/instagram3.webp" alt="Instagram billede 3" class="w-full h-auto object-cover rotate-1 hover:animate-jump animate-once" />
+    <img src="/instagram4.webp" alt="Instagram billede 4" class="w-full h-auto object-cover -rotate-8 hover:animate-jump animate-once" />
+    <img src="/instagram5.webp" alt="Instagram billede 5" class="w-full h-auto object-cover rotate-9 hover:animate-jump animate-once" />
   </div>
 </section>
 <!-- SLUT PÅ INSTAGRAM -->
