@@ -74,6 +74,7 @@
   --text-mobile-p: 16px;
   --text-mobile-quote: 65px;
   --text-mobile-hero: 18vw;
+  --text-mobile-p-hero: 20px;
 
   --text-desktop-h1: 105px;
   --text-desktop-h2: 80px;
@@ -83,6 +84,7 @@
   --text-desktop-p: 18px;
   --text-desktop-quote: 160px;
   --text-desktop-hero: 20vw;
+  --text-desktop-p-hero: 24px;
 
   /* CTA */
   --text-cta-large: 20px;
