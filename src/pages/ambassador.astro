@@ -241,7 +241,7 @@ import Instagram from "../components/Instagram.astro";
     <section id="formsektion" class="my-section-mobile lg:my-section-desktop mx-margin-mobile lg:mx-margin-desktop intersect:animate-fade-left animate-once">
       <div class="relative mr-15">
         <!-- ROSA border bakom -->
-        <div class="absolute bottom-15 left-15 w-full h-full bg-button-tertiary-default z-0"></div>
+        <div class="absolute lg:bottom-15 bottom-10 lg:left-15 left-10 w-full h-full bg-button-tertiary-default z-0"></div>
 
         <!-- SVART BOXEN -->
         <section class="relative z-10 bg-cards-primary py-20 px-10 lg:px-15" x-data="{ step: 1, showThanks: false }">
@@ -358,7 +358,7 @@ import Instagram from "../components/Instagram.astro";
                   </div>
 
                   <!-- KNAPPER -->
-                  <div class="mt-section-mobile flex items-center justify-between">
+                  <div class="mt-section-mobile flex lg:flex-row flex-col gap-grid-gap-small lg:items-center justify-between">
                     <div class="flex gap-grid-gap-small">
                       <span class="w-4 h-4 rounded-full" :class="step === 1 ? 'bg-button-tertiary-default' : 'bg-white'"></span>
                       <span class="w-4 h-4 rounded-full" :class="step === 2 ? 'bg-button-tertiary-default' : 'bg-white'"></span>
