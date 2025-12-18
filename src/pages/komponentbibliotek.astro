@@ -2,11 +2,11 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Heading from "../components/Heading.astro";
 import Text from "../components/Text.astro";
-import Link from "../components/Link.astro";
 import Button from "../components/Button.astro";
 import Quote from "../components/Quote.astro";
-import { Image } from "astro:assets";
-import thumbsup from "../assets/images/thumbsup.png";
+import Infocard from "../components/Infocard.astro";
+import Ligestillningcard from "../components/Ligestillningcard.astro";
+import Bubble from "../components/Bubble.astro";
 ---
 
 <MainLayout title="Titel">
@@ -24,33 +24,21 @@ import thumbsup from "../assets/images/thumbsup.png";
 
       <Quote htmlheading="h2" size="large" weight="regular">Quote</Quote>
       <Text teksttype="brødtekst">
-        Her er en sektion brødtekst: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dolorem doloremque commodi eaque quisquam quasi recusandae veniam. Corporis totam <Link href="#">Default link: </Link> reiciendis quibusdam ratione iure
-        aut, numquam tenetur voluptatem exercitationem sequi enim!
+        Her er en sektion brødtekst: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dolorem doloremque commodi eaque quisquam quasi recusandae veniam. Corporis totam reiciendis quibusdam ratione iure aut, numquam tenetur voluptatem
+        exercitationem sequi enim!
       </Text>
       <Text teksttype="konsultativ">
         Her en sektion konsultativ tekst: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dolorem doloremque commodi eaque quisquam quasi recusandae veniam. Corporis totam reiciendis quibusdam ratione iure aut, numquam tenetur
         voluptatem exercitationem sequi enim!
       </Text>
       <Text teksttype="brødtekst" stylingclasses="italic">
-        Her er en sektion brødtekst med ekstra css: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dolorem doloremque commodi eaque quisquam quasi recusandae veniam. Corporis totam <Link href="#">Default link: </Link> reiciendis quibusdam
-        ratione iure aut, numquam tenetur voluptatem exercitationem sequi enim!
+        Her er en sektion brødtekst med ekstra css: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dolorem doloremque commodi eaque quisquam quasi recusandae veniam. Corporis totam reiciendis quibusdam ratione iure aut, numquam
+        tenetur voluptatem exercitationem sequi enim!
       </Text>
     </section>
     <!-- slut på typografi -->
     <hr class="my-4" />
-    <!-- Link komponent instanser -->
-    <section>
-      <Heading htmlheading="h2" size="medium">Links</Heading>
-      <Text teksttype="brødtekst"><Link href="#">Default link: </Link>Default linket er en del af en tekst, og burde gerne fungere som et <Link href="#">link</Link> i en paragraf.</Text>
-      <Text><Link href="#" variant="primary">Link variant: primary</Link></Text>
-      <Text><Link href="#" variant="primary" size="small">Link variant: primary size small</Link></Text>
-      <Text><Link href="#" variant="primary" size="medium">Link variant: primary size medium</Link></Text>
-      <Text><Link href="#" variant="primary" size="large">Link variant: primary size large</Link></Text>
-      <Text><Link href="#" variant="secondary" size="small">Link variant: secondary size small</Link></Text>
-      <Text><Link href="#" variant="secondary" size="medium">Link variant: secondary size medium</Link></Text>
-      <Text><Link href="#" variant="secondary" size="large">Link variant: secondary size large</Link></Text>
-    </section>
-    <!-- Slut på Link komponent instanser -->
+
     <hr class="my-4" />
     <!-- Buttons komponent instanser -->
     <section>
@@ -67,5 +55,45 @@ import thumbsup from "../assets/images/thumbsup.png";
       <Text><Button variant="quaternary" size="large">Variant: secondary size large</Button></Text>
     </section>
     <!-- Slut på Buttons komponent instanser -->
+
+    <!-- Komponenter cards-->
+    <div>
+      <Infocard
+        cardtitle="Overskrift"
+        cardimage="/party.webp"
+        cardimagealt="People partying"
+        url="/"
+        subtitle=""
+        cardtext_1="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorKALDER ALLE UNGE afholder events rundt om i landet, der giver unge ny viden og inspiration til at tage del i ligestillingsdebatten. "
+      />
+    </div>
+
+    <div>
+      <Infocard
+        cardtitle="Overskrift"
+        cardimage="/party.webp"
+        cardimagealt="People partying"
+        url="/"
+        subtitle="Sekundær Overskrift"
+        variant=""
+        cardtext_1="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute i"
+      />
+    </div>
+    <div class="mt-20">
+      <Ligestillningcard cardtitle="OVERSKRIFT" cardimage="/card1.webp" cardimagealt="Hands on table" url="/feminisme" cardtext="Lorem ipsum dolor " />
+    </div>
+
+    <!-- Bubble 1 -->
+    <div class="my-28 md:w-1/2">
+      <Bubble variant="left"
+        ><Heading htmlheading="h3" size="medium" weight="medium">"Lorem ipsum</Heading>
+        <Text>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute i</Text></Bubble
+      >
+    </div>
+
+    <!-- Bubble 2 -->
+    <div class="my-28 md:w-1/2">
+      <Bubble variant="right"><Heading htmlheading="h3" size="medium" weight="medium">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</Heading></Bubble>
+    </div>
   </main>
 </MainLayout>
