@@ -113,7 +113,7 @@ import Quote from "./Quote.astro";
               <div class="lg:mb-p-desktop mb-p-mobile">
                 <label class="block text-text-secondary text-xl"> Samtykke </label>
                 <label class="flex items-start gap-grid-gap-small text-text-secondary text-sm">
-                  <input type="checkbox" name="samtykke" class="mt-1 rounded-full w-8 h-8 bg-text-button-primary border-2 border-white focus:ring-focus-primary" />
+                  <input type="checkbox" name="samtykke" class="mt-1 rounded-full w-8 h-8 bg-text-button-primary border-2 border-white focus:ring-focus-primary cursor-pointer" />
                   <span>
                     Jeg giver hermed samtykke til at Dansk Kvindesamfund/KALDER ALLE UNGE må tage kontakt til mig ifm Dansk Kvindesamfund/KALDER ALLE UNGE aktiviteter. Jeg giver derudover samtykke til at Dansk Kvindesamfund/KALDER ALLE UNGE må
                     opbevare mine kontaktinformationer.
@@ -131,12 +131,12 @@ import Quote from "./Quote.astro";
               </div>
 
               <div class="flex gap-grid-gap-small">
-                <button type="button" x-show="step > 1" x-on:click="step--" class="px-6 md:px-8 py-3 rounded-full border-2 border-text-secondary text-text-secondary hover:rounded-none transition-all ease-in-out"> Tilbage </button>
+                <button type="button" x-show="step > 1" x-on:click="step--" class="px-6 md:px-8 py-3 rounded-full border-2 border-text-secondary text-text-secondary hover:rounded-none transition-all ease-in-out cursor-pointer"> Tilbage </button>
                 <button
                   type="button"
                   x-show="step < 3"
                   x-on:click="step++"
-                  class="px-6 md:px-8 py-3 rounded-full bg-button-primary-default hover:bg-button-primary-hover active:bg-button-primary-active text-text-button-primary hover:rounded-none transition-all ease-in-out"
+                  class="px-6 md:px-8 py-3 rounded-full bg-button-primary-default hover:bg-button-primary-hover active:bg-button-primary-active text-text-button-primary hover:rounded-none transition-all ease-in-out cursor-pointer"
                 >
                   Næste
                 </button>
@@ -144,7 +144,7 @@ import Quote from "./Quote.astro";
                   type="button"
                   x-show="step === 3"
                   x-on:click="showThanks = true"
-                  class="px-6 md:px-8 py-3 rounded-full bg-button-primary-default hover:bg-button-primary-hover active:bg-button-primary-active text-text-button-primary hover:rounded-none transition-all ease-in-out"
+                  class="px-6 md:px-8 py-3 rounded-full bg-button-primary-default hover:bg-button-primary-hover active:bg-button-primary-active text-text-button-primary hover:rounded-none transition-all ease-in-out cursor-pointer"
                 >
                   Send
                 </button>
@@ -160,7 +160,10 @@ import Quote from "./Quote.astro";
       <div class="bg-cards-tertiary text-text-primary p-8 md:p-10 max-w-2xl mx-4">
         <h2 class="text-2xl font-semibold mb-4">Tak for din tilmelding!</h2>
         <p class="mb-6">Vi kontakter dig snart på den email, du har angivet.</p>
-        <button class="px-8 py-3 rounded-full bg-button-primary-default hover:bg-button-primary-hover active:bg-button-primary-active text-text-button-primary hover:rounded-none transition-all ease-in-out" x-on:click="showThanks = false">
+        <button
+          class="px-8 py-3 rounded-full bg-button-primary-default hover:bg-button-primary-hover active:bg-button-primary-active text-text-button-primary hover:rounded-none transition-all ease-in-out cursor-pointer"
+          x-on:click="showThanks = false"
+        >
           Luk
         </button>
       </div>
