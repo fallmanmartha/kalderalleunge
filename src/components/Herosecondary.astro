@@ -5,7 +5,7 @@ import Text from "./Text.astro";
 const { herotitle = "", herotext_1 = "", herotext_2 = "" } = Astro.props;
 ---
 
-<section class="bg-hero-primary lg:px-32 px-12 pb-20 pt-5">
+<section class="bg-hero-primary lg:px-32 px-12 pb-20 lg:pt-section-desktop pt-section-mobile">
   <div class="intersect:animate-flip-down animate-once">
     <Heading htmlheading="h1" size="xlarge" font="quote" color="tertiary" weight="italic">
       {herotitle}
