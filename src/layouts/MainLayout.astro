@@ -3,6 +3,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/tailwind.css";
 const { title } = Astro.props;
+import Login from "../components/Login.astro";
 ---
 
 <html lang="da">
@@ -20,7 +21,9 @@ const { title } = Astro.props;
   </head>
   <body class="scroll-smooth">
     <Header />
-
+    <!-- LOCK TO LOG IN -->
+    <Login />
+    <!-- SLUT PÅ LOCK TO LOG IN -->
     <slot />
 
     <Footer />
