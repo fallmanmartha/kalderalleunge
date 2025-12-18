@@ -4,24 +4,24 @@ const currentPath = pathname.slice(1); // remove the first "/"
 import Button from "./Button.astro";
 ---
 
-<header x-data="{ showmenu: false }" class="animate-fade-down animate-once">
+<header x-data="{ showmenu: false }" class="">
   <div id="navbar" class="p-margin-mobile flex flex-row justify-between items-center bg-hero-primary">
     <!-- BURGER MENY KNAPP -->
-    <button id="burgermenu" class="pr-30" x-on:click="showmenu = !showmenu" aria-label="Åbn menu">
+    <button id="burgermenu" class="pr-30 animate-fade-down animate-once" x-on:click="showmenu = !showmenu" aria-label="Åbn menu">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-15">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
       </svg>
     </button>
 
     <!-- LOGO -->
-    <div id="logo" class="lg:w-35 lg:h-35 w-20 h-20">
+    <div id="logo" class="lg:w-35 lg:h-35 w-20 h-20 animate-fade-down animate-once">
       <a href="/">
         <img src="/logo.svg" alt="logo" class="hover:animate-jump hover:animate-once" />
       </a>
     </div>
 
     <!-- DESKTOP CTA -->
-    <div class="hidden lg:block">
+    <div class="hidden lg:block animate-fade-down animate-once">
       <a href="/ambassador">
         <Button variant="tertiary" size="large">Bliv ambassadør</Button>
       </a>
