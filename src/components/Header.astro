@@ -4,10 +4,10 @@ const currentPath = pathname.slice(1); // remove the first "/"
 import Button from "./Button.astro";
 ---
 
-<header x-data="{ showmenu: false }" class="">
+<header x-data="{ showmenu: false }" class="fixed top-0 left-0 w-full z-50">
   <div id="navbar" class="p-margin-mobile flex flex-row justify-between items-center bg-hero-primary">
     <!-- BURGER MENY KNAPP -->
-    <button id="burgermenu" class="pr-30 animate-fade-down animate-once" x-on:click="showmenu = !showmenu" aria-label="Åbn menu">
+    <button id="burgermenu" class="pr-30 animate-fade-down animate-once transform transition-transform duration-200 hover:scale-110 cursor-pointer" x-on:click="showmenu = !showmenu" aria-label="Åbn menu">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-15">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
       </svg>
